@@ -1,14 +1,18 @@
 <template>
-  <TestComponent></TestComponent>
+  <div id="app">
+    <div class="background-image">
+      <Test></Test>
+    </div>
+  </div>
 </template>
 
 <script>
-import TestComponent from './components/TestComponent.vue'
+import Test from './components/Test.vue'
 
 export default {
   name: 'App',
   components: {
-    TestComponent
+    Test
   }
 }
 </script>
@@ -16,10 +20,16 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.background-image {
+  background-image: url('@/assets/background_placeholder.jpg');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Avoids repeating the image */
+  width: 100%;
+  height: 100vh; /* Makes the container full viewport height */
 }
 </style>
