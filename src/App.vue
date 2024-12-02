@@ -1,31 +1,31 @@
 <template>
-  <div id="app">
-    <div class="background-image">
-      <Test></Test>
-    </div>
-  </div>
+  <Header></Header>
+  <div class="background-image"></div>
+  <TextDisplay></TextDisplay>
 </template>
 
 <script>
-import Test from './components/Test.vue'
+import Header from "@/components/Header.vue";
+import TextDisplay from "@/components/Text.vue";
 
 export default {
-  name: 'App',
-  components: {
-    Test
+  name: "App",
+    components: {
+      TextDisplay,
+      Header
   }
 }
 </script>
 
 <style>
-#app {
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
 }
 
 .background-image {
-  background-image: url('@/assets/background_placeholder.jpg');
+  background-image: url("@/assets/background_placeholder.jpg");
   background-size: cover; /* Ensures the image covers the entire container */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Avoids repeating the image */
