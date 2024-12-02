@@ -27,6 +27,6 @@ export default {
 
 h1 {
   margin: 0;
-  padding-left: 1rem; /* Adds padding from the left */
+  padding-left: 1rem;
 }
 </style>
