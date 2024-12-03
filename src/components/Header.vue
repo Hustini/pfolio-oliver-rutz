@@ -16,7 +16,7 @@ export default {
   color: white;
   text-align: left;
   font-size: 2.25rem;
-  position: relative;
+  position: absolute;
   width: 100%;
   box-sizing: border-box;
 }
