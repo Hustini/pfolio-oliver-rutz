@@ -2,15 +2,18 @@
   <Header></Header>
   <div class="background-image"></div>
   <TextDisplay></TextDisplay>
+  <AccordionPanel></AccordionPanel>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
 import TextDisplay from "@/components/Text.vue";
+import AccordionPanel from "@/components/Accordion.vue";
 
 export default {
   name: "App",
     components: {
+      AccordionPanel,
       TextDisplay,
       Header
   }
