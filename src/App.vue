@@ -25,9 +25,9 @@ body {
 }
 
 .background-image {
-  background-image: url("@/assets/background_placeholder.jpg");
+  background-image: url("@/assets/Portrait.png");
   background-size: cover; /* Ensures the image covers the entire container */
-  background-position: center; /* Centers the image */
+  background-position: center 125%; /* Centers the image */
   background-repeat: no-repeat; /* Avoids repeating the image */
   width: 100%;
   height: 100vh; /* Makes the container full viewport height */
