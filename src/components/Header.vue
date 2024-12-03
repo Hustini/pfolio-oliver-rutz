@@ -15,9 +15,8 @@ export default {
   background-color: black;
   color: white;
   text-align: left;
-  padding: 1rem;
   font-family: Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   position: relative;
   width: 100%;
   box-sizing: border-box;
