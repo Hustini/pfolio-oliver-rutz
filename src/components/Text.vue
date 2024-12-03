@@ -15,7 +15,6 @@ export default {
   background-color: black;
   color: white;
   text-align: left;
-  font-family: Arial, sans-serif;
   font-size: 2.25rem;
   position: absolute;
   width: 100%;
@@ -27,5 +26,7 @@ export default {
 h1 {
   margin: 0;
   padding-left: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
 }
 </style>
