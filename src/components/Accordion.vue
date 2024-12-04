@@ -2,7 +2,7 @@
   <section>
     <div class="wrapper">
       <div class="title">
-        <h3>About</h3>
+        <h3>ABOUT</h3>
       </div>
       <div class="content">
         <p>
