@@ -33,11 +33,8 @@ export default {
 
 <style>
 .item {
-  max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid white;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -54,7 +51,10 @@ export default {
 }
 
 .title h3 {
+  color: white;
+  background: black;
   margin: 0;
-  font-size: 1.5rem;
+  padding: 0;
+  font-size: 72px;
 }
 </style>
