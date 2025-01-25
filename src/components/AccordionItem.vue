@@ -57,4 +57,10 @@ export default {
   padding: 0;
   font-size: 72px;
 }
+
+@media screen and (max-width: 800px) {
+  .title h3 {
+    font-size: 48px;
+  }
+}
 </style>
