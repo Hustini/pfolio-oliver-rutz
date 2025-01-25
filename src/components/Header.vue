@@ -27,4 +27,12 @@ h1 {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
 }
+
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 1.5em;
+    width: 100%;
+    padding-right: 0.5rem;
+  }
+}
 </style>
