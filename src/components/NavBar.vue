@@ -5,13 +5,13 @@
         <img src="https://flowbite.com/docs/images/logo.svg" class="logo" alt="Flowbite Logo" />
         <span class="brand-name">Flowbite</span>
       </a>
-      <button class="menu-toggle" aria-controls="navbar-menu" aria-expanded="false">
+      <button class="menu-toggle" aria-controls="navbar-menu" aria-expanded="false" @click="toggleMenu">
         <span class="sr-only">Open main menu</span>
         <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
       </button>
-      <div class="navbar-menu" id="navbar-menu">
+      <div :class="['navbar-menu', { active: isMenuOpen }]">
         <ul class="menu-items">
           <li><a href="#" class="menu-item active">Home</a></li>
           <li><a href="#" class="menu-item">About</a></li>
@@ -25,6 +25,13 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
 </script>
 
 <style scoped>
@@ -60,9 +67,9 @@
   color: #333;
 }
 
-/* Menu Toggle Button (for mobile) */
+/* Menu Toggle Button */
 .menu-toggle {
-  display: none;
+  display: inline-flex;
   padding: 8px;
   background-color: transparent;
   border: none;
@@ -77,21 +84,35 @@
 
 /* Navbar Menu */
 .navbar-menu {
-  display: flex;
+  display: none; /* Hide the menu by default */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  max-height: 0; /* Start with no height */
+  overflow: hidden; /* Hide overflow */
+}
+
+.navbar-menu.active {
+  display: block; /* Show the menu when active */
+  max-height: 500px; /* Set a max-height when menu is open (adjust as necessary) */
 }
 
 .menu-items {
   list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
 }
 
 .menu-item {
-  padding: 8px 16px;
+  padding: 12px 16px;
   text-decoration: none;
   color: #333;
   font-size: 16px;
+  display: block;
 }
 
 .menu-item:hover {
@@ -104,26 +125,14 @@
   color: white;
 }
 
-/* Mobile Menu */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: inline-flex;
-  }
-
-  .navbar-menu {
-    display: none;
-    width: 100%;
-  }
-
+/* Mobile and Desktop Styles */
+@media (min-width: 768px) {
   .navbar-menu.active {
-    display: flex;
-    flex-direction: column;
-    background-color: #f8f8f8;
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
-    padding: 16px;
+    width: 100%;
   }
 
   .menu-items {
@@ -133,8 +142,13 @@
 
   .menu-item {
     text-align: center;
-    padding: 12px;
+    padding: 16px;
     width: 100%;
+  }
+
+  /* Keep the hamburger menu visible at all times */
+  .menu-toggle {
+    display: inline-flex;
   }
 }
 </style>
