@@ -59,7 +59,6 @@ const toggleMenu = () => {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 16px;
 }
 
 .navbar-logo {
