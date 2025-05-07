@@ -1,6 +1,7 @@
 <script setup>
 import NavBar from "@/components/NavBar.vue";
 import Blob from "@/components/Blob.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
@@ -9,15 +10,10 @@ import Blob from "@/components/Blob.vue";
     <Blob class="blob" />
     <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
   </div>
+  <Footer class="footer" />
 </template>
 
 <style scoped>
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 .hero {
   position: relative;
   height: 100vh;
