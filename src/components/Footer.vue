@@ -1,17 +1,22 @@
-<script setup>
-</script>
-
 <template>
   <footer>
-    <div class="big-text">Let's Work Together!</div>
-    <div class="contact-container">
-      <div class="contact-item">
-        <div>Mail</div>
-        <div>Insta</div>
-      </div>
-      <div class="contact-item">
-        <div>olivverutz26@gmail.com</div>
-        <a href="https://www.instagram.com/oli_s_acc/">oli_s_acc</a>
+    <div class="footer-content">
+      <div class="big-text">Let's Work Together!</div>
+      <div class="footer-bottom">
+        <div class="contact-info">
+          <div class="labels">
+            <div>Mail</div>
+            <div>Insta</div>
+          </div>
+          <div class="values">
+            <div><a href="mailto:olivverutz26@gmail.com">olivverutz26@gmail.com</a></div>
+            <div><a href="https://www.instagram.com/oli_s_acc/">@oli_s_acc</a></div>
+          </div>
+        </div>
+        <div class="footer-note">
+          Just hit me up for a chat or we<br />
+          drink a coffee somewhere in zurich.
+        </div>
       </div>
     </div>
   </footer>
@@ -19,34 +24,54 @@
 
 <style scoped>
 footer {
+  background-color: #11FF004D;
+  color: black;
+  width: 100%;
+  padding: 1rem 0 3rem 0;
+  border-top: 2px solid black;
+}
+
+.footer-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  position: relative;
-  margin: 0;
-  width: 100%;
-  height: 310px;
-  background-color: #11FF004D;
-  color: white;
-  font-size: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .big-text {
-  font-size: 140px;
-  color : #000000;
+  font-size: 8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
-.contact-container {
+.footer-bottom {
   display: flex;
-  gap: 2rem;
-  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1rem;
 }
 
-.contact-item {
+.contact-info {
+  display: flex;
+  gap: 7rem;
+}
+
+.labels, .values {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  color: #000000;
+  gap: 0.5rem;
+  font-style: italic;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+.footer-note {
+  max-width: 300px;
+  text-align: left;
 }
 </style>
