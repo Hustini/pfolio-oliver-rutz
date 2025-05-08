@@ -7,7 +7,7 @@ import Footer from "@/components/Footer.vue";
 <template>
   <NavBar class="navbar" />
   <div class="hero">
-    <Blob class="blob" />
+    <Blob class="blob" width="400px" height="400px" />
     <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
   </div>
   <Footer class="footer" />
