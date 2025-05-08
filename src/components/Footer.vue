@@ -3,9 +3,7 @@
 
 <template>
   <footer>
-    <p>Author: Hege Refsnes<br>
-      <a href="mailto:hege@example.com">hege@example.com</a>
-    </p>
+    <div>Let's Work Together!</div>
   </footer>
 </template>
 
@@ -14,9 +12,8 @@ footer {
   position: relative;
   margin: 0;
   width: 100%;
-  text-align: center;
-  padding: 3px;
-  background-color: DarkSalmon;
+  height: 310px;
+  background-color: #11FF004D;
   color: white;
   font-size: 14px;
 }
