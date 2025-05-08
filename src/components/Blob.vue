@@ -13,6 +13,7 @@ const props = defineProps({
   }
 })
 
+const blobRef = ref(null)
 const gradientPos = ref({ x: 75, y: 25 })
 
 // Utility function to constrain a value between min and max
@@ -21,26 +22,21 @@ function clamp(val, min, max) {
 }
 
 function updatePosition(e) {
-  const blob = document.querySelector('.blob')
+  const blob = blobRef.value
   if (!blob) return
 
-  // Get the size and position of the blob element on the screen
   const rect = blob.getBoundingClientRect()
 
-  // Calculate the center of the blob element
   const centerX = rect.left + rect.width / 2
   const centerY = rect.top + rect.height / 2
 
-  // Calculate the distance from the mouse to the center of the blob
   const dx = e.clientX - centerX
   const dy = e.clientY - centerY
 
-  // Convert distance into percentage offsets for the gradient position
-  // 50% means center; we offset proportionally and clamp to keep the green visible
   const percentX = clamp(50 + (dx / rect.width) * 50, 20, 80)
   const percentY = clamp(50 + (dy / rect.height) * 50, 20, 80)
 
-  gradientPos.value = {x: percentX, y: percentY}
+  gradientPos.value = { x: percentX, y: percentY }
 }
 
 // Add the mousemove listener when component is mounted
@@ -56,6 +52,7 @@ onUnmounted(() => {
 
 <template>
   <div
+      ref="blobRef"
       class="blob"
       :style="{
       width: typeof width === 'number' ? width + 'px' : width,
