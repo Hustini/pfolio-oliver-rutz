@@ -16,7 +16,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div>
+  <div class="card">
     <img :src="imgPath" alt="placeholder">
     <div class="text">
       <div class="title">{{title}}</div>
@@ -27,8 +27,12 @@ const props = defineProps({
 
 <style scoped>
 img {
-  width: 425px;
+  width: 100%;
   border: solid 1px black;
+}
+
+.card {
+  width: 100%;
 }
 
 .text {
