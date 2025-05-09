@@ -12,7 +12,7 @@ import ProjectCard from "@/components/ProjectCard.vue";
         <ProjectCard imgPath="/img/placeholder.png" title="Tsalskdflasdfhj" caption="dfalsdfhlaskj"/>
         <ProjectCard imgPath="/img/placeholder.png" title="Tsalskdflasdfhj" caption="dfalsdfhlaskj"/>
       </div>
-      <Button buttonText="SEE ALL PROJECTS" isArrow="true"/>
+      <Button buttonText="SEE ALL PROJECTS" isArrow="True"/>
     </div>
   </div>
 </template>
