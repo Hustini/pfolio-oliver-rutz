@@ -1,7 +1,14 @@
+<script setup lang="ts">
+import Blob from '@/components/Blob.vue';
+</script>
+
 <template>
   <footer>
     <div class="footer-content">
       <div class="big-text">Let's Work Together!</div>
+      <div class="blob">
+        <Blob width="475px" height="475px"/>
+      </div>
       <div class="footer-bottom">
         <div class="contact-info">
           <div class="labels">
@@ -24,6 +31,8 @@
 
 <style scoped>
 footer {
+  position: relative;
+  overflow: hidden;
   background-color: #11FF004D;
   color: black;
   width: 100%;
@@ -40,7 +49,7 @@ footer {
 }
 
 .big-text {
-  font-size: 8rem;
+  font-size: 7.5rem;
   font-weight: bold;
   margin-bottom: 3rem;
   text-align: center;
@@ -55,13 +64,16 @@ footer {
 
 .contact-info {
   display: flex;
-  gap: 7rem;
+  gap: 5rem;
 }
 
 .labels, .values {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.values {
   font-style: italic;
 }
 
@@ -73,5 +85,14 @@ a {
 .footer-note {
   max-width: 300px;
   text-align: left;
+}
+
+.blob {
+  position: absolute;
+  left: 50%;
+  bottom: -75%;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
 }
 </style>
