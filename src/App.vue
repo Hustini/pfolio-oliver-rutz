@@ -2,8 +2,8 @@
 import NavBar from "@/components/NavBar.vue";
 import Blob from "@/components/Blob.vue";
 import Footer from "@/components/Footer.vue";
-import Button from "@/components/Button.vue";
 import InfoSection from "@/components/InfoSection.vue";
+import ProjectParent from "@/components/ProjectParent.vue";
 </script>
 
 <template>
@@ -12,9 +12,8 @@ import InfoSection from "@/components/InfoSection.vue";
       <Blob class="blob" width="400px" height="400px" />
       <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
     </div>
-    <div>
-      <InfoSection />
-    </div>
+    <InfoSection />
+    <ProjectParent />
     <Footer class="footer" />
   </div>
 </template>
