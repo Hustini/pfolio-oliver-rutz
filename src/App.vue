@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar.vue";
 import Blob from "@/components/Blob.vue";
 import Footer from "@/components/Footer.vue";
 import Button from "@/components/Button.vue";
+import InfoSection from "@/components/InfoSection.vue";
 </script>
 
 <template>
@@ -11,8 +12,8 @@ import Button from "@/components/Button.vue";
       <Blob class="blob" width="400px" height="400px" />
       <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
     </div>
-    <div class="layout-container">
-      <Button buttonText="LEARN MORE ABOUT ME" isArrow="True"/>
+    <div>
+      <InfoSection />
     </div>
     <Footer class="footer" />
   </div>
