@@ -2,6 +2,7 @@
 import NavBar from "@/components/NavBar.vue";
 import Blob from "@/components/Blob.vue";
 import Footer from "@/components/Footer.vue";
+import Button from "@/components/Button.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import Footer from "@/components/Footer.vue";
     <div class="layout-container hero-content">
       <Blob class="blob" width="400px" height="400px" />
       <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
+      <Button />
     </div>
     <Footer class="footer" />
   </div>
