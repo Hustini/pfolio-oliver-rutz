@@ -12,8 +12,7 @@ import ProjectCard from "@/components/ProjectCard.vue";
         <ProjectCard imgPath="/img/placeholder.png" title="Tsalskdflasdfhj" caption="dfalsdfhlaskj"/>
         <ProjectCard imgPath="/img/placeholder.png" title="Tsalskdflasdfhj" caption="dfalsdfhlaskj"/>
       </div>
-      <Button buttonText="SEE ALL PROJECTS" isArrow="True"/>
-      <router-link to="/projects"><Button buttonText="LEARN MORE ABOUT ME" isArrow="True"/></router-link>
+      <router-link to="/projects"><Button buttonText="SEE ALL PROJECTS" isArrow="True"/></router-link>
     </div>
   </div>
 </template>
@@ -37,5 +36,6 @@ import ProjectCard from "@/components/ProjectCard.vue";
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
+  padding-bottom: 2rem;
 }
 </style>
