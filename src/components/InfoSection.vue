@@ -17,6 +17,8 @@ import Button from "@/components/Button.vue";
 .info-container {
   background-color: #11FF004D;
   padding: 2rem 0;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
 }
 
 .text {
