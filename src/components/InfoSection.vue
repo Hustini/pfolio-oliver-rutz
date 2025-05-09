@@ -8,7 +8,7 @@ import Button from "@/components/Button.vue";
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus diam aliquet risus egestas, aliquam molestie tortor fermentum. Nullam ornare enim vel tempor commodo. Mauris id lobortis augue. Nullam ornare enim vel tempor commodo. Mauris id lobortis augue.
     </div>
     <div class="layout-container">
-      <Button buttonText="LEARN MORE ABOUT ME" isArrow="True"/>
+      <router-link to="/about"><Button buttonText="LEARN MORE ABOUT ME" isArrow="True"/></router-link>
     </div>
   </div>
 </template>
