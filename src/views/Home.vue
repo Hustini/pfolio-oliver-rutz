@@ -56,7 +56,6 @@ import ProjectParent from "@/components/ProjectParent.vue";
   font-weight: 400;
   text-align: left;
   color: #000;
-  border: 2px solid black;
   margin-top: auto;
   padding: 1rem 0;
 }

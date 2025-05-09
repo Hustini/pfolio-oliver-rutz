@@ -51,14 +51,12 @@ footer {
   font-weight: 400;
   margin-bottom: 3rem;
   text-align: left;
-  border: 2px solid black;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border: 2px solid black;
 }
 
 .contact-info {
