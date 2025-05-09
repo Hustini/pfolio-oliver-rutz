@@ -7,7 +7,11 @@ import ProjectCard from "@/components/ProjectCard.vue";
   <div class="container">
     <div class="layout-container">
       <div class="title">Projects</div>
-      <ProjectCard />
+      <div class="projects">
+        <ProjectCard imgPath="/img/placeholder.png" title="Tsalskdflasdfhj" caption="dfalsdfhlaskj"/>
+        <ProjectCard imgPath="/img/placeholder.png" title="Tsalskdflasdfhj" caption="dfalsdfhlaskj"/>
+        <ProjectCard imgPath="/img/placeholder.png" title="Tsalskdflasdfhj" caption="dfalsdfhlaskj"/>
+      </div>
       <Button buttonText="SEE ALL PROJECTS" isArrow="true"/>
     </div>
   </div>
@@ -22,5 +26,16 @@ import ProjectCard from "@/components/ProjectCard.vue";
 .title {
   font-size: 2rem;
   font-weight: 400;
+}
+
+.layout-container > *{
+  margin-top: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
 }
 </style>
