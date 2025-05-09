@@ -20,7 +20,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
   </div>
 </template>
 
-<style scoped>
+<style>
 .home {
   position: relative;
   width: 100%;
@@ -52,7 +52,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
 .title {
   position: relative;
   z-index: 1;
-  font-size: 6rem;
+  font-size: 5.75rem;
   font-weight: 400;
   text-align: left;
   color: #000;

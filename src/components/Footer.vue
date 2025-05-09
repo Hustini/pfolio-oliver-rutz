@@ -47,7 +47,7 @@ footer {
 }
 
 .big-text {
-  font-size: 7.75rem;
+  font-size: 7rem;
   font-weight: 400;
   margin-bottom: 3rem;
   text-align: left;
@@ -86,7 +86,7 @@ a {
 .blob {
   position: absolute;
   left: 50%;
-  bottom: -75%;
+  bottom: 75%;
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
