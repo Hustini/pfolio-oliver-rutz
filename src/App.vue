@@ -10,7 +10,9 @@ import Button from "@/components/Button.vue";
     <div class="layout-container hero-content">
       <Blob class="blob" width="400px" height="400px" />
       <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
-      <Button />
+    </div>
+    <div class="layout-container">
+      <Button buttonText="LEARN MORE ABOUT ME" isArrow="True"/>
     </div>
     <Footer class="footer" />
   </div>
