@@ -1,14 +1,25 @@
 <script setup>
+import Button from "@/components/Button.vue";
 </script>
 
 <template>
   <div class="container">
-    <h1 class="layout-container">Projects</h1>
+    <div class="layout-container">
+      <div class="title">Projects</div>
+      <Button buttonText="SEE ALL PROJECTS" isArrow="true"/>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .container {
-  background: #2c3e50;
+  background: white;
+  padding: 2rem 0;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
 }
 </style>
