@@ -28,7 +28,7 @@ import ProjectCard from "@/components/ProjectCard.vue";
   font-weight: 400;
 }
 
-.layout-container > *{
+.layout-container > *:not(:first-child) {
   margin-top: 2rem;
 }
 
