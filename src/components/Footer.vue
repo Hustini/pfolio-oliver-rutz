@@ -7,7 +7,7 @@ import Blob from '@/components/Blob.vue';
     <div class="layout-container footer-content">
       <div class="big-text">Let's Work Together!</div>
       <div class="blob">
-        <Blob width="475px" height="475px"/>
+        <Blob />
       </div>
       <div class="footer-bottom">
         <div class="contact-info">
@@ -90,5 +90,13 @@ a {
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .blob {
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
 }
 </style>

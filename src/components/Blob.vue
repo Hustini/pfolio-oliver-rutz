@@ -1,18 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
-// Props for dynamic width and height
-const props = defineProps({
-  width: {
-    type: [Number, String],
-    default: 400
-  },
-  height: {
-    type: [Number, String],
-    default: 400
-  }
-})
-
 const blobRef = ref(null)
 const gradientPos = ref({ x: 75, y: 25 })
 
@@ -55,8 +43,6 @@ onUnmounted(() => {
       ref="blobRef"
       class="blob"
       :style="{
-      width: typeof width === 'number' ? width + 'px' : width,
-      height: typeof height === 'number' ? height + 'px' : height,
       background: `radial-gradient(circle at ${gradientPos.x}% ${gradientPos.y}%, rgba(0, 255, 64, 1) 0%, rgba(0, 255, 64, 1) 10%, rgb(119, 23, 244) 70%)`
     }"
   ></div>
@@ -64,8 +50,21 @@ onUnmounted(() => {
 
 <style scoped>
 .blob {
+  width: 475px;
+  height: 475px;
   border-radius: 50%;
   filter: blur(30px);
   box-shadow: 0 0 40px rgba(0, 255, 64, 0.4), 0 0 60px rgba(119, 23, 244, 0.4);
+}
+
+
+@media (max-width: 640px) {
+  .blob {
+    width: 280px;
+    height: 280px;
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
 }
 </style>
