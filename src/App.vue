@@ -5,24 +5,33 @@ import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-  <NavBar class="navbar" />
   <div class="hero">
-    <Blob class="blob" width="400px" height="400px" />
-    <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
+    <div class="layout-container hero-content">
+      <Blob class="blob" width="400px" height="400px" />
+      <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
+    </div>
+    <Footer class="footer" />
   </div>
-  <Footer class="footer" />
 </template>
 
 <style scoped>
 .hero {
   position: relative;
-  height: 100vh;
   width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
+  background-color: white;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  justify-content: center;
 }
 
 .blob {
@@ -30,17 +39,19 @@ import Footer from "@/components/Footer.vue";
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .title {
   position: relative;
-  z-index: 2;
-  font-size: 95px;
-  font-weight: 600;
+  z-index: 1;
+  font-size: 6rem;
+  font-weight: 400;
   text-align: left;
   color: #000;
+  border: 2px solid black;
   margin-top: auto;
-  padding: 0 40px 40px;
+  padding: 1rem 0;
 }
 </style>

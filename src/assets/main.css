@@ -3,3 +3,18 @@ html, body {
     padding: 0;
     font-family: Manrope, sans-serif;
 }
+
+.layout-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+    .layout-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

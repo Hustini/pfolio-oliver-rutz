@@ -1,10 +1,10 @@
-<script setup lang="ts">
+<script setup>
 import Blob from '@/components/Blob.vue';
 </script>
 
 <template>
   <footer>
-    <div class="footer-content">
+    <div class="layout-container footer-content">
       <div class="big-text">Let's Work Together!</div>
       <div class="blob">
         <Blob width="475px" height="475px"/>
@@ -43,23 +43,22 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  align-items: stretch;
 }
 
 .big-text {
-  font-size: 7.5rem;
-  font-weight: bold;
+  font-size: 7.75rem;
+  font-weight: 400;
   margin-bottom: 3rem;
-  text-align: center;
+  text-align: left;
+  border: 2px solid black;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: 1rem;
+  border: 2px solid black;
 }
 
 .contact-info {
@@ -70,7 +69,6 @@ footer {
 .labels, .values {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .values {
