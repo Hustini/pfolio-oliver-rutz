@@ -116,9 +116,10 @@ a {
   .footer-content {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: left;
     height: 110%;
+    gap: 2rem;
   }
 
   .footer-bottom {
