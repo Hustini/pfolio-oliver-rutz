@@ -38,4 +38,11 @@ import ProjectCard from "@/components/ProjectCard.vue";
   gap: 1rem;
   padding-bottom: 2rem;
 }
+
+@media (max-width: 640px) {
+  .title {
+    padding: 0;
+    margin: 0;
+  }
+}
 </style>
