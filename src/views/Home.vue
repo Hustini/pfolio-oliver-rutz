@@ -70,30 +70,23 @@ import ProjectParent from "@/components/ProjectParent.vue";
 
 @media (max-width: 640px) {
   .hero-content {
-    flex-direction: row;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 100vh;
-    position: relative;
+    text-align: center;
+    padding: 2rem;
   }
 
   .title {
-    font-size: 3.75rem;
     transform: rotate(-90deg);
-    transform-origin: bottom left;
-    white-space: nowrap;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+    position: static;
+    font-size: 3.75rem;
+    writing-mode: horizontal-tb;
+    text-align: center;
     margin: 0;
-    padding: 0 0 0 1rem;
-    width: auto;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .arrow {
-    bottom: 2rem;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
   }
 
   .blob {
@@ -102,6 +95,12 @@ import ProjectParent from "@/components/ProjectParent.vue";
     transform: translate(-50%, -50%);
     width: 80vw;
     height: 80vw;
+  }
+
+  .arrow {
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 </style>
