@@ -78,13 +78,13 @@ import ProjectParent from "@/components/ProjectParent.vue";
   .title {
     font-size: 3.75rem;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 2rem;
     position: absolute;
     left: 0;
-    bottom: -15%;
-    transform-origin: 0 0;
+    top: 100%; /* 👈 anchor it to the bottom of hero-content */
+    transform-origin: top left; /* 👈 rotate around the corner */
     transform: rotate(-90deg);
-    width: 210%;
+    width: 100vh; /* match height of hero-content */
   }
 
   .blob {
@@ -97,7 +97,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
   }
 
   .arrow {
-    bottom: 3%;
+    bottom: 2rem;
     left: 50%;
   }
 }
