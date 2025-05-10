@@ -99,6 +99,15 @@ a {
     transform: translate(-50%, -50%);
   }
 
+  .big-text {
+    font-size: 0.5rem;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+  }
+
   .footer-bottom {
     display: flex;
     flex-direction: column;
