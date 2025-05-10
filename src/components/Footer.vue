@@ -128,5 +128,10 @@ a {
     justify-content: space-between;
     height: 100%;
   }
+
+  .contact-info {
+    display: flex;
+    gap: 2.5rem;
+  }
 }
 </style>
