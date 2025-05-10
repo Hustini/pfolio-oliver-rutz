@@ -81,7 +81,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
     padding: 0;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -20%;
     transform-origin: 0 0;
     transform: rotate(-90deg);
     width: 200%;
