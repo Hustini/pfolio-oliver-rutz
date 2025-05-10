@@ -100,9 +100,11 @@ a {
   }
 
   .big-text {
-    font-size: 0.5rem;
+    font-size: 40px;
     transform: rotate(-90deg);
     white-space: nowrap;
+    margin: 0;
+    width: 44px;
   }
 
   footer {
@@ -114,11 +116,16 @@ a {
   .footer-content {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    height: 110%;
   }
 
   .footer-bottom {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 }
 </style>
