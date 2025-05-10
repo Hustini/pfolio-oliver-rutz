@@ -80,11 +80,11 @@ import ProjectParent from "@/components/ProjectParent.vue";
     margin: 0;
     padding: 0;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform-origin: center;
-    transform: translate(-68%, 20%) rotate(-90deg);
-    width: auto;
+    left: 0;
+    bottom: -15%;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    width: 750px;
   }
 
   .blob {
