@@ -71,6 +71,20 @@ import ProjectParent from "@/components/ProjectParent.vue";
 @media (max-width: 640px) {
   .hero-content {
     width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .title {
+    font-size: 3.75rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+    transform: translate(-68%, 20%) rotate(-90deg);
+    width: auto;
   }
 
   .blob {
