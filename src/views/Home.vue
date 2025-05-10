@@ -88,7 +88,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
     text-align: left;
     white-space: normal;
     margin: 0;
-    width: 100vh;
+    width: 165%;
     height: auto;
     padding-top: 0;
     padding-left: 30px;
