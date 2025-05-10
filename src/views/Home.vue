@@ -71,7 +71,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
 @media (max-width: 640px) {
   .hero-content {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     text-align: center;
     min-height: 100vh;
@@ -90,9 +90,9 @@ import ProjectParent from "@/components/ProjectParent.vue";
     margin: 0;
     width: 100vh;
     height: auto;
-    padding: 0;
+    padding-top: 250px;
+    padding-left: 30px;
     z-index: 1;
-    background: rgba(255, 0, 0, 0.1);
   }
 
   .blob {
