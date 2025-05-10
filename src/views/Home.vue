@@ -20,7 +20,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
   </div>
 </template>
 
-<style>
+<style scoped>
 .home {
   position: relative;
   width: 100%;
@@ -66,5 +66,35 @@ import ProjectParent from "@/components/ProjectParent.vue";
   left: 50%;
   transform: translateX(-50%);
   height: 20px;
+}
+
+@media (max-width: 640px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .title {
+    position: absolute;
+    bottom: 22.5%;
+    left: -35%;
+    font-size: 3.75rem;
+    transform: rotate(-90deg);
+    transform-origin: center center;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+  }
 }
 </style>
