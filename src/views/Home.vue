@@ -76,22 +76,19 @@ import ProjectParent from "@/components/ProjectParent.vue";
   }
 
   .title {
-    position: absolute;
-    bottom: 22.5%;
-    left: -35%;
     font-size: 3.75rem;
     transform: rotate(-90deg);
-    transform-origin: center center;
-    white-space: nowrap;
+    white-space: normal;
     margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
+    padding-top: 3rem;
+    text-align: left;
+    width: 750px;
+    height: 135px;
   }
 
   .arrow {
     position: absolute;
-    bottom: 5%;
+    bottom: 9%;
     left: 50%;
     transform: translateX(-50%);
     height: 20px;
