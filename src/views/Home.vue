@@ -69,9 +69,13 @@ import ProjectParent from "@/components/ProjectParent.vue";
 }
 
 @media (max-width: 640px) {
+  .hero-content {
+    width: 100%;
+  }
+
   .blob {
     top: 50%;
-    left: 35%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 80vw;
     height: 80vw;
@@ -80,7 +84,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
 
   .arrow {
     bottom: 2rem;
-    left: 35%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
