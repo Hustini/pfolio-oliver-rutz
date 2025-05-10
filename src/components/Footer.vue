@@ -98,5 +98,10 @@ a {
     bottom: auto;
     transform: translate(-50%, -50%);
   }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
