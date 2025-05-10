@@ -84,7 +84,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
     bottom: -15%;
     transform-origin: 0 0;
     transform: rotate(-90deg);
-    width: 750px;
+    width: 200%;
   }
 
   .blob {
@@ -97,7 +97,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
   }
 
   .arrow {
-    bottom: 2rem;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
   }
