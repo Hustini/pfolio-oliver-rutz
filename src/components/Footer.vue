@@ -104,7 +104,7 @@ a {
     transform: rotate(-90deg);
     white-space: nowrap;
     margin: 0;
-    width: 44px;
+    width: 2.75rem;
   }
 
   footer {
