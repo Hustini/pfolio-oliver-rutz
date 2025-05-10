@@ -90,7 +90,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
     margin: 0;
     width: 100vh;
     height: auto;
-    padding-top: 250px;
+    padding-top: 60%;
     padding-left: 30px;
     z-index: 1;
   }
