@@ -75,7 +75,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
     justify-content: center;
     text-align: center;
     min-height: 100vh;
-    width: 100%;
+    width: 130%;
     padding: 0;
     margin: 0;
   }
@@ -90,14 +90,14 @@ import ProjectParent from "@/components/ProjectParent.vue";
     margin: 0;
     width: 100vh;
     height: auto;
-    padding-top: 2em;
+    padding-top: 0;
     padding-left: 30px;
     z-index: 1;
   }
 
   .blob {
     top: 50%;
-    left: 50%;
+    left: 35%;
     transform: translate(-50%, -50%);
     width: 80vw;
     height: 80vw;
@@ -106,7 +106,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
 
   .arrow {
     bottom: 2rem;
-    left: 50%;
+    left: 35%;
     transform: translateX(-50%);
   }
 }
