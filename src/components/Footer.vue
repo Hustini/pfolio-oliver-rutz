@@ -86,7 +86,7 @@ a {
 .blob {
   position: absolute;
   left: 50%;
-  bottom: 75%;
+  bottom: -80%;
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
@@ -100,7 +100,7 @@ a {
   }
 
   .big-text {
-    font-size: 40px;
+    font-size: 2.5rem;
     transform: rotate(-90deg);
     white-space: nowrap;
     margin: 0;
