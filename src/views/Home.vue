@@ -69,32 +69,6 @@ import ProjectParent from "@/components/ProjectParent.vue";
 }
 
 @media (max-width: 640px) {
-  .hero-content {
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
-    min-height: 100vh;
-    width: 130%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .title {
-    transform: rotate(-90deg);
-    position: static;
-    font-size: 3.75rem;
-    writing-mode: horizontal-tb;
-    text-align: left;
-    white-space: normal;
-    margin: 0;
-    width: 165%;
-    height: auto;
-    padding-top: 0;
-    padding-left: 30px;
-    z-index: 1;
-  }
-
   .blob {
     top: 50%;
     left: 35%;
