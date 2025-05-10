@@ -74,7 +74,10 @@ import ProjectParent from "@/components/ProjectParent.vue";
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .title {
@@ -82,11 +85,14 @@ import ProjectParent from "@/components/ProjectParent.vue";
     position: static;
     font-size: 3.75rem;
     writing-mode: horizontal-tb;
-    text-align: center;
+    text-align: left;
+    white-space: normal;
     margin: 0;
-    width: 100%;
+    width: 100vh;
+    height: auto;
     padding: 0;
     z-index: 1;
+    background: rgba(255, 0, 0, 0.1);
   }
 
   .blob {
