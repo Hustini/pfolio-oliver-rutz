@@ -51,4 +51,12 @@ const props = defineProps({
   width: 1.25rem;
   height: 1.25rem;
 }
+
+@media (max-width: 640px) {
+  .custom-button {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 </style>
