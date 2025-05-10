@@ -101,6 +101,14 @@ a {
 
   .big-text {
     font-size: 0.5rem;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+  }
+
+  footer {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    overflow: visible;
   }
 
   .footer-content {
