@@ -108,8 +108,7 @@ a {
   }
 
   footer {
-    aspect-ratio: 1 / 1;
-    height: auto;
+    height: 420px;
     overflow: visible;
   }
 
