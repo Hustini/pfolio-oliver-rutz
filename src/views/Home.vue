@@ -81,7 +81,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
     padding: 0;
     position: absolute;
     left: 0;
-    bottom: -15%;
+    bottom: 0;
     transform-origin: 0 0;
     transform: rotate(-90deg);
     width: 200%;
@@ -99,7 +99,6 @@ import ProjectParent from "@/components/ProjectParent.vue";
   .arrow {
     bottom: 3%;
     left: 50%;
-    transform: translateX(-50%);
   }
 }
 </style>
