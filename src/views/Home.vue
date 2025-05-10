@@ -84,7 +84,7 @@ import ProjectParent from "@/components/ProjectParent.vue";
     bottom: -20%;
     transform-origin: 0 0;
     transform: rotate(-90deg);
-    width: 200%;
+    width: 250%;
   }
 
   .blob {
