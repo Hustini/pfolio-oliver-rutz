@@ -70,28 +70,38 @@ import ProjectParent from "@/components/ProjectParent.vue";
 
 @media (max-width: 640px) {
   .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
   }
 
   .title {
     font-size: 3.75rem;
     transform: rotate(-90deg);
-    white-space: normal;
+    transform-origin: bottom left;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
     margin: 0;
-    padding-top: 3rem;
-    text-align: left;
-    width: 750px;
-    height: 135px;
+    padding: 0 0 0 1rem;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
   }
 
   .arrow {
-    position: absolute;
-    bottom: 9%;
+    bottom: 2rem;
+  }
+
+  .blob {
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    height: 20px;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vw;
   }
 }
 </style>
