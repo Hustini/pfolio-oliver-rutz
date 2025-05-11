@@ -37,7 +37,7 @@ footer {
   color: black;
   width: 100%;
   padding: 1rem 0 3rem 0;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
 }
 
 .footer-content {
