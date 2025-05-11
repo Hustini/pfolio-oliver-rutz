@@ -13,9 +13,11 @@ import Footer from "@/components/Footer.vue";
         Phasellus cursus orci nec tempus egestas. Lorem ipsum dolor sit amet,  consectetur adipiscing elit. Aenean malesuada nisl id tellus aliquam,  vel lobortis mi aliquet. Fusce dictum leo magna, sed eleifend erat  ultricies id. Cras ut imperdiet ipsum. Nullam at facilisis nunc. In hac  habitasse platea dictumst.
         Donec est nunc, ultricies sit amet elit at, tristique tempor tellus. Sed aliquam congue feugiat. Vivamus ut euismod orci, vel luctus sem.  Integer a lacus tortor. Morbi vitae nisl malesuada, dictum nibh eget,  faucibus lorem. Integer porttitor, nibh nec lobortis viverra, felis  nulla eleifend velit, ac imperdiet magna orci vel lacus. Quisque pretium metus sit amet purus rhoncus, vitae volutpat lorem accumsan. Maecenas  faucibus posuere blandit. Duis id blandit odio, at interdum felis.</div>
       <div class="img-container">
-        <img class="img-items" src="/img/about_placeholder.jpg" alt="placeholder image">
-        <img class="img-items" src="/img/about_placeholder.jpg" alt="placeholder image">
-        <img class="img-items" src="/img/about_placeholder.jpg" alt="placeholder image">
+        <div class="rectangle"></div>
+        <div class="wrapper">
+          <div class="rectangle"></div>
+          <div class="rectangle"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -29,9 +31,41 @@ import Footer from "@/components/Footer.vue";
 
 .hero-portrait {
   width: 100%;
+  border: solid 1px black;
+  margin-bottom: 2rem;
 }
 
 .text {
   font-size: 16px;
+  width: 50%;
+  flex: 1;
+  max-width: 33.3333%;
+}
+
+.about-content {
+  display: flex;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 2rem;
+  width: 100%;
+}
+
+.rectangle {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  background: #333333;
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 </style>
