@@ -85,13 +85,13 @@ const toggleMenu = () => {
 }
 
 /* Navbar Menu */
+/* TODO: !!!!!!need to place this relative to the nav-container*/
 .navbar-menu {
   display: none;
   position: absolute;
   top: 60px;
-  left: 0;
   right: 0;
-  width: 100%;
+  width: 14%;
   background-color: #f8f8f8;
   transition: all 0.3s ease-in-out;
   max-height: 0;
