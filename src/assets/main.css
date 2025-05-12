@@ -4,6 +4,10 @@ html, body {
     font-family: Manrope, sans-serif;
 }
 
+.border {
+    border: solid 1px black;
+}
+
 .layout-container {
     width: 100%;
     margin: 0 auto;
