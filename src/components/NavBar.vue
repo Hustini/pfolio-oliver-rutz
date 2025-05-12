@@ -1,10 +1,22 @@
+<script setup>
+import {ref} from 'vue';
+
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+  console.log("Menu toggled:", isMenuOpen.value);
+};
+</script>
+
 <template>
   <nav class="navbar">
     <div class="navbar-container">
       <a href="../app" class="navbar-logo">
         <span class="brand-name">Home</span>
       </a>
-      <button class="menu-toggle" aria-controls="navbar-menu" aria-expanded="false" @click="toggleMenu">
+      <button class="menu-toggle" :aria-expanded="isMenuOpen.toString()" @click="toggleMenu">
+        <span>Menu</span>
         <svg  :class="['arrow-icon', { rotated: isMenuOpen }]" viewBox="0 -6.5 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -26,25 +38,20 @@
       </button>
       <div :class="['navbar-menu', { active: isMenuOpen }]">
         <ul class="menu-items">
-          <li><a href="#" class="menu-item active">Menu</a></li>
-          <li><a href="#" class="menu-item">Projects</a></li>
-          <li><a href="#" class="menu-item">About</a></li>
-          <li><a href="#" class="menu-item">Contact</a></li>
+          <li>
+            <router-link to="/" class="menu-item" active-class="active" exact>Home</router-link>
+          </li>
+          <li>
+            <router-link to="/projects" class="menu-item" active-class="active">Projects</router-link>
+          </li>
+          <li>
+            <router-link to="/about" class="menu-item" active-class="active">About</router-link>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
-
-<script setup>
-import {ref} from 'vue';
-
-const isMenuOpen = ref(false);
-
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-};
-</script>
 
 <style scoped>
 /* General Navbar Styles */
@@ -106,6 +113,7 @@ const toggleMenu = () => {
   transition: all 0.3s ease-in-out;
   max-height: 0;
   overflow: hidden;
+  z-index: 10;
 }
 
 .navbar-menu.active {
