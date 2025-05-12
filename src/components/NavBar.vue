@@ -11,12 +11,12 @@ const toggleMenu = () => {
 
 <template>
   <nav class="navbar">
-    <div class="navbar-container">
-      <a href="../app" class="navbar-logo">
+    <div class="navbar-container layout-container">
+      <router-link to="/" class="navbar-logo" active-class="active" exact>
         <span class="brand-name">Home</span>
-      </a>
+      </router-link>
       <button class="menu-toggle" :aria-expanded="isMenuOpen.toString()" @click="toggleMenu">
-        <span>Menu</span>
+        <span class="menu-item">Menu</span>
         <svg  :class="['arrow-icon', { rotated: isMenuOpen }]" viewBox="0 -6.5 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -61,7 +61,7 @@ const toggleMenu = () => {
 }
 
 .navbar-container {
-  max-width: 1280px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,8 +76,7 @@ const toggleMenu = () => {
 
 .brand-name {
   font-size: 24px;
-  font-weight: 600;
-  margin-left: 8px;
+  font-weight: 400;
   color: #333;
 }
 
@@ -119,7 +118,6 @@ const toggleMenu = () => {
 .navbar-menu.active {
   display: block;
   max-height: 500px;
-
 }
 
 .menu-items {
@@ -129,47 +127,9 @@ const toggleMenu = () => {
 }
 
 .menu-item {
-  padding: 12px 16px;
   text-decoration: none;
-  color: #333;
-  font-size: 16px;
+  color: black;
+  font-size: 20px;
   display: block;
-}
-
-.menu-item:hover {
-  background-color: #f0f0f0;
-  color: #007bff;
-}
-
-.menu-item.active {
-  background-color: #007bff;
-  color: white;
-}
-
-/* Mobile and Desktop Styles */
-@media (min-width: 768px) {
-  .navbar-menu.active {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
-
-  .menu-items {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .menu-item {
-    text-align: center;
-    padding: 16px;
-    width: 100%;
-  }
-
-  /* Keep the hamburger menu visible at all times */
-  .menu-toggle {
-    display: inline-flex;
-  }
 }
 </style>
