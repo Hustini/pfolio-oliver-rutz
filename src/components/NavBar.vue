@@ -95,10 +95,10 @@ const toggleMenu = () => {
 .navbar-menu {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 100%;
   right: 0;
   width: 14%;
-  background-color: #f8f8f8;
+  background: transparent;
   transition: all 0.3s ease-in-out;
   max-height: 0;
   overflow: hidden;
@@ -108,6 +108,11 @@ const toggleMenu = () => {
 .navbar-menu.active {
   display: block;
   max-height: 500px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background: transparent;
+  border: 1px solid #000000;
+  border-top: none;
 }
 
 .menu-items {
