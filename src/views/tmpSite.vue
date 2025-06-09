@@ -2,29 +2,28 @@
 </script>
 
 <template>
+  <!-- Invisible Debug Button -->
+  <router-link to="/home" class="debug-button" active-class="active" exact>Home</router-link>
+
   <div class="coming-soon">
     <h1>Coming Soon</h1>
     <p>Our website is under construction. Stay tuned!</p>
-
-    <!-- Invisible Debug Button -->
-    <router-link to="/home" class="debug-button" active-class="active" exact>Home</router-link>
   </div>
 </template>
 
 <style scoped>
 .coming-soon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   font-family: Arial, sans-serif;
 }
 
 .debug-button {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 40px;
