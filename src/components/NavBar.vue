@@ -41,8 +41,13 @@ const toggleMenu = () => {
 <style scoped>
 /* General Navbar Styles */
 .navbar {
-  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: transparent;
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid #000000;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -51,6 +56,7 @@ const toggleMenu = () => {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  z-index: 1100;
 }
 
 .navbar-logo {
