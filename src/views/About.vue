@@ -2,9 +2,20 @@
 import Footer from "@/components/Footer.vue";
 </script>
 
+<script>
+import Breadcrumb from "@/components/Breadcrumb.vue";
+
+export default {
+  components: {
+    Breadcrumb
+  }
+}
+</script>
+
 <template>
   <div>
     <div class="layout-container">
+      <Breadcrumb />
       <div class="about">About</div>
       <img class="hero-portrait" src="/img/about_portrait.jpg" alt="portrait">
     </div>
