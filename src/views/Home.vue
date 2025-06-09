@@ -3,10 +3,12 @@ import InfoSection from "@/components/InfoSection.vue";
 import Blob from "@/components/Blob.vue";
 import Footer from "@/components/Footer.vue";
 import ProjectParent from "@/components/ProjectParent.vue";
+import NavBar from "@/components/NavBar.vue";
 </script>
 
 <template>
   <div class="home">
+    <NavBar />
     <div class="layout-container hero-content">
       <Blob class="blob"/>
       <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
