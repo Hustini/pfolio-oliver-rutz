@@ -24,10 +24,10 @@ const toggleMenu = () => {
       <div :class="['navbar-menu', { active: isMenuOpen }]">
         <ul class="menu-items">
           <li>
-            <router-link to="/" class="menu-item" active-class="active" exact>Projects →</router-link>
+            <router-link to="/projects" class="menu-item" active-class="active" exact>Projects →</router-link>
           </li>
           <li>
-            <router-link to="/projects" class="menu-item" active-class="active">About →</router-link>
+            <router-link to="/about" class="menu-item" active-class="active">About →</router-link>
           </li>
           <li>
             <router-link to="/about" class="menu-item" active-class="active">contact ↓</router-link>
