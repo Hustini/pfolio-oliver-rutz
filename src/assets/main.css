@@ -25,6 +25,12 @@ html, body {
 }
 
 @media (max-width: 640px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: TWKLausannePan, sans-serif;
+    }
+
     .layout-container {
         padding-left: 1rem;
         padding-right: 1rem;
