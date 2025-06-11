@@ -1,5 +1,6 @@
 <script setup>
 import Footer from "@/components/Footer.vue";
+import NavBar from "@/components/NavBar.vue";
 </script>
 
 <script>
@@ -14,7 +15,8 @@ export default {
 
 <template>
   <div>
-    <div class="layout-container">
+    <NavBar isArrow="True"/>
+    <div class="layout-container about-container">
       <Breadcrumb />
       <div class="about">About</div>
       <img class="hero-portrait" src="/img/about_portrait.jpg" alt="portrait">
@@ -40,6 +42,10 @@ export default {
 </template>
 
 <style scoped>
+.about-container {
+  padding-top: 2rem;
+}
+
 .about {
   font-size: 6rem;
 }
