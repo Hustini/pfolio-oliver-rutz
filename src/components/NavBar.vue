@@ -91,7 +91,6 @@ const toggleMenu = () => {
 }
 
 /* Navbar Menu */
-/* TODO: !!!!!!need to place this relative to the nav-container*/
 .navbar-menu {
   display: none;
   position: absolute;
