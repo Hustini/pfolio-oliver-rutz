@@ -7,12 +7,22 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
   console.log("Menu toggled:", isMenuOpen.value);
 };
+
+const props = defineProps({
+  isArrow: {
+    type: [String],
+    default: "False"
+  }
+})
 </script>
 
 <template>
   <nav class="navbar" :class="{ 'menu-open': isMenuOpen }">
     <div class="navbar-container layout-container">
       <router-link to="/" class="navbar-logo" active-class="active" exact>
+        <svg class="arrow-icon" v-if="isArrow === 'True'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d="M26.29 20.29 18 28.59V0h-2v28.59l-8.29-8.3-1.42 1.42 10 10a1 1 0 0 0 1.41 0l10-10z" data-name="2-Arrow Down"/>
+        </svg>
         <span class="brand-name">Home</span>
       </router-link>
       <button class="menu-toggle" :aria-expanded="isMenuOpen.toString()" @click="toggleMenu">
