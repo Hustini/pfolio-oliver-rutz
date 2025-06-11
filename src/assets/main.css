@@ -1,7 +1,12 @@
+@font-face {
+    font-family: TWKLausannePan;
+    src: url('../fonts/TWKLausannePan-400.otf');
+}
+
 html, body {
     margin: 0;
     padding: 32px 0 0 0;
-    font-family: Manrope, sans-serif;
+    font-family: TWKLausannePan, sans-serif;
 }
 
 .border {
