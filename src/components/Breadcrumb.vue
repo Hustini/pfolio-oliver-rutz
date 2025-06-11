@@ -92,7 +92,8 @@ export default {
   content: ">";
   display: inline-block;
   color: #000000;
-  font-size: 1.25em;
+  font-size: 1em;
+  text-align: center;
 }
 
 .breadcrumb-link {
