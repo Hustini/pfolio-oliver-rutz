@@ -10,7 +10,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <nav class="navbar">
+  <nav class="navbar" :class="{ 'menu-open': isMenuOpen }">
     <div class="navbar-container layout-container">
       <router-link to="/" class="navbar-logo" active-class="active" exact>
         <span class="brand-name">Home</span>
@@ -30,7 +30,7 @@ const toggleMenu = () => {
             <router-link to="/about" class="menu-item" active-class="active">About →</router-link>
           </li>
           <li>
-            <router-link to="/about" class="menu-item" active-class="active">contact ↓</router-link>
+            <router-link to="/" class="menu-item" active-class="active">contact ↓</router-link>
           </li>
         </ul>
       </div>
@@ -46,8 +46,28 @@ const toggleMenu = () => {
   top: 0;
   background: transparent;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #000000;
   z-index: 1000;
+  border-bottom: none;
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient( /* Border is drawn using a pseudo-element */
+      to right,
+      black 100%,
+      transparent 0
+  );
+  pointer-events: visible;
+}
+
+/* When menu is open, cut 169px from the right */
+.navbar.menu-open::after {
+  background: linear-gradient(to right, black calc(100% - 169px), transparent 0);
 }
 
 .navbar-container {
@@ -68,7 +88,7 @@ const toggleMenu = () => {
 .brand-name {
   font-size: 24px;
   font-weight: 400;
-  color: #333;
+  color: #000;
 }
 
 .arrow-icon {
@@ -107,6 +127,7 @@ const toggleMenu = () => {
 .navbar-menu.active {
   display: block;
   max-height: 500px;
+  width: 170px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* For Safari */
   background: transparent;
@@ -120,15 +141,57 @@ const toggleMenu = () => {
   padding: 0;
 }
 
-.menu-items li {
-  padding: 0.25rem 2.5rem 0.25rem 0;
-}
-
 .menu-item {
   text-decoration: none;
   color: black;
   font-size: 20px;
   display: block;
   text-align: right;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.menu-items li:hover .menu-item{
+  font-size: 22px;
+}
+
+.menu-items li {
+  padding: 0.25rem 2.5rem 0.25rem 0;
+}
+
+@media (max-width: 640px) {
+  .navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        black 100%,
+        transparent 0
+    );
+    transition: background 0.3s ease;
+    pointer-events: none;
+  }
+
+  .navbar.menu-open::after {
+    background: linear-gradient(to right, black calc(100% - 149px), transparent 0);
+  }
+
+  .menu-items li {
+    padding: 0.25rem 1.5rem 0.25rem 0;
+  }
+
+  .navbar-menu.active {
+    display: block;
+    max-height: 500px;
+    width: 150px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    background: transparent;
+    border: 1px solid #000000;
+    border-top: none;
+  }
 }
 </style>
