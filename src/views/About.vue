@@ -92,6 +92,10 @@ export default {
 }
 
 @media (max-width: 640px) {
+  .about-container {
+    padding-top: 4rem;
+  }
+
   .about {
     font-size: 3.75rem;
   }
