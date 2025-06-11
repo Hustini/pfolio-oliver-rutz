@@ -99,6 +99,11 @@ const props = defineProps({
   font-size: 24px;
   font-weight: 400;
   color: #000;
+  padding-left: 5px;
+}
+
+.navbar-logo .arrow-icon {
+  transform: rotate(90deg);
 }
 
 .arrow-icon {
@@ -143,6 +148,7 @@ const props = defineProps({
   background: transparent;
   border: 1px solid #000000;
   border-top: none;
+  border-right: none;
 }
 
 .menu-items {
@@ -202,6 +208,7 @@ const props = defineProps({
     background: transparent;
     border: 1px solid #000000;
     border-top: none;
+    border-right: none;
   }
 }
 </style>
