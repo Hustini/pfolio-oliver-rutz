@@ -1,6 +1,7 @@
 <script setup>
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
+import Filter from "@/components/Filter.vue";
 </script>
 
 <script>
@@ -18,6 +19,7 @@ export default {
   <div class="layout-container">
     <Breadcrumb />
     <h1>Projects Page</h1>
+    <Filter />
   </div>
   <Footer />
 </template>
