@@ -2,6 +2,7 @@
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
 import Filter from "@/components/Filter.vue";
+import ProjectCard from "@/components/ProjectCard.vue";
 </script>
 
 <script>
@@ -19,7 +20,18 @@ export default {
     <NavBar isArrow="True"/>
     <div class="layout-container">
       <Breadcrumb />
-      <h1>Projects Page</h1>
+      <div class="title">Projects Page</div>
+      <div class="featured-title">Featured Projects </div>
+      <div class="featured-projects">
+        <div class="wrapper">
+          <ProjectCard class="featured-title" imgPath="/img/placeholder.png" title="" caption=""/>
+          <div class="featured-title">gkjhdgijb fasdkfsfsd</div>
+        </div>
+        <div class="wrapper">
+          <ProjectCard class="featured-title" imgPath="/img/placeholder.png" title="" caption=""/>
+          <div class="featured-title">gkjhdgijb fasdkfsfsd</div>
+        </div>
+      </div>
     </div>
     <Filter />
     <Footer />
@@ -27,6 +39,22 @@ export default {
 </template>
 
 <style scoped>
+.title {
+  font-size: 6rem;
+  padding-bottom: 2rem;
+}
+
+.featured-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.featured-projects {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
 .project-container {
   padding-top: 2rem;
 }
@@ -35,5 +63,26 @@ export default {
   .project-container {
     padding-top: 4rem;
   }
+
+  .title {
+    font-size: 3.75rem;
+    padding-bottom: 1rem;
+  }
+
+  .featured-title {
+    font-size: 1.5rem;
+  }
+
+  .featured-projects {
+    display: flex;
+    flex-direction: column  ;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .project-container {
+    padding-top: 4rem;
+  }
 }
+
 </style>
