@@ -7,6 +7,8 @@ import Button from "@/components/Button.vue";
 export default {
   data() {
     return {
+      firstClick: true,
+      selectedTags: [],
       tags: {
         web: true,
         installation: true,
@@ -18,8 +20,33 @@ export default {
   },
   methods: {
     toggleTag(tagName) {
-      this.tags[tagName] = !this.tags[tagName];
-      console.log(`${tagName} toggled to`, this.tags[tagName]);
+      // handles the first click
+      if (this.firstClick) {
+        this.selectedTags.push(tagName);
+        for (let tag in this.tags) {
+          this.tags[tag] = (tag === tagName);
+        }
+        this.firstClick = false;
+        return;
+      }
+      // toggle for the different tags
+      if (this.selectedTags.includes(tagName)) {
+        this.tags[tagName] = false;
+        this.selectedTags = this.selectedTags.filter((tag) => tag !== tagName);
+      } else {
+        this.tags[tagName] = true;
+        this.selectedTags.push(tagName);
+      }
+      // handles if no tag is selected
+      if (this.selectedTags.length === 0 && this.firstClick === false) {
+        for (let tag in this.tags) {
+          this.tags[tag] = true;
+        }
+        this.firstClick = true;
+      }
+    },
+    reset() {
+      console.log("Stuff")
     }
   }
 }
