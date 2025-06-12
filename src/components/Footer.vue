@@ -126,6 +126,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    font-size: 16px;
   }
 
   .contact-info {

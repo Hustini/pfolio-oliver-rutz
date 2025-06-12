@@ -57,6 +57,7 @@ const props = defineProps({
     width: 100%;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
   }
 }
 </style>

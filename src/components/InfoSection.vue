@@ -26,4 +26,11 @@ import Button from "@/components/Button.vue";
   font-weight: 400;
   padding-bottom: 2rem;
 }
+
+@media (max-width: 640px) {
+  .text {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
 </style>

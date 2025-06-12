@@ -52,4 +52,11 @@ img {
   font-weight: 400;
   font-size: 12px;
 }
+
+@media (max-width: 640px) {
+  .title {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
 </style>

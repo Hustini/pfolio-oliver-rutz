@@ -71,7 +71,7 @@ export default {
       <span><Button :class="['button', { toggled : !allTagsActive && tags.UX }]" buttonText="UX/UI" @click="toggleTag('UX')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.print }]" buttonText="PRINT" @click="toggleTag('print')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.video }]" buttonText="VIDEO" @click="toggleTag('video')"/></span>
-      <span><Button class="reset-button" buttonText="Reset Filter" @click="reset()"/></span>
+      <span><Button class="reset-button button" buttonText="Reset Filter" @click="reset()"/></span>
     </div>
     <div class="projects">
       <ProjectCard imgPath="/img/placeholder.png" title="WEB" caption="dfalsdfhlaskj" :tag="tags.web"/>
@@ -108,6 +108,7 @@ export default {
 
 .filter-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding-bottom: 2rem
 }
