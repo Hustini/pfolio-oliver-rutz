@@ -27,6 +27,7 @@ export default {
   },
   methods: { // methods re-evaluate every call
     toggleTag(tagName) {
+      console.log("happend");
       // handles the first click
       if (this.firstClick) {
         this.selectedTags.push(tagName);
@@ -57,6 +58,7 @@ export default {
       for (let tag in this.tags) {
         this.tags[tag] = true;
       }
+      this.firstClick = false;
     }
   }
 }
@@ -66,7 +68,7 @@ export default {
   <div class="filter layout-container">
     <div class="title">Filter</div>
     <div class="filter-buttons">
-      <span><Button :class="['button', { toggled : !allTagsActive && tags.web }]" buttonText="WEB" @click="toggleTag('web'); reset()"/></span>
+      <span><Button :class="['button', { toggled : !allTagsActive && tags.web }]" buttonText="WEB" @click="toggleTag('web');"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.installation }]" buttonText="INSTALLATION" @click="toggleTag('installation')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.UX }]" buttonText="UX/UI" @click="toggleTag('UX')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.print }]" buttonText="PRINT" @click="toggleTag('print')"/></span>
