@@ -27,7 +27,6 @@ export default {
   },
   methods: { // methods re-evaluate every call
     toggleTag(tagName) {
-      console.log("happend");
       // handles the first click
       if (this.firstClick) {
         this.selectedTags.push(tagName);
