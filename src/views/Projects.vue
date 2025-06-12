@@ -15,14 +15,25 @@ export default {
 </script>
 
 <template>
-  <NavBar isArrow="True"/>
-  <div class="layout-container">
-    <Breadcrumb />
-    <h1>Projects Page</h1>
-    <Filter />
+  <div class="project-container">
+    <NavBar isArrow="True"/>
+    <div class="layout-container">
+      <Breadcrumb />
+      <h1>Projects Page</h1>
+      <Filter />
+    </div>
+    <Footer />
   </div>
-  <Footer />
 </template>
 
 <style scoped>
+.project-container {
+  padding-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .project-container {
+    padding-top: 4rem;
+  }
+}
 </style>
