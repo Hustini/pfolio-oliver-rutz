@@ -44,5 +44,10 @@ import ProjectCard from "@/components/ProjectCard.vue";
     padding: 0;
     margin: 0;
   }
+
+  .container {
+    background: white;
+    padding: 1rem 0;
+  }
 }
 </style>

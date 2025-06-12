@@ -48,6 +48,7 @@ export default {
 
 .about {
   font-size: 6rem;
+  padding-bottom: 2rem;
 }
 
 .hero-portrait {
@@ -98,6 +99,13 @@ export default {
 
   .about {
     font-size: 3.75rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero-portrait {
+    width: 100%;
+    border: solid 1px black;
+    margin-bottom: 1rem;
   }
 
   .about-content {
@@ -105,6 +113,7 @@ export default {
     width: 100%;
     padding: 0;
     margin: 0;
+    gap: 1rem;
   }
 
   .text {
@@ -113,13 +122,22 @@ export default {
     flex: unset;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
-    padding: 2rem 1rem;
+    padding: 1rem;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 1rem;
+    width: 100%;
   }
 
   .wrapper {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
   }
 }
 </style>

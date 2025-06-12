@@ -30,7 +30,14 @@ import Button from "@/components/Button.vue";
 @media (max-width: 640px) {
   .text {
     font-size: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .info-container {
+    background-color: #11FF004D;
+    padding: 1rem 0;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
   }
 }
 </style>

@@ -46,7 +46,6 @@ export default {
 
 .featured-title {
   font-size: 2rem;
-  padding-bottom: 1rem;
 }
 
 .featured-projects {
@@ -75,8 +74,8 @@ export default {
 
   .featured-projects {
     display: flex;
-    flex-direction: column  ;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 1rem;
     padding-bottom: 1rem;
   }
 
