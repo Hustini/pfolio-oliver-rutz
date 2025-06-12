@@ -21,8 +21,10 @@ export default {
   },
   computed: { // computed only re-evaluate when the dependencies change
     allTagsActive() {
-      // .every works on arrays and this.tags is an object
-      return Object.values(this.tags).every(val => val === true);
+      if (this.firstClick) {
+        // .every works on arrays and this.tags is an object
+        return Object.values(this.tags).every(val => val === true);
+      }
     },
   },
   methods: { // methods re-evaluate every call
@@ -57,7 +59,7 @@ export default {
       for (let tag in this.tags) {
         this.tags[tag] = true;
       }
-      this.firstClick = false;
+      this.firstClick = true;
     }
   }
 }
