@@ -11,12 +11,16 @@ const props = defineProps({
   caption: {
     type: [Number, String],
     default: "default caption"
+  },
+  tag: {
+    type: Boolean,
+    default: true
   }
 })
 </script>
 
 <template>
-  <div class="card">
+  <div class="card" v-if="tag === true">
     <img :src="imgPath" alt="placeholder">
     <div class="text">
       <div class="title">{{title}}</div>
