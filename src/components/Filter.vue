@@ -53,37 +53,76 @@ export default {
       }
     },
     reset() {
-      console.log("Stuff")
+      this.selectedTags = [];
+      for (let tag in this.tags) {
+        this.tags[tag] = true;
+      }
     }
   }
 }
 </script>
 
 <template>
-  <div>
-    <h1>Filter</h1>
+  <div class="filter layout-container">
+    <div class="title">Filter</div>
     <div class="filter-buttons">
-      <span><Button :class="{ toggled : !allTagsActive && tags.web }" buttonText="WEB" @click="toggleTag('web'); reset()"/></span>
-      <span><Button :class="{ toggled : !allTagsActive && tags.installation }" class="button" buttonText="INSTALLATION" @click="toggleTag('installation')"/></span>
-      <span><Button :class="{ toggled : !allTagsActive && tags.UX }" class="button" buttonText="UX/UI" @click="toggleTag('UX')"/></span>
+      <span><Button :class="['button', { toggled : !allTagsActive && tags.web }]" buttonText="WEB" @click="toggleTag('web'); reset()"/></span>
+      <span><Button :class="['button', { toggled : !allTagsActive && tags.installation }]" buttonText="INSTALLATION" @click="toggleTag('installation')"/></span>
+      <span><Button :class="['button', { toggled : !allTagsActive && tags.UX }]" buttonText="UX/UI" @click="toggleTag('UX')"/></span>
+      <span><Button :class="['button', { toggled : !allTagsActive && tags.print }]" buttonText="PRINT" @click="toggleTag('print')"/></span>
+      <span><Button :class="['button', { toggled : !allTagsActive && tags.video }]" buttonText="VIDEO" @click="toggleTag('video')"/></span>
+      <span><Button class="reset-button" buttonText="Reset Filter" @click="reset()"/></span>
     </div>
     <div class="projects">
       <ProjectCard imgPath="/img/placeholder.png" title="WEB" caption="dfalsdfhlaskj" :tag="tags.web"/>
       <ProjectCard imgPath="/img/placeholder.png" title="Installation" caption="dfalsdfhlaskj" :tag="tags.installation"/>
       <ProjectCard imgPath="/img/placeholder.png" title="UX/UI" caption="dfalsdfhlaskj" :tag="tags.UX"/>
+      <ProjectCard imgPath="/img/placeholder.png" title="Print" caption="dfalsdfhlaskj" :tag="tags.print"/>
+      <ProjectCard imgPath="/img/placeholder.png" title="Video" caption="dfalsdfhlaskj" :tag="tags.video"/>
     </div>
   </div>
 </template>
 
 <style scoped>
+.filter {
+  border-top: black solid 1px;
+  padding-top: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);;
   gap: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .toggled {
   background: #7717F44D;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 2rem
+}
+
+.reset-button {
+  border: none;
+}
+
+@media (max-width: 640px) {
+  .button {
+    width: auto
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

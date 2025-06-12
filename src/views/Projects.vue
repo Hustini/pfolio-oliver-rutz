@@ -20,8 +20,8 @@ export default {
     <div class="layout-container">
       <Breadcrumb />
       <h1>Projects Page</h1>
-      <Filter />
     </div>
+    <Filter />
     <Footer />
   </div>
 </template>
