@@ -7,6 +7,7 @@ import Button from "@/components/Button.vue";
 export default {
   data() {
     return {
+      toggled: false,
       firstClick: true,
       selectedTags: [],
       tags: {
@@ -18,7 +19,13 @@ export default {
       }
     };
   },
-  methods: {
+  computed: { // computed only re-evaluate when the dependencies change
+    allTagsActive() {
+      // .every works on arrays and this.tags is an object
+      return Object.values(this.tags).every(val => val === true);
+    },
+  },
+  methods: { // methods re-evaluate every call
     toggleTag(tagName) {
       // handles the first click
       if (this.firstClick) {
@@ -56,9 +63,9 @@ export default {
   <div>
     <h1>Filter</h1>
     <div class="filter-buttons">
-      <span><Button buttonText="WEB" @click="toggleTag('web')"/></span>
-      <span><Button buttonText="INSTALLATION" @click="toggleTag('installation')"/></span>
-      <span><Button buttonText="UX/UI" @click="toggleTag('UX')"/></span>
+      <span><Button :class="{ toggled : !allTagsActive && tags.web }" buttonText="WEB" @click="toggleTag('web'); reset()"/></span>
+      <span><Button :class="{ toggled : !allTagsActive && tags.installation }" class="button" buttonText="INSTALLATION" @click="toggleTag('installation')"/></span>
+      <span><Button :class="{ toggled : !allTagsActive && tags.UX }" class="button" buttonText="UX/UI" @click="toggleTag('UX')"/></span>
     </div>
     <div class="projects">
       <ProjectCard imgPath="/img/placeholder.png" title="WEB" caption="dfalsdfhlaskj" :tag="tags.web"/>
@@ -74,5 +81,9 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   padding-bottom: 2rem;
+}
+
+.toggled {
+  background: #7717F44D;
 }
 </style>
