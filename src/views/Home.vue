@@ -110,4 +110,26 @@ function scrollTo() {
     left: 50%;
   }
 }
+
+@media (min-width: 1536px) {
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 6.25rem;
+    font-weight: 400;
+    text-align: left;
+    color: #000;
+    margin-top: auto;
+    padding: 1rem 0;
+    max-width: 1500px;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 8.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+  }
+}
 </style>

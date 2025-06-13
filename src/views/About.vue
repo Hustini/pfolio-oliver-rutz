@@ -139,4 +139,14 @@ function scrollTo() {
     padding-bottom: 1rem;
   }
 }
+
+@media (min-width: 1536px) {
+  .text {
+    font-size: 1.5rem;
+    width: 50%;
+    flex: 1;
+    max-width: 33.3333%;
+    padding-left: 2rem;
+  }
+}
 </style>
