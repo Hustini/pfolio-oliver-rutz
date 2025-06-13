@@ -102,8 +102,8 @@ const props = defineProps({
 }
 
 .arrow-icon {
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   transition: transform 0.3s ease-in-out;
   transform: rotate(-90deg);
 }
@@ -171,7 +171,7 @@ const props = defineProps({
 }
 
 span.menu-item {
-  padding-right: 5px;
+  padding-right: 6px;
 }
 
 .arrow-wrapper {
@@ -208,9 +208,13 @@ span.menu-item {
     padding-left: 5px;
   }
 
+  span.menu-item {
+    padding-right: 5px;
+  }
+
   .arrow-icon {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     transition: transform 0.3s ease-in-out;
   }
 
