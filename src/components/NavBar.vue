@@ -96,7 +96,7 @@ const props = defineProps({
 }
 
 .brand-name {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   color: #000;
   padding-left: 5px;
@@ -193,6 +193,32 @@ const props = defineProps({
 
   .navbar.menu-open::after {
     background: linear-gradient(to right, black calc(100% - 149px), transparent 0);
+  }
+
+  .brand-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    padding-left: 5px;
+  }
+
+  .arrow-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu-item {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: block;
+    text-align: right;
+    transition: font-size 0.3s ease-in-out;
+  }
+
+  .menu-items li:hover .menu-item{
+    font-size: 20px;
   }
 
   .menu-items li {
