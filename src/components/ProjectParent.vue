@@ -24,7 +24,7 @@ import ProjectCard from "@/components/ProjectCard.vue";
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
@@ -43,6 +43,7 @@ import ProjectCard from "@/components/ProjectCard.vue";
   .title {
     padding: 0;
     margin: 0;
+    font-size: 1.5rem;
   }
 
   .container {

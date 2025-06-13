@@ -54,7 +54,7 @@ import NavBar from "@/components/NavBar.vue";
 .title {
   position: relative;
   z-index: 1;
-  font-size: 5.75rem;
+  font-size: 6.25rem;
   font-weight: 400;
   text-align: left;
   color: #000;

@@ -22,7 +22,7 @@ import Button from "@/components/Button.vue";
 }
 
 .text {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   padding-bottom: 2rem;
 }
@@ -30,6 +30,7 @@ import Button from "@/components/Button.vue";
 @media (max-width: 640px) {
   .text {
     font-size: 1.5rem;
+    font-weight: 400;
     padding-bottom: 1rem;
   }
 

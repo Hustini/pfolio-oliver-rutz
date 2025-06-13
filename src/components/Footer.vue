@@ -47,9 +47,9 @@ footer {
 }
 
 .big-text {
-  font-size: 7rem;
+  font-size: 8.75rem;
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -57,6 +57,7 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  font-size: 20px;
 }
 
 .contact-info {
@@ -79,7 +80,7 @@ a {
 }
 
 .footer-note {
-  max-width: 300px;
+  max-width: 320px;
   text-align: left;
 }
 
