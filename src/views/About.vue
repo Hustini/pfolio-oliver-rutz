@@ -44,6 +44,7 @@ export default {
 <style scoped>
 .about-container {
   padding-top: 2rem;
+  padding-bottom: 2rem
 }
 
 .about {
@@ -54,7 +55,6 @@ export default {
 .hero-portrait {
   width: 100%;
   border: solid 1px black;
-  margin-bottom: 2rem;
 }
 
 .text {
@@ -95,6 +95,7 @@ export default {
 @media (max-width: 640px) {
   .about-container {
     padding-top: 4rem;
+    padding-bottom: 1rem;
   }
 
   .about {

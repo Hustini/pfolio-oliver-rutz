@@ -126,5 +126,13 @@ export default {
     color: #000000;
     font-size: 0.75rem;
   }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    display: inline-block;
+    color: #000000;
+    font-size: 0.75rem;
+    text-align: center;
+  }
 }
 </style>
