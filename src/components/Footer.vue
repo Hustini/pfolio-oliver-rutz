@@ -1,9 +1,15 @@
 <script setup>
 import Blob from '@/components/Blob.vue';
+import { ref } from 'vue';
+
+const footerRef = ref(null);
+defineExpose({
+  footerRef
+});
 </script>
 
 <template>
-  <footer>
+  <footer ref="footerRef">
     <div class="layout-container footer-content">
       <div class="big-text">Let's Work Together!</div>
       <div class="blob">

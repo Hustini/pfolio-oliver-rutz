@@ -1,5 +1,8 @@
 <script setup>
 import {ref} from 'vue';
+import { defineEmits } from 'vue'
+
+const emit = defineEmits(['scroll-contact'])
 
 const isMenuOpen = ref(false);
 
@@ -35,7 +38,7 @@ const props = defineProps({
             <router-link to="/about" class="menu-item" active-class="active">ABOUT -></router-link>
           </li>
           <li>
-            <router-link to="/" class="menu-item" active-class="active">CONTACT |></router-link>
+            <router-link to="" class="menu-item" active-class="active" @click.prevent="() => { emit('scroll-contact'); isMenuOpen = false; }">CONTACT |></router-link>
           </li>
         </ul>
       </div>

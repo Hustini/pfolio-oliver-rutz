@@ -1,14 +1,21 @@
-<script setup>
+<script setup lang="ts">
 import InfoSection from "@/components/InfoSection.vue";
 import Blob from "@/components/Blob.vue";
 import Footer from "@/components/Footer.vue";
 import ProjectParent from "@/components/ProjectParent.vue";
 import NavBar from "@/components/NavBar.vue";
+import { ref } from 'vue'
+
+const scrollToContact = ref<HTMLElement | null>(null)
+
+function scrollTo() {
+  scrollToContact.value?.footerRef?.scrollIntoView({ behavior: 'smooth' });
+}
 </script>
 
 <template>
   <div class="home">
-    <NavBar />
+    <NavBar @scroll-contact="() => scrollTo(scrollToContact)" />
     <div class="layout-container hero-content">
       <Blob class="blob"/>
       <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
@@ -18,7 +25,7 @@ import NavBar from "@/components/NavBar.vue";
     </div>
     <InfoSection />
     <ProjectParent />
-    <Footer class="footer" />
+    <Footer ref="scrollToContact" />
   </div>
 </template>
 
