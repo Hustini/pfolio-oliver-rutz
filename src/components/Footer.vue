@@ -50,7 +50,7 @@ footer {
   font-size: 7rem;
   font-weight: 400;
   margin-bottom: 3rem;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-bottom {
