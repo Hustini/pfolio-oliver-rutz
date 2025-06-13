@@ -24,6 +24,12 @@ html, body {
     box-sizing: border-box;
 }
 
+*::selection {
+    background: #7717F4;
+    color: #fff;
+    opacity: 60%;
+}
+
 @media (max-width: 640px) {
     html, body {
         margin: 0;
