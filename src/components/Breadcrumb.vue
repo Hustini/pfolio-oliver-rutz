@@ -114,4 +114,17 @@ export default {
 .breadcrumb-item.active .breadcrumb-text {
   font-weight: 500;
 }
+
+@media (max-width: 640px) {
+  .breadcrumb-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.75rem;
+  }
+
+  .breadcrumb-text {
+    color: #000000;
+    font-size: 0.75rem;
+  }
+}
 </style>

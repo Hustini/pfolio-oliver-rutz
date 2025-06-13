@@ -89,11 +89,11 @@ export default {
 <style scoped>
 .filter {
   border-top: black solid 1px;
-  padding-top: 2rem;
+  padding: 2rem;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   padding-bottom: 2rem;
 }
@@ -102,7 +102,6 @@ export default {
   display: grid;
   grid-template-columns: repeat(3, 1fr);;
   gap: 1rem;
-  padding-bottom: 4rem;
 }
 
 .toggled {
@@ -125,8 +124,32 @@ export default {
     width: auto
   }
 
+  .filter {
+    border-top: black solid 1px;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+
   .projects {
+    display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 2rem
+  }
+
+  .reset-button {
+    border: none;
   }
 }
 </style>

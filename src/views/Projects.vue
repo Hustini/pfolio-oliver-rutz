@@ -20,7 +20,7 @@ export default {
     <NavBar isArrow="True"/>
     <div class="layout-container">
       <Breadcrumb />
-      <div class="title">Projects Page</div>
+      <div class="title">Projects</div>
       <div class="featured-title">Featured Projects </div>
       <div class="featured-projects">
         <div class="wrapper">
@@ -40,12 +40,12 @@ export default {
 
 <style scoped>
 .title {
-  font-size: 6rem;
+  font-size: 6.25rem;
   padding-bottom: 2rem;
 }
 
 .featured-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .featured-projects {
