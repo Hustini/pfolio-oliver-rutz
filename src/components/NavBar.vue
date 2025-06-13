@@ -23,7 +23,8 @@ const props = defineProps({
   <nav class="navbar" :class="{ 'menu-open': isMenuOpen }">
     <div class="navbar-container layout-container">
       <router-link to="/" class="navbar-logo" active-class="active" exact>
-        <span class="brand-name"><- HOME</span>
+        <span v-if="isArrow === 'True'" class="arrow-wrapper"><img id="home-arrow" src="../assets/arrow.svg" class="arrow-icon"></span>
+        <span class="brand-name">HOME</span>
       </router-link>
       <button class="menu-toggle" :aria-expanded="isMenuOpen.toString()" @click="toggleMenu">
         <span class="menu-item">MENU</span>
@@ -113,6 +114,10 @@ const props = defineProps({
 
 .arrow-icon.rotated {
   transform: rotate(90deg);
+}
+
+#home-arrow {
+  transform: rotate(180deg);
 }
 
 /* Menu Toggle Button */

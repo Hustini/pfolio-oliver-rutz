@@ -1,23 +1,21 @@
-<script setup>
+<script setup lang="ts">
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
 import Filter from "@/components/Filter.vue";
 import ProjectCard from "@/components/ProjectCard.vue";
-</script>
-
-<script>
 import Breadcrumb from "@/components/Breadcrumb.vue";
+import { ref } from 'vue'
 
-export default {
-  components: {
-    Breadcrumb
-  }
+const scrollToContact = ref<HTMLElement | null>(null)
+
+function scrollTo() {
+  scrollToContact.value?.footerRef?.scrollIntoView({ behavior: 'smooth' });
 }
 </script>
 
 <template>
   <div class="project-container">
-    <NavBar isArrow="True"/>
+    <NavBar isArrow="True" @scroll-contact="() => scrollTo(scrollToContact)" />
     <div class="layout-container">
       <Breadcrumb />
       <div class="title">Projects</div>
@@ -34,7 +32,7 @@ export default {
       </div>
     </div>
     <Filter />
-    <Footer />
+    <Footer ref="scrollToContact" />
   </div>
 </template>
 

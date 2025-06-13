@@ -1,21 +1,19 @@
-<script setup>
+<script setup lang="ts">
 import Footer from "@/components/Footer.vue";
 import NavBar from "@/components/NavBar.vue";
-</script>
-
-<script>
 import Breadcrumb from "@/components/Breadcrumb.vue";
+import { ref } from 'vue'
 
-export default {
-  components: {
-    Breadcrumb
-  }
+const scrollToContact = ref<HTMLElement | null>(null)
+
+function scrollTo() {
+  scrollToContact.value?.footerRef?.scrollIntoView({ behavior: 'smooth' });
 }
 </script>
 
 <template>
   <div>
-    <NavBar isArrow="True"/>
+    <NavBar isArrow="True" @scroll-contact="() => scrollTo(scrollToContact)"/>
     <div class="layout-container about-container">
       <Breadcrumb />
       <div class="about">About</div>
@@ -38,7 +36,7 @@ export default {
       </div>
     </div>
   </div>
-  <Footer />
+  <Footer ref="scrollToContact" />
 </template>
 
 <style scoped>
