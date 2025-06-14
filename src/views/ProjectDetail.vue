@@ -150,4 +150,10 @@ function scrollTo() {
     max-width: 100%;
   }
 }
+
+@media (min-width: 1536px) {
+  .project-text {
+    font-size: 1.5rem;
+  }
+}
 </style>
