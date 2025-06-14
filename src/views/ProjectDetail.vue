@@ -58,7 +58,6 @@ function scrollTo() {
 .project {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
 }
 
 .project-info {
