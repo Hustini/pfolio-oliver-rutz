@@ -23,12 +23,19 @@ export default {
         });
       }
 
-      // Add current route if it's not Home
+      // Add current route if it's not Home and change route if it's ProjectDetail
       if (route.name && route.name !== 'Home') {
-        crumbs.push({
-          name: route.name.toUpperCase(),
-          path: route.path
-        });
+        if (route.name === 'ProjectDetail') {
+          crumbs.push({
+            name: 'PROJECTS',
+            path: route.path
+          });
+        } else {
+          crumbs.push({
+            name: route.name.toUpperCase(),
+            path: route.path
+          });
+        }
       }
 
       return crumbs;
