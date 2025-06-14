@@ -91,7 +91,6 @@ export default {
       >
         <ProjectCard imgPath="/img/placeholder.png" title="Installation" caption="dfalsdfhlaskj" :tag="tags.installation"/>
       </router-link>
-      <ProjectCard imgPath="/img/placeholder.png" title="Installation" caption="dfalsdfhlaskj" :tag="tags.installation"/>
       <ProjectCard imgPath="/img/placeholder.png" title="UX/UI" caption="dfalsdfhlaskj" :tag="tags.UX"/>
       <ProjectCard imgPath="/img/placeholder.png" title="Print" caption="dfalsdfhlaskj" :tag="tags.print"/>
       <ProjectCard imgPath="/img/placeholder.png" title="Video" caption="dfalsdfhlaskj" :tag="tags.video"/>
