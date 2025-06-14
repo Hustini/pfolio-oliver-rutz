@@ -74,7 +74,10 @@ export default {
       <span><Button :class="['button', { toggled : !allTagsActive && tags.UX }]" buttonText="UX/UI" @click="toggleTag('UX')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.print }]" buttonText="PRINT" @click="toggleTag('print')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.video }]" buttonText="VIDEO" @click="toggleTag('video')"/></span>
-      <span><Button class="reset-button button" buttonText="Reset Filter" @click="reset()"/></span>
+      <span class="reset">
+        <img class="reset-symbol" src="../assets/x_symbol.svg" alt="Reset Icon" />
+        <Button class="reset-button button" buttonText="Reset Filter" @click="reset()" />
+      </span>
     </div>
     <div class="projects">
       <router-link
@@ -150,8 +153,20 @@ export default {
   padding-bottom: 2rem
 }
 
+.reset {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .reset-button {
   border: none;
+  padding: 10px 0;
+}
+
+.reset-symbol {
+  width: 10px;
+  height: 10px;
 }
 
 .link {
