@@ -25,27 +25,25 @@ function scrollTo() {
 <template>
   <div class="page-container">
     <NavBar isArrow="True" @scroll-contact="() => scrollTo(scrollToContact)" />
-    <div class="layout-container">
-      <div class="padding-bottom">
-        <Breadcrumb />
+    <div class="padding-bottom layout-container">
+      <Breadcrumb />
+    </div>
+    <div class="project">
+      <div class="project-info layout-container">
+        <div class="wrapper"> <!--Besser Platzieren -->
+          <ProjectCard :imgPath="imgPath" title="" caption=""/>
+          <div class="title">{{ title }}</div>
+        </div>
+        <div class="wrapper">
+          Tags: <Button class="tag" v-for="tag in tagsSplit" :buttonText="tag"/>
+        </div>
+        <div class="wrapper">
+          Zeitraum: {{ time }}
+        </div>
       </div>
-      <div class="project">
-        <div class="project-info">
-          <div class="wrapper"> <!--Besser Platzieren -->
-            <ProjectCard :imgPath="imgPath" title="" caption=""/>
-            <div class="title">{{ title }}</div>
-          </div>
-          <div class="wrapper">
-            Tags: <Button class="tag" v-for="tag in tagsSplit" :buttonText="tag"/>
-          </div>
-          <div class="wrapper">
-            Zeitraum: {{ time }}
-          </div>
-        </div>
-        <div class="project-text">
-          <div>{{ text }}</div>
-          <a :href="link" target="_blank" class="link">{{ link }}</a>
-        </div>
+      <div class="project-text layout-container">
+        <div>{{ text }}</div>
+        <a :href="link" target="_blank" class="link">{{ link }}</a>
       </div>
     </div>
     <Footer ref="scrollToContact" />
@@ -116,8 +114,7 @@ function scrollTo() {
 
   .project-text {
     font-size: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     border-top: black solid 1px;
   }
 
