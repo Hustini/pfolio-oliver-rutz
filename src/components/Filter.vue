@@ -77,8 +77,19 @@ export default {
       <span><Button class="reset-button button" buttonText="Reset Filter" @click="reset()"/></span>
     </div>
     <div class="projects">
-      <router-link :to="{ name: 'ProjectDetail', params: { title: 'WEB', time: '2025' } }" class="link">
+      <router-link
+          :to="{ name: 'ProjectDetail',
+          params: { imgPath: 'images/web.png', title: 'WEB', tags: 'HTML,CSS,JS', time: '2025', text: 'A modern web design project.', link: 'https://example.com'}}"
+          class="link"
+      >
         <ProjectCard imgPath="/img/placeholder.png" title="WEB" caption="dfalsdfhlaskj" :tag="tags.web"/>
+      </router-link>
+      <router-link
+          :to="{ name: 'ProjectDetail',
+          params: { imgPath: 'images/web.png', title: 'Installation', tags: 'Eins,Zwei,Drei', time: '1945', text: 'Random Text', link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}}"
+          class="link"
+      >
+        <ProjectCard imgPath="/img/placeholder.png" title="Installation" caption="dfalsdfhlaskj" :tag="tags.installation"/>
       </router-link>
       <ProjectCard imgPath="/img/placeholder.png" title="Installation" caption="dfalsdfhlaskj" :tag="tags.installation"/>
       <ProjectCard imgPath="/img/placeholder.png" title="UX/UI" caption="dfalsdfhlaskj" :tag="tags.UX"/>
