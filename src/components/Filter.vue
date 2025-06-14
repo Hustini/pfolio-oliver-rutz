@@ -74,9 +74,9 @@ export default {
       <span><Button :class="['button', { toggled : !allTagsActive && tags.UX }]" buttonText="UX/UI" @click="toggleTag('UX')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.print }]" buttonText="PRINT" @click="toggleTag('print')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.video }]" buttonText="VIDEO" @click="toggleTag('video')"/></span>
-      <span class="reset">
+      <span class="reset" @click="reset()">
         <img class="reset-symbol" src="../assets/x_symbol.svg" alt="Reset Icon" />
-        <Button class="reset-button button" buttonText="Reset Filter" @click="reset()" />
+        <Button class="reset-button button" buttonText="Reset Filter" />
       </span>
     </div>
     <div class="projects">
@@ -200,7 +200,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding-bottom: 2rem
+    padding-bottom: 1rem
   }
 
   .reset-button {
