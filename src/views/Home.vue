@@ -79,6 +79,7 @@ function scrollTo() {
 
 @media (max-width: 640px) {
   .hero-content {
+    height: 90vh;
     width: 100%;
     display: block;
     position: relative;
