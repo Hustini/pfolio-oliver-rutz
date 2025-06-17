@@ -85,6 +85,7 @@ function scrollTo() {
 .tag {
   background: #7717F44D;
   margin-right: 1rem;
+  pointer-events: none;
 }
 
 .link {
@@ -138,6 +139,7 @@ function scrollTo() {
     padding: 5px 10px;
     font-size: 12px;
     width: auto;
+    pointer-events: none;
   }
 
   .link {
