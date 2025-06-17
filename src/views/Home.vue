@@ -86,9 +86,9 @@ function scrollTo() {
   }
 
   .title {
-    font-size: 3.25rem;
+    font-size: 3rem;
     margin: 0;
-    padding: 0 0 0 2rem;
+    padding: 1rem 0 0 2rem;
     position: absolute;
     left: 0;
     top: 100%; /* 👈 anchor it to the bottom of hero-content */
