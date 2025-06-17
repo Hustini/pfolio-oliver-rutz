@@ -86,7 +86,7 @@ function scrollTo() {
   }
 
   .title {
-    font-size: 3.75rem;
+    font-size: 3.25rem;
     margin: 0;
     padding: 0 0 0 2rem;
     position: absolute;
@@ -94,7 +94,7 @@ function scrollTo() {
     top: 100%; /* 👈 anchor it to the bottom of hero-content */
     transform-origin: top left; /* 👈 rotate around the corner */
     transform: rotate(-90deg);
-    width: 100vh; /* match height of hero-content */
+    width: 85vh; /* match height of hero-content */
   }
 
   .blob {
