@@ -42,6 +42,7 @@ const props = defineProps({
   border: solid 1px black;
   border-radius: 30px;
   background: none;
+  color: black;
   font-size: 20px;
   padding: 10px 20px;
   cursor: pointer;
