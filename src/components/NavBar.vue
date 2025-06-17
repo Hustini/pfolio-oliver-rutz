@@ -188,6 +188,12 @@ span.menu-item {
   justify-content: center;
 }
 
+.arrow-wrapper img {
+  display: block;
+  vertical-align: middle;
+  background: red;
+}
+
 @media (max-width: 640px) {
   .navbar::after {
     content: "";
