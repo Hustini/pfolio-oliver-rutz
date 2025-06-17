@@ -180,6 +180,7 @@ const props = defineProps({
 
 span.menu-item {
   padding-right: 6px;
+  border: red solid 1px;
 }
 
 .arrow-wrapper {
@@ -191,7 +192,8 @@ span.menu-item {
 .arrow-wrapper img {
   display: block;
   vertical-align: middle;
-  background: red;
+  background: cornflowerblue;
+  border: red solid 1px;
 }
 
 @media (max-width: 640px) {
