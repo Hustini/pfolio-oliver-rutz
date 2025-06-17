@@ -50,5 +50,16 @@ import ProjectCard from "@/components/ProjectCard.vue";
     background: white;
     padding: 1rem 0;
   }
+
+  .layout-container > *:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 </style>
