@@ -46,6 +46,7 @@ const props = defineProps({
   font-size: 20px;
   padding: 10px 20px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .arrow-icon {
