@@ -122,6 +122,7 @@ a {
 
   .svg-container {
     width: 3rem;
+    height: 100%;
   }
 
   .svg-text {
@@ -132,10 +133,10 @@ a {
   }
 
   .svg-text-rotated {
-    display: inline;
+    display: block;
     padding-top: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   footer {
