@@ -6,8 +6,9 @@
   <router-link to="/home" class="debug-button" active-class="active" exact>Home</router-link>
 
   <div class="coming-soon">
-    <h1>Coming Soon</h1>
-    <p>Our website is under construction. Stay tuned!</p>
+    <h1>Coming Soon!</h1>
+    <p>Our website is currently under construction and is expected to be completed by next month. Thank you for your patience.</p>
+    <a href="mailto:hallo@olirutz.ch" class="contact-button">Contact Us</a>
   </div>
 </template>
 
@@ -30,5 +31,23 @@
   height: 40px;
   opacity: 0;
   z-index: 1000;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: transparent;
+  color: black;
+  border: black solid 1px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #7717F4;
+  color: white;
+  border: #7717F4 solid 1px;
 }
 </style>
