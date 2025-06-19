@@ -107,7 +107,7 @@ a {
   }
 
   .big-text {
-    font-size: 5vh;
+    font-size: 7vh;
     transform: rotate(-90deg);
     white-space: nowrap;
     margin: 0;
