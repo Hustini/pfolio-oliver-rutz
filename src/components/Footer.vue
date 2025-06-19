@@ -169,7 +169,7 @@ a {
 
 @media (min-width: 1536px) {
   .blob {
-    top: 150%;
+    top: 100%;
     bottom: auto;
     transform: translate(-50%, -50%);
   }
