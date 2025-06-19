@@ -84,5 +84,15 @@ const props = defineProps({
     align-items: center;
     font-size: 16px;
   }
+
+  .custom-button:hover {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: #7717F4 solid 1px;
+    background: #7717F4;
+    color: white;
+  }
 }
 </style>
