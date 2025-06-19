@@ -13,6 +13,7 @@ defineExpose({
     <div class="layout-container footer-content">
       <div class="svg-container">
         <img src="../assets/text.svg" class="svg-text" alt="Let's Work Together!" />
+        <img src="../assets/text_rotated.svg" class="svg-text-rotated" alt="Let's Work Together!" />
       </div>
       <div class="blob">
         <Blob />
@@ -56,13 +57,20 @@ footer {
 }
 
 .svg-container {
-  padding-top: 2rem;
   width: 100%;
 }
 
-.svg-container img {
+.svg-text {
+  padding-top: 2rem;
   width: 100%;
   height: auto;
+}
+
+.svg-text-rotated {
+  display: none;
+  padding-top: 2rem;
+  width: auto;
+  height: 100%;
 }
 
 .footer-bottom {
@@ -113,21 +121,21 @@ a {
   }
 
   .svg-container {
-    padding-top: 0;
-    width: 2.75rem;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    overflow: visible;
+    width: 3rem;
   }
 
   .svg-text {
-    transform: rotate(-90deg);
-    transform-origin: top left;
-    height: 2.75rem;
+    display: none;
+    padding-top: 2rem;
     width: 100%;
-    object-fit: contain;
+    height: auto;
+  }
+
+  .svg-text-rotated {
+    display: inline;
+    padding-top: 0;
+    width: 100%;
+    height: auto;
   }
 
   footer {
