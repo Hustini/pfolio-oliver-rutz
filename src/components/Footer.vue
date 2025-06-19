@@ -141,4 +141,12 @@ a {
     gap: 2.5rem;
   }
 }
+
+@media (min-width: 1536px) {
+  .blob {
+    top: 150%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+}
 </style>
