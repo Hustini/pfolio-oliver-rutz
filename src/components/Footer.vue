@@ -11,7 +11,9 @@ defineExpose({
 <template>
   <footer ref="footerRef">
     <div class="layout-container footer-content">
-      <div class="big-text">Let's Work Together!</div>
+      <div class="text-container">
+        <div class="big-text">Let's Work Together!</div>
+      </div>
       <div class="blob">
         <Blob />
       </div>
@@ -52,8 +54,14 @@ footer {
   align-items: stretch;
 }
 
+.text-container {
+  container-type: inline-size;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .big-text {
-  font-size: 10vw;
+  font-size: 10cqw;
   font-weight: 400;
   margin-bottom: 2rem;
   text-align: center;
@@ -104,6 +112,21 @@ a {
     top: 50%;
     bottom: auto;
     transform: translate(-50%, -50%);
+  }
+
+  .big-text {
+    font-size: 10.5cqw;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    margin: 0;
+    width: 2.75rem;
+  }
+
+  /* You might need to adjust the container size for mobile */
+  .text-container {
+    width: 100vh;
+    height: 2.75rem;
+    margin: 0;
   }
 
   .big-text {
