@@ -129,14 +129,6 @@ a {
     margin: 0;
   }
 
-  .big-text {
-    font-size: 10.8vw;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    margin: 0;
-    width: 2.75rem;
-  }
-
   footer {
     height: 420px;
     overflow: visible;
