@@ -22,7 +22,7 @@ defineExpose({
             <div>Insta</div>
           </div>
           <div class="values">
-            <div><a href="mailto:olivverutz26@gmail.com">olivverutz26@gmail.com</a></div>
+            <div><a href="mailto:hallo@olirutz.ch">hallo@olirutz.ch</a></div>
             <div><a href="https://www.instagram.com/oli_s_acc/">@oli_s_acc</a></div>
           </div>
         </div>
@@ -53,7 +53,7 @@ footer {
 }
 
 .big-text {
-  font-size: 8.75rem;
+  font-size: 10vw;
   font-weight: 400;
   margin-bottom: 2rem;
   text-align: center;
@@ -107,7 +107,7 @@ a {
   }
 
   .big-text {
-    font-size: 2.5rem;
+    font-size: 5vh;
     transform: rotate(-90deg);
     white-space: nowrap;
     margin: 0;
