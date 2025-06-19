@@ -16,8 +16,8 @@ html, body {
 .layout-container {
     width: 100%;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 *, *::before, *::after {
@@ -40,5 +40,12 @@ html, body {
     .layout-container {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .layout-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
