@@ -11,8 +11,8 @@ defineExpose({
 <template>
   <footer ref="footerRef">
     <div class="layout-container footer-content">
-      <div class="text-container">
-        <div class="big-text">Let's Work Together!</div>
+      <div class="svg-container">
+        <img src="../assets/text.svg" class="svg-text" alt="Let's Work Together!" />
       </div>
       <div class="blob">
         <Blob />
@@ -52,19 +52,17 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  gap: 2rem;
 }
 
-.text-container {
-  container-type: inline-size;
-  margin-bottom: 2rem;
-  text-align: center;
+.svg-container {
+  padding-top: 2rem;
+  width: 100%;
 }
 
-.big-text {
-  font-size: 10cqw;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  text-align: center;
+.svg-container img {
+  width: 100%;
+  height: auto;
 }
 
 .footer-bottom {
@@ -114,19 +112,22 @@ a {
     transform: translate(-50%, -50%);
   }
 
-  .big-text {
-    font-size: 100cqw;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    margin: 0;
+  .svg-container {
+    padding-top: 0;
     width: 2.75rem;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: visible;
   }
 
-  /* You might need to adjust the container size for mobile */
-  .text-container {
-    width: 100vh;
+  .svg-text {
+    transform: rotate(-90deg);
+    transform-origin: top left;
     height: 2.75rem;
-    margin: 0;
+    width: 100%;
+    object-fit: contain;
   }
 
   footer {
