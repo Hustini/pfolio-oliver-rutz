@@ -19,7 +19,6 @@ const props = defineProps({
         class="arrow-icon"
         viewBox="0 -6.5 36 36"
         xmlns="http://www.w3.org/2000/svg"
-        fill="#000000"
     >
       <g id="SVGRepo_iconCarrier">
         <g transform="translate(-212.000000, -159.000000)" fill="#252528">
@@ -47,11 +46,35 @@ const props = defineProps({
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: #7717F4 solid 1px;
+  border-radius: 30px;
+  background: #7717F4;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .arrow-icon {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.arrow-icon path {
+  fill: black; /* default */
+  transition: fill 0.3s ease;
+}
+
+.custom-button:hover .arrow-icon path {
+  fill: white;
 }
 
 @media (max-width: 640px) {
