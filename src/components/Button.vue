@@ -57,7 +57,6 @@ const props = defineProps({
   border-radius: 30px;
   background: #7717F4;
   color: white;
-  padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
 }

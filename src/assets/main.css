@@ -30,6 +30,13 @@ html, body {
     opacity: 60%;
 }
 
+/*Overwrite hover of the reset filter button*/
+.reset-button.custom-button:hover {
+    background: none !important;
+    color: black !important;
+    border: none !important;
+}
+
 @media (max-width: 640px) {
     html, body {
         margin: 0;
