@@ -67,9 +67,10 @@ function scrollTo() {
   display: flex;
   flex-direction: row;
   gap: 1.25rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding-top: 2.5rem;
+  margin-bottom: 120px;
 }
 
 .project-info-item {
