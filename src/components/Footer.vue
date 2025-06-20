@@ -140,7 +140,7 @@ a {
   }
 
   footer {
-    height: 420px;
+    padding: 1.25rem 0;
     overflow: visible;
   }
 
@@ -158,6 +158,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    min-height: 375px;
     font-size: 16px;
   }
 

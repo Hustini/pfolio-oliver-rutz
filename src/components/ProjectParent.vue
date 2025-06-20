@@ -64,18 +64,14 @@ import ProjectCard from "@/components/ProjectCard.vue";
 
   .container {
     background: white;
-    padding: 1rem 0;
-  }
-
-  .layout-container > *:not(:first-child) {
-    margin-top: 1rem;
+    padding: 1.25rem 0 3rem 0;
   }
 
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding-bottom: 1rem;
+    gap: 0.625rem;
+    padding: 0.625rem 0;
   }
 }
 </style>

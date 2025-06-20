@@ -31,12 +31,12 @@ import Button from "@/components/Button.vue";
   .text {
     font-size: 1.5rem;
     font-weight: 400;
-    padding-bottom: 1rem;
+    padding-bottom: 1.25rem;
   }
 
   .info-container {
     background-color: #11FF004D;
-    padding: 1rem 0;
+    padding: 1.25rem 0;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
   }
