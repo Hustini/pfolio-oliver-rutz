@@ -17,8 +17,23 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    scrollBehavior() {
-        return { top: 0, left: 0 }
+    scrollBehavior(to, from, savedPosition) {
+        // Keep scroll on same-page interactions
+        if (to.path === from.path) return false;
+
+        // Support saved positions (back/forward)
+        if (savedPosition) return savedPosition;
+
+        // Hash navigation
+        if (to.hash) {
+            return {
+                el: to.hash,
+                behavior: 'smooth'
+            };
+        }
+
+        // Default scroll to top for real page changes
+        return { top: 0 };
     }
 });
 
