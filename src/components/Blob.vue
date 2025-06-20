@@ -50,8 +50,8 @@ onUnmounted(() => {
 
 <style scoped>
 .blob {
-  width: 475px;
-  height: 475px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   filter: blur(30px);
   box-shadow: 0 0 40px rgba(0, 255, 64, 0.4), 0 0 60px rgba(119, 23, 244, 0.4);
