@@ -35,7 +35,7 @@ import ProjectCard from "@/components/ProjectCard.vue";
 <style scoped>
 .container {
   background: white;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 }
 
 .title {
@@ -43,15 +43,11 @@ import ProjectCard from "@/components/ProjectCard.vue";
   font-weight: 400;
 }
 
-.layout-container > *:not(:first-child) {
-  margin-top: 2rem;
-}
-
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  padding-bottom: 2rem;
+  gap: 1.25rem;
+  padding: 1.375rem 0;
 }
 
 .link {
