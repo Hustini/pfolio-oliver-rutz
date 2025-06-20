@@ -7,6 +7,7 @@ import Button from "@/components/Button.vue";
 export default {
   data() {
     return {
+      showReset: false,
       toggled: false,
       firstClick: true,
       selectedTags: [],
@@ -32,6 +33,7 @@ export default {
       // handles the first click
       if (this.firstClick) {
         this.selectedTags.push(tagName);
+        this.showReset = true;
         for (let tag in this.tags) {
           this.tags[tag] = (tag === tagName);
         }
@@ -45,6 +47,7 @@ export default {
       } else {
         this.tags[tagName] = true;
         this.selectedTags.push(tagName);
+        this.showReset = true;
       }
       // handles if no tag is selected
       if (this.selectedTags.length === 0 && this.firstClick === false) {
@@ -52,6 +55,7 @@ export default {
           this.tags[tag] = true;
         }
         this.firstClick = true;
+        this.showReset = false;
       }
     },
     reset() {
@@ -60,6 +64,7 @@ export default {
         this.tags[tag] = true;
       }
       this.firstClick = true;
+      this.showReset = false;
     }
   }
 }
@@ -74,7 +79,7 @@ export default {
       <span><Button :class="['button', { toggled : !allTagsActive && tags.UX }]" buttonText="UX/UI" @click="toggleTag('UX')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.print }]" buttonText="PRINT" @click="toggleTag('print')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.video }]" buttonText="VIDEO" @click="toggleTag('video')"/></span>
-      <span class="reset" @click="reset()">
+      <span class="reset" v-if="showReset === true" @click="reset()">
         <img class="reset-symbol" src="../assets/x_symbol.svg" alt="Reset Icon" />
         <Button class="reset-button button" buttonText="Reset Filter" />
       </span>
