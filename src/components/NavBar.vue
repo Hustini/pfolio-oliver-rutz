@@ -263,4 +263,25 @@ span.menu-item {
     border-right: none;
   }
 }
+
+@media (min-width: 1536px) {
+  .menu-items li {
+    padding: 0.25rem 4rem 0.25rem 0;
+  }
+
+  .arrow-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(-90deg);
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    padding: 8px 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
 </style>
