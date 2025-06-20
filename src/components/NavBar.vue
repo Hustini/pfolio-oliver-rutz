@@ -116,6 +116,19 @@ const props = defineProps({
   transform: rotate(90deg);
 }
 
+.arrow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-wrapper img {
+  display: block;
+  vertical-align: middle;
+  background: cornflowerblue;
+  border: red solid 1px;
+}
+
 #home-arrow {
   transform: rotate(180deg);
 }
@@ -161,10 +174,6 @@ const props = defineProps({
   padding: 0;
 }
 
-.menu-items li:hover .menu-item{
-  font-size: 22px;
-}
-
 .menu-items li {
   padding: 0.25rem 2.5rem 0.25rem 0;
 }
@@ -180,19 +189,6 @@ const props = defineProps({
 
 span.menu-item {
   padding-right: 6px;
-  border: red solid 1px;
-}
-
-.arrow-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.arrow-wrapper img {
-  display: block;
-  vertical-align: middle;
-  background: cornflowerblue;
   border: red solid 1px;
 }
 
