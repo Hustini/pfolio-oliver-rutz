@@ -98,7 +98,7 @@ function scrollTo() {
 
   .about {
     font-size: 3.75rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
 
   .hero-portrait {

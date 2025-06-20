@@ -45,11 +45,12 @@ function scrollTo() {
 <style scoped>
 .title {
   font-size: 6.25rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .featured-title {
   font-size: 2.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .featured-projects {
@@ -74,7 +75,7 @@ function scrollTo() {
 
   .title {
     font-size: 3.75rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
 
   .featured-title {
