@@ -57,7 +57,6 @@ const props = defineProps({
   border-radius: 30px;
   background: #7717F4;
   color: white;
-  font-size: 20px;
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
@@ -69,7 +68,7 @@ const props = defineProps({
 }
 
 .arrow-icon path {
-  fill: black; /* default */
+  fill: black;
   transition: fill 0.3s ease;
 }
 
