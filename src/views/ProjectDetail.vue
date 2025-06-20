@@ -29,21 +29,27 @@ function scrollTo() {
       <Breadcrumb />
     </div>
     <div class="project">
-      <div class="project-info layout-container">
-        <div class="wrapper"> <!--Besser Platzieren -->
-          <ProjectCard :imgPath="imgPath" title="" caption=""/>
-          <div class="title">{{ title }}</div>
+      <div class="layout-container">
+        <div class="project-wrapper">
+          <ProjectCard class="project-card" :imgPath="imgPath" title="" caption=""/>
         </div>
-        <div class="wrapper">
-          Tags: <Button class="tag" v-for="tag in tagsSplit" :buttonText="tag"/>
+        <div class="project-info">
+          <div class="project-info-item">
+            <div class="title">{{ title }}</div>
+            <div class="info-wrapper">
+              <div class="info-item">
+                Tags: <Button class="tag" v-for="tag in tagsSplit" :buttonText="tag"/>
+              </div>
+              <div class="info-item">
+                Zeitraum: {{ time }}
+              </div>
+            </div>
+          </div>
+          <div class="project-text">
+            <div>{{ text }}</div>
+            <a :href="link" target="_blank" class="link">{{ link }}</a>
+          </div>
         </div>
-        <div class="wrapper">
-          Zeitraum: {{ time }}
-        </div>
-      </div>
-      <div class="project-text layout-container">
-        <div>{{ text }}</div>
-        <a :href="link" target="_blank" class="link">{{ link }}</a>
       </div>
     </div>
     <Footer ref="scrollToContact" />
@@ -52,17 +58,28 @@ function scrollTo() {
 
 <style scoped>
 .padding-bottom {
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .project {
-  display: flex;
-  flex-direction: row;
+
+}
+
+.project-card {
+  width: 100%;
 }
 
 .project-info {
-  max-width: 50%;
-  min-width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+
+.project-info-item {
+  width: 50%;
 }
 
 .project-text {
@@ -71,21 +88,39 @@ function scrollTo() {
   gap: 1rem;
   font-size: 1rem;
   padding-bottom: 2rem;
+  width: 50%;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 4.7rem;
+  word-break: break-all;
 }
 
-.wrapper {
-  font-size: 40px;
-  padding-bottom: 2rem;
+.project-wrapper {
+  margin-top: 0;
+  padding: 0;
+}
+
+.info-wrapper {
+  font-size: 20px;
+  padding: 1.125rem 0 1.375rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  border-bottom: black solid 1px;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+
 }
 
 .tag {
   background: #7717F44D;
-  margin-right: 1rem;
+  margin-right: 0.625rem;
   pointer-events: none;
+  font-size: 12px;
+  padding: 5px 10px;
 }
 
 .link {
@@ -128,9 +163,10 @@ function scrollTo() {
     font-size: 1.5rem;
   }
 
-  .wrapper {
+  .info-wrapper {
     font-size: 20px;
     padding-bottom: 1rem;
+    border-bottom: none;
   }
 
   .tag {
@@ -149,12 +185,6 @@ function scrollTo() {
     overflow-wrap: anywhere;
     display: inline-block;
     max-width: 100%;
-  }
-}
-
-@media (min-width: 1536px) {
-  .project-text {
-    font-size: 1.5rem;
   }
 }
 </style>
