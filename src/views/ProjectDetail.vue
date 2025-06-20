@@ -29,26 +29,24 @@ function scrollTo() {
       <Breadcrumb />
     </div>
     <div class="project">
-      <div class="layout-container">
-        <div class="project-wrapper">
-          <ProjectCard class="project-card" :imgPath="imgPath" title="" caption=""/>
-        </div>
-        <div class="project-info">
-          <div class="project-info-item">
-            <div class="title">{{ title }}</div>
-            <div class="info-wrapper">
-              <div class="info-item">
-                Tags: <Button class="tag" v-for="tag in tagsSplit" :buttonText="tag"/>
-              </div>
-              <div class="info-item">
-                Zeitraum: {{ time }}
-              </div>
+      <div class="project-wrapper layout-container">
+        <ProjectCard class="project-card" :imgPath="imgPath" title="" caption=""/>
+      </div>
+      <div class="project-info">
+        <div class="project-info-item layout-container">
+          <div class="title">{{ title }}</div>
+          <div class="info-wrapper">
+            <div class="info-item">
+              Tags: <Button class="tag" v-for="tag in tagsSplit" :buttonText="tag"/>
+            </div>
+            <div class="info-item">
+              Zeitraum: {{ time }}
             </div>
           </div>
-          <div class="project-text">
-            <div>{{ text }}</div>
-            <a :href="link" target="_blank" class="link">{{ link }}</a>
-          </div>
+        </div>
+        <div class="project-text">
+          <div>{{ text }}</div>
+          <a :href="link" target="_blank" class="link">{{ link }}</a>
         </div>
       </div>
     </div>
@@ -59,10 +57,6 @@ function scrollTo() {
 <style scoped>
 .padding-bottom {
   padding-bottom: 0.5rem;
-}
-
-.project {
-
 }
 
 .project-card {
@@ -80,6 +74,7 @@ function scrollTo() {
 
 .project-info-item {
   width: 50%;
+  padding: 0 0 0 3rem;
 }
 
 .project-text {
@@ -87,18 +82,13 @@ function scrollTo() {
   flex-direction: column;
   gap: 1rem;
   font-size: 1rem;
-  padding-bottom: 2rem;
+  padding: 0 3rem 0 0;
   width: 50%;
 }
 
 .title {
   font-size: 4.7rem;
   word-break: break-all;
-}
-
-.project-wrapper {
-  margin-top: 0;
-  padding: 0;
 }
 
 .info-wrapper {
@@ -108,11 +98,6 @@ function scrollTo() {
   flex-direction: column;
   gap: 0.625rem;
   border-bottom: black solid 1px;
-  margin-bottom: 2rem;
-}
-
-.info-item {
-
 }
 
 .tag {
@@ -138,7 +123,7 @@ function scrollTo() {
   }
 
   .padding-bottom {
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
   }
 
   .project {
@@ -147,9 +132,18 @@ function scrollTo() {
     gap: 1rem;
   }
 
+  .project-info-item {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
   .project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     font-size: 1rem;
-    padding: 1rem;
+    padding: 2.5rem 1rem;
+    width: 100%;
     border-top: black solid 1px;
   }
 
@@ -157,6 +151,10 @@ function scrollTo() {
     max-width: 100%;
     min-width: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 0.25rem;
   }
 
   .title {
@@ -165,7 +163,7 @@ function scrollTo() {
 
   .info-wrapper {
     font-size: 20px;
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
     border-bottom: none;
   }
 
@@ -185,6 +183,16 @@ function scrollTo() {
     overflow-wrap: anywhere;
     display: inline-block;
     max-width: 100%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .project-info-item {
+    padding: 0 0 0 4rem;
+  }
+
+  .project-text {
+    padding: 0 4rem 0 0 ;
   }
 }
 </style>
