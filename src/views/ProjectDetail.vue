@@ -56,7 +56,7 @@ function scrollTo() {
 
 <style scoped>
 .padding-bottom {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.625rem;
 }
 
 .project-card {
@@ -69,13 +69,13 @@ function scrollTo() {
   gap: 1.25rem;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 2.5rem;
+  padding-top: 3rem;
   margin-bottom: 120px;
 }
 
 .project-info-item {
   width: 50%;
-  padding: 0 0 0 3rem;
+  padding: 0 0 0 3.75rem;
 }
 
 .project-text {
@@ -83,7 +83,7 @@ function scrollTo() {
   flex-direction: column;
   gap: 1rem;
   font-size: 1rem;
-  padding: 0 3rem 0 0;
+  padding: 0 3.75rem 0 0;
   width: 50%;
 }
 
@@ -97,7 +97,7 @@ function scrollTo() {
   padding: 1.125rem 0 1.375rem 0;
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 0.75rem;
   border-bottom: black solid 1px;
 }
 
