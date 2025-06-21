@@ -33,13 +33,13 @@ const props = defineProps({
       <div :class="['navbar-menu', { active: isMenuOpen }]">
         <ul class="menu-items">
           <li>
-            <router-link to="/projects" class="menu-item" active-class="active" exact>PROJECTS -></router-link>
+            <router-link to="/projects" class="menu-item" active-class="active" exact>PROJECTS <span style="font-style: normal">-></span></router-link>
           </li>
           <li>
-            <router-link to="/about" class="menu-item" active-class="active">ABOUT -></router-link>
+            <router-link to="/about" class="menu-item" active-class="active">ABOUT <span style="font-style: normal">-></span></router-link>
           </li>
           <li>
-            <router-link to="" class="menu-item" active-class="active" @click.prevent="() => { emit('scroll-contact'); isMenuOpen = false; }">CONTACT |></router-link>
+            <router-link to="" class="menu-item" active-class="active" @click.prevent="() => { emit('scroll-contact'); isMenuOpen = false; }">CONTACT <span style="font-style: normal">|></span></router-link>
           </li>
         </ul>
       </div>
@@ -99,6 +99,10 @@ const props = defineProps({
   font-weight: 400;
   color: #000;
   padding-left: 5px;
+}
+
+.brand-name:hover {
+  font-style: italic;
 }
 
 .navbar-logo .arrow-icon {
@@ -185,6 +189,10 @@ const props = defineProps({
   display: block;
   text-align: right;
   transition: font-size 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  font-style: italic;
 }
 
 span.menu-item {
