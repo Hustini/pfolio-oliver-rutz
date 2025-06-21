@@ -187,26 +187,26 @@ export default {
 
   .filter {
     border-top: black solid 1px;
-    padding: 1rem;
+    padding: 2.5rem 1.25rem;
   }
 
   .title {
     font-size: 1.5rem;
     font-weight: 400;
-    padding-bottom: 1rem;
+    padding-bottom: 0.625rem;
   }
 
   .projects {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.625rem;
   }
 
   .filter-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding-bottom: 1rem
+    padding-bottom: 0.625rem
   }
 
   .reset-button {

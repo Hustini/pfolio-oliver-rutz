@@ -74,18 +74,19 @@ function scrollTo() {
 
   .title {
     font-size: 3.75rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.125rem;
   }
 
   .featured-title {
     font-size: 1.5rem;
+    padding: 0 0 0.75rem 0;
   }
 
   .featured-projects {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2.5rem;
   }
 
   .project-container {
