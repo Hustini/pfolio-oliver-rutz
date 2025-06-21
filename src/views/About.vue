@@ -93,7 +93,7 @@ function scrollTo() {
 
 @media (max-width: 640px) {
   .about-container {
-    padding-top: 4rem;
+    padding-top: 4.75rem;
     padding-bottom: 2.5rem;
   }
 
