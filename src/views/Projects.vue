@@ -45,18 +45,18 @@ function scrollTo() {
 <style scoped>
 .title {
   font-size: 6.25rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.375rem;
 }
 
 .featured-title {
   font-size: 2.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.625rem;
 }
 
 .featured-projects {
   display: flex;
   gap: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .project-container {

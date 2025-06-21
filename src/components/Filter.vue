@@ -132,19 +132,19 @@ export default {
 <style scoped>
 .filter {
   border-top: black solid 1px;
-  padding: 2rem;
+  padding: 3.75rem;
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: 400;
-  padding-bottom: 2rem;
+  padding-bottom: 0.625rem;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .toggled {
@@ -162,6 +162,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 0 0 0 1.25rem;
 }
 
 .reset-button {
