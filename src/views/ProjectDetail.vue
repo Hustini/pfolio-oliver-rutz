@@ -120,7 +120,7 @@ function scrollTo() {
 
 @media (max-width: 640px) {
   .page-container {
-    padding-top: 4rem;
+    padding-top: 4.75rem;
   }
 
   .padding-bottom {
@@ -130,12 +130,12 @@ function scrollTo() {
   .project {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0;
   }
 
   .project-info-item {
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 1.25rem;
   }
 
   .project-text {
@@ -143,7 +143,7 @@ function scrollTo() {
     flex-direction: column;
     gap: 1rem;
     font-size: 1rem;
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1.25rem;
     width: 100%;
     border-top: black solid 1px;
   }
@@ -160,11 +160,12 @@ function scrollTo() {
 
   .title {
     font-size: 1.5rem;
+    padding: 0.75rem 0 0 0;
   }
 
   .info-wrapper {
     font-size: 20px;
-    padding-bottom: 0.75rem;
+    padding: 0.75rem 0 1.25rem 0;
     border-bottom: none;
   }
 
