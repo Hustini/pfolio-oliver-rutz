@@ -42,12 +42,12 @@ function scrollTo() {
 <style scoped>
 .about-container {
   padding-top: 2rem;
-  padding-bottom: 2rem
+  padding-bottom: 1.875rem
 }
 
 .about {
   font-size: 6rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.625rem;
 }
 
 .hero-portrait {
@@ -60,13 +60,13 @@ function scrollTo() {
   width: 50%;
   flex: 1;
   max-width: 33.3333%;
-  padding-left: 2rem;
+  padding-left: 3.75rem;
 }
 
 .about-content {
   display: flex;
-  padding-bottom: 2rem;
-  gap: 2rem;
+  padding-bottom: 1.625rem;
+  gap: 1.875rem;
 }
 
 .img-container {
@@ -75,6 +75,7 @@ function scrollTo() {
   flex: 2;
   gap: 2rem;
   width: 100%;
+  padding: 0 3.75rem 0 0;
 }
 
 .rectangle {
@@ -93,7 +94,7 @@ function scrollTo() {
 @media (max-width: 640px) {
   .about-container {
     padding-top: 4rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2.5rem;
   }
 
   .about {
@@ -104,7 +105,6 @@ function scrollTo() {
   .hero-portrait {
     width: 100%;
     border: solid 1px black;
-    margin-bottom: 1rem;
   }
 
   .about-content {
@@ -121,22 +121,22 @@ function scrollTo() {
     flex: unset;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
-    padding: 1rem;
+    padding: 2.5rem 1.25rem;
   }
 
   .img-container {
     display: flex;
     flex-direction: column;
     flex: 2;
-    gap: 1rem;
+    gap: 1.25rem;
     width: 100%;
+    padding: 2.5rem 1.25rem;
   }
 
   .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding-bottom: 1rem;
+    gap: 1.25rem;
   }
 }
 
