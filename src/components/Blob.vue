@@ -5,6 +5,10 @@ const props = defineProps({
   color: {
     type: [String],
     default: "#11FF00"
+  },
+  transparentColor: {
+    type: [String],
+    default: "#11FF004D"
   }
 })
 
@@ -50,7 +54,8 @@ onUnmounted(() => {
       ref="blobRef"
       class="blob"
       :style="{
-      background: `radial-gradient(circle at ${gradientPos.x}% ${gradientPos.y}%, ${color} 0%, ${color} 10%, rgb(119, 23, 244) 70%)`
+      background: `radial-gradient(circle at ${gradientPos.x}% ${gradientPos.y}%, ${color} 0%, ${color} 10%, rgb(119, 23, 244) 70%)`,
+      boxShadow: `0 0 40px ${transparentColor}, 0 0 60px rgba(119, 23, 244, 0.4)`
     }"
   ></div>
 </template>
