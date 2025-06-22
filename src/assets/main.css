@@ -42,6 +42,10 @@ html, body {
     transform: scale(1) !important;
 }
 
+.featured-project.card:hover {
+    transform: scale(1) !important;
+}
+
 @media (max-width: 640px) {
     html, body {
         margin: 0;
