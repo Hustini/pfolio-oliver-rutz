@@ -53,7 +53,7 @@ const props = defineProps({
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   z-index: 1000;
   border-bottom: none;
 }
@@ -163,7 +163,7 @@ const props = defineProps({
   display: block;
   max-height: 500px;
   width: 200px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid #000000;
   border-top: none;
   border-right: none;
