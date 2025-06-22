@@ -90,13 +90,13 @@ footer {
   flex-direction: column;
 }
 
-.values {
-  font-style: italic;
-}
-
 a {
   color: black;
   text-decoration: underline;
+}
+
+a:hover {
+  font-style: italic;
 }
 
 .footer-note {
