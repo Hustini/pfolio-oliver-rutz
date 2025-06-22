@@ -23,12 +23,12 @@ const props = defineProps({
   <nav class="navbar" :class="{ 'menu-open': isMenuOpen }">
     <div class="navbar-container layout-container">
       <router-link to="/" class="navbar-logo" active-class="active" exact>
-        <span v-if="isArrow === 'True'" class="arrow-wrapper"><img id="home-arrow" src="../assets/arrow.svg" class="arrow-icon"></span>
+        <span v-if="isArrow === 'True'" class="arrow-wrapper"><img id="home-arrow" src="../assets/arrow.svg" class="arrow-icon" alt="arrow"></span>
         <span class="brand-name">HOME</span>
       </router-link>
       <button class="menu-toggle" :aria-expanded="isMenuOpen.toString()" @click="toggleMenu">
         <span class="menu-item">MENU</span>
-        <span class="arrow-wrapper"><img src="../assets/arrow.svg" :class="['arrow-icon', { rotated: isMenuOpen }]"></span>
+        <span class="arrow-wrapper"><img src="../assets/arrow.svg" :class="['arrow-icon', { rotated: isMenuOpen }]" alt="arrow"></span>
       </button>
       <div :class="['navbar-menu', { active: isMenuOpen }]">
         <ul class="menu-items">
@@ -260,7 +260,7 @@ span.menu-item {
   }
 
   .menu-items li {
-    padding: 0.25rem 1.5rem 0.25rem 0;
+    padding: 0.25rem 1.25rem 0.25rem 0;
   }
 
   .navbar-menu.active {
