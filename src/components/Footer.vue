@@ -2,6 +2,17 @@
 import Blob from '@/components/Blob.vue';
 import { ref } from 'vue';
 
+const props = defineProps({
+  color: {
+    type: [String],
+    default: "#11FF004D"
+  },
+  transparentColor: {
+    type: [String],
+    default: "#11FF004D"
+  }
+})
+
 const footerRef = ref(null);
 defineExpose({
   footerRef
@@ -9,7 +20,7 @@ defineExpose({
 </script>
 
 <template>
-  <footer ref="footerRef">
+  <footer ref="footerRef" :style="{'background-color': transparentColor}">
     <div class="layout-container footer-content">
       <div class="svg-container">
         <img src="../assets/text.svg" class="svg-text" alt="Let's Work Together!" />
@@ -42,7 +53,6 @@ defineExpose({
 footer {
   position: relative;
   overflow: hidden;
-  background-color: #11FF004D;
   color: black;
   width: 100%;
   padding: 2.5rem 0;

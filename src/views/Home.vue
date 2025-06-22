@@ -5,6 +5,11 @@ import Footer from "@/components/Footer.vue";
 import ProjectParent from "@/components/ProjectParent.vue";
 import NavBar from "@/components/NavBar.vue";
 import { ref } from 'vue'
+import { inject } from 'vue'
+
+const initParams = inject('initParams')
+const color = initParams.color
+const transparentColor = initParams.transparentColor
 
 const scrollToContact = ref<HTMLElement | null>(null)
 
@@ -25,7 +30,7 @@ function scrollTo() {
     </div>
     <InfoSection />
     <ProjectParent />
-    <Footer ref="scrollToContact" />
+    <Footer ref="scrollToContact" :color="color" :transparentColor="transparentColor" />
   </div>
 </template>
 
