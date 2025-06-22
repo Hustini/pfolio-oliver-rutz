@@ -118,6 +118,10 @@ function scrollTo() {
   max-width: 100%;
 }
 
+.link:hover {
+  font-style: italic;
+}
+
 @media (max-width: 640px) {
   .page-container {
     padding-top: 4.75rem;
