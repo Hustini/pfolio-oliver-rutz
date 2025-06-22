@@ -53,8 +53,7 @@ const props = defineProps({
   position: fixed;
   width: 100%;
   top: 0;
-  background: transparent;
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
   z-index: 1000;
   border-bottom: none;
 }
@@ -164,12 +163,22 @@ const props = defineProps({
   display: block;
   max-height: 500px;
   width: 200px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  background: transparent;
+  background: rgba(255, 255, 255, 0.2);
   border: 1px solid #000000;
   border-top: none;
   border-right: none;
+}
+
+.navbar::before,
+.navbar-menu::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: -1;
 }
 
 .menu-items {
