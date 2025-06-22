@@ -5,10 +5,6 @@ const props = defineProps({
   color: {
     type: [String],
     default: "#11FF00"
-  },
-  transparentColor: {
-    type: [String],
-    default: "#11FF004D"
   }
 })
 

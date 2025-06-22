@@ -27,7 +27,7 @@ defineExpose({
         <img src="../assets/text_rotated.svg" class="svg-text-rotated" alt="Let's Work Together!" />
       </div>
       <div class="blob">
-        <Blob :color="color" :transparentColor="transparentColor" />
+        <Blob :color="color" />
       </div>
       <div class="footer-bottom">
         <div class="contact-info">
