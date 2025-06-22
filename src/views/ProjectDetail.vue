@@ -6,6 +6,11 @@ import { useRoute } from 'vue-router';
 import Breadcrumb from '@/components/Breadcrumb.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import Button from '@/components/Button.vue';
+import { inject } from 'vue'
+
+const initParams = inject('initParams')
+const color = initParams.color
+const transparentColor = initParams.transparentColor
 
 const route = useRoute();
 const imgPath = route.params.imgPath;
@@ -50,7 +55,7 @@ function scrollTo() {
         </div>
       </div>
     </div>
-    <Footer ref="scrollToContact" />
+    <Footer ref="scrollToContact" :color="color" :transparentColor="transparentColor" />
   </div>
 </template>
 

@@ -1,9 +1,20 @@
 <script setup>
 import Button from "@/components/Button.vue";
+
+const props = defineProps({
+  color: {
+    type: [String],
+    default: "#11FF004D"
+  },
+  transparentColor: {
+    type: [String],
+    default: "#11FF004D"
+  }
+})
 </script>
 
 <template>
-  <div class="info-container">
+  <div class="info-container" :style="{'background-color': transparentColor}">
     <div class="layout-container text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus diam aliquet risus egestas, aliquam molestie tortor fermentum. Nullam ornare enim vel tempor commodo. Mauris id lobortis augue. Nullam ornare enim vel tempor commodo. Mauris id lobortis augue.
     </div>
@@ -15,7 +26,6 @@ import Button from "@/components/Button.vue";
 
 <style scoped>
 .info-container {
-  background-color: #11FF004D;
   padding: 2.5rem 0;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
@@ -35,7 +45,6 @@ import Button from "@/components/Button.vue";
   }
 
   .info-container {
-    background-color: #11FF004D;
     padding: 1.25rem 0;
     border-top: solid 1px black;
     border-bottom: solid 1px black;

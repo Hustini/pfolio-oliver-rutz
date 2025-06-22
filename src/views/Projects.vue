@@ -5,6 +5,11 @@ import Filter from "@/components/Filter.vue";
 import ProjectCard from "@/components/ProjectCard.vue";
 import Breadcrumb from "@/components/Breadcrumb.vue";
 import { ref } from 'vue'
+import { inject } from 'vue'
+
+const initParams = inject('initParams')
+const color = initParams.color
+const transparentColor = initParams.transparentColor
 
 const scrollToContact = ref<HTMLElement | null>(null)
 
@@ -38,7 +43,7 @@ function scrollTo() {
       </div>
     </div>
     <Filter />
-    <Footer ref="scrollToContact" />
+    <Footer ref="scrollToContact" :color="color" :transparentColor="transparentColor" />
   </div>
 </template>
 

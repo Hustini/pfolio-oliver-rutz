@@ -28,7 +28,7 @@ function scrollTo() {
         <path d="M26.29 20.29 18 28.59V0h-2v28.59l-8.29-8.3-1.42 1.42 10 10a1 1 0 0 0 1.41 0l10-10z" data-name="2-Arrow Down"/>
       </svg>
     </div>
-    <InfoSection />
+    <InfoSection :color="color" :transparentColor="transparentColor" />
     <ProjectParent />
     <Footer ref="scrollToContact" :color="color" :transparentColor="transparentColor" />
   </div>
