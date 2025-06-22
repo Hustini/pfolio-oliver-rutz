@@ -38,6 +38,10 @@ html, body {
     text-decoration: underline !important;
 }
 
+.project-card.card:hover {
+    transform: scale(1) !important;
+}
+
 @media (max-width: 640px) {
     html, body {
         margin: 0;
