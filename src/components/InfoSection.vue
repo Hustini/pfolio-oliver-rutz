@@ -4,7 +4,7 @@ import Button from "@/components/Button.vue";
 const props = defineProps({
   color: {
     type: [String],
-    default: "#11FF004D"
+    default: "#11FF00"
   },
   transparentColor: {
     type: [String],

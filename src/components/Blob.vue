@@ -1,6 +1,17 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
+const props = defineProps({
+  color: {
+    type: [String],
+    default: "#11FF00"
+  },
+  transparentColor: {
+    type: [String],
+    default: "#11FF004D"
+  }
+})
+
 const blobRef = ref(null)
 const gradientPos = ref({ x: 75, y: 25 })
 
@@ -43,7 +54,7 @@ onUnmounted(() => {
       ref="blobRef"
       class="blob"
       :style="{
-      background: `radial-gradient(circle at ${gradientPos.x}% ${gradientPos.y}%, rgba(0, 255, 64, 1) 0%, rgba(0, 255, 64, 1) 10%, rgb(119, 23, 244) 70%)`
+      background: `radial-gradient(circle at ${gradientPos.x}% ${gradientPos.y}%, ${color} 0%, ${color} 10%, rgb(119, 23, 244) 70%)`
     }"
   ></div>
 </template>
@@ -54,7 +65,6 @@ onUnmounted(() => {
   height: 450px;
   border-radius: 50%;
   filter: blur(30px);
-  box-shadow: 0 0 40px rgba(0, 255, 64, 0.4), 0 0 60px rgba(119, 23, 244, 0.4);
 }
 
 
