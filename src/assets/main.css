@@ -29,7 +29,7 @@ html, body {
     opacity: 60%;
 }
 
-/*Overwrite hover of the reset filter button*/
+/*Overwrite hover*/
 .reset-button.custom-button:hover {
     background: none !important;
     color: black !important;
