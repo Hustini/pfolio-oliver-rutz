@@ -2,9 +2,18 @@
 import { provide } from 'vue'
 import { onMounted } from 'vue'
 
+const colors = [
+  ['#11FF00', '#11FF004D'], // Green
+  ['#17F4D7', '#17F4D74D'], // Blue
+  ['#FF0090', '#FF00904D'], // Pink
+  ['#FF7700', '#FF77004D'], // Orange
+]
+
+const randomNumber = Math.floor(Math.random() * 4);
+
 const initParams = {
-  color: '#17F4D7',
-  transparentColor: '#17F4D74D'
+  color: colors[randomNumber][0],
+  transparentColor: colors[randomNumber][1]
 }
 
 onMounted(() => {
