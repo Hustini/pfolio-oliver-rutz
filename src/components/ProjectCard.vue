@@ -37,6 +37,12 @@ img {
 
 .card {
   width: 100%;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .text {
