@@ -75,7 +75,7 @@ function scrollTo() {
 }
 
 .link:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 @media (max-width: 640px) {
