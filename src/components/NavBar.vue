@@ -206,6 +206,7 @@ const props = defineProps({
 
 span.menu-item {
   padding-right: 6px;
+  font-family: TWKLausannePan, sans-serif;
 }
 
 @media (max-width: 640px) {
