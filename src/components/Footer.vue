@@ -178,6 +178,14 @@ a:hover {
   }
 }
 
+@media (min-width: 641px) and (max-width: 1024px) {
+  .blob {
+    top: 120%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (min-width: 1536px) {
   .blob {
     top: 100%;
