@@ -83,14 +83,16 @@ const props = defineProps({
     font-size: 16px;
   }
 
+  /*Reset hover on mobile*/
   .custom-button:hover {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    border: #7717F4 solid 1px;
-    background: #7717F4;
-    color: white;
+    background: #7717F44D;
+    color: black;
+    border: solid 1px black;
+    cursor: pointer;
+  }
+
+  .custom-button:hover .arrow-icon path {
+    fill: black;
   }
 }
 </style>
