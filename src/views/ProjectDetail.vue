@@ -94,7 +94,9 @@ function scrollTo() {
 
 .title {
   font-size: 4.7rem;
-  word-break: break-all;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .info-wrapper {
