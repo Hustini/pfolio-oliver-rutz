@@ -64,10 +64,6 @@ img {
   transform-origin: center;
 }
 
-.text {
-  margin-top: 0.5rem;
-}
-
 .title {
   font-weight: 400;
   font-size: 20px;

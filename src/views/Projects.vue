@@ -86,12 +86,12 @@ function scrollTo() {
   padding-bottom: 2.5rem;
 }
 
-.featured-project {
-  transition: transform 0.3s ease;
-}
-
-.featured-project:hover {
-  transform: scale(1.025);
+.featured-project-title {
+  font-size: 2.5rem;
+  padding: 0.625rem 0 0 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .project-container {
@@ -126,6 +126,11 @@ function scrollTo() {
     flex-direction: column;
     gap: 1rem;
     padding-bottom: 2.5rem;
+  }
+
+  .featured-project-title {
+    font-size: 1.5rem;
+    padding: 0;
   }
 
   .project-container {
