@@ -147,6 +147,14 @@ function scrollTo() {
   }
 }
 
+@media (min-width: 641px) and (max-width: 1024px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 @media (min-width: 1536px) {
   .text {
     font-size: 1.5rem;
