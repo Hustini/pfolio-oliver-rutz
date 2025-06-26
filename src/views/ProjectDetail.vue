@@ -42,7 +42,7 @@ function scrollTo() {
           <div class="title">{{ title }}</div>
           <div class="info-wrapper">
             <div class="info-item">
-              Tags: <Button class="tag" v-for="tag in tagsSplit" :buttonText="tag"/>
+              <span>Tags:</span><Button class="tag" v-for="tag in tagsSplit" :buttonText="tag"/>
             </div>
             <div class="info-item">
               Zeitraum: {{ time }}
@@ -106,6 +106,10 @@ function scrollTo() {
   flex-direction: column;
   gap: 0.75rem;
   border-bottom: black solid 1px;
+}
+
+.info-item span{
+  padding: 0 0.625rem 0 0;
 }
 
 .tag {
