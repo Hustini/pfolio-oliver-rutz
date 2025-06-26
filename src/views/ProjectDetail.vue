@@ -13,13 +13,13 @@ const color = initParams.color
 const transparentColor = initParams.transparentColor
 
 const route = useRoute();
-const imgPath = route.params.imgPath;
-const title = route.params.title;
-const tags = route.params.tags;
-const tagsSplit = tags.split(",").filter(t => t.trim() !== "");
-const time = route.params.time;
-const text = decodeURIComponent(route.params.text);
-const link = route.params.link;
+const imgPath = route.query.imgPath || '';
+const title = route.query.title || '';
+const tags = route.query.tags || '';
+const tagsSplit = tags.split(',').filter(t => t.trim() !== '');
+const time = route.query.time || '';
+const text = route.query.text || '';
+const link = route.query.link || '';
 
 const scrollToContact = ref<HTMLElement | null>(null)
 function scrollTo() {
