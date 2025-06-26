@@ -35,7 +35,7 @@ function scrollTo() {
     </div>
     <div class="project">
       <div class="project-wrapper layout-container">
-        <ProjectCard class="project-card" :imgPath="imgPath" title="" caption=""/>
+        <ProjectCard class="project-card" :imgPath="imgPath" title="" caption="" :disableHover=true />
       </div>
       <div class="project-info">
         <div class="project-info-item layout-container">

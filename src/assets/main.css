@@ -38,16 +38,6 @@ html, body {
     text-decoration: underline !important;
 }
 
-/*ProjectDetail reset hover*/
-.project-card.card:hover {
-    transform: scale(1) !important;
-}
-
-/*featured project reset hover*/
-.featured-project.card:hover {
-    transform: scale(1) !important;
-}
-
 @media (max-width: 640px) {
     html, body {
         margin: 0;

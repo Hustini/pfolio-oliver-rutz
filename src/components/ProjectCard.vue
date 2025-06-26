@@ -15,16 +15,22 @@ const props = defineProps({
   tag: {
     type: Boolean,
     default: true
+  },
+  disableHover: {
+    type: Boolean,
+    default: false
   }
 })
 </script>
 
 <template>
-  <div class="card" v-if="tag === true">
-    <img :src="imgPath" alt="placeholder">
+  <div class="card">
+    <div class="image-wrapper" :class="{ 'no-hover': disableHover }">
+      <img :src="imgPath" alt="placeholder" />
+    </div>
     <div class="text">
-      <div class="title">{{title}}</div>
-      <div class="caption">{{caption}}</div>
+      <div class="title">{{ title }}</div>
+      <div class="caption">{{ caption }}</div>
     </div>
   </div>
 </template>
@@ -37,16 +43,25 @@ img {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.image-wrapper img {
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.025);
+}
+.image-wrapper.no-hover:hover img {
+  transform: scale(1) !important;
 }
 
 .card {
   width: 100%;
   transition: transform 0.3s ease;
   transform-origin: center;
-}
-
-.card:hover {
-  transform: scale(1.025);
 }
 
 .text {

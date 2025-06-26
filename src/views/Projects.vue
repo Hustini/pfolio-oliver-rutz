@@ -86,6 +86,14 @@ function scrollTo() {
   padding-bottom: 2.5rem;
 }
 
+.featured-project {
+  transition: transform 0.3s ease;
+}
+
+.featured-project:hover {
+  transform: scale(1.025);
+}
+
 .project-container {
   padding-top: 2rem;
 }
@@ -96,10 +104,6 @@ function scrollTo() {
   transition: transform 0.3s ease;
   transform-origin: center;
   width: 50%;
-}
-
-.link:hover {
-  transform: scale(1.025);
 }
 
 @media (max-width: 640px) {
