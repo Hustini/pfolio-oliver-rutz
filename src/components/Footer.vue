@@ -112,6 +112,12 @@ a:hover {
   font-style: italic;
 }
 
+a::selection {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fff;
+  text-decoration-color: #fff;
+}
+
 .footer-note {
   max-width: 320px;
   text-align: left;
