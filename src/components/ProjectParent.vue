@@ -1,10 +1,14 @@
 <script setup>
 import Button from "@/components/Button.vue";
 import ProjectCard from "@/components/ProjectCard.vue";
+import { ref, defineExpose } from 'vue'
+
+const teaserRef = ref(null)
+defineExpose({ teaserRef })
 </script>
 
 <template>
-  <div class="container">
+  <div class="container" ref="teaserRef">
     <div class="layout-container">
       <div class="title">Projects</div>
       <div class="projects">
