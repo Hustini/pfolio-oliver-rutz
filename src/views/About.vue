@@ -68,7 +68,6 @@ function scrollTo() {
   font-size: 16px;
   width: 50%;
   flex: 1;
-  max-width: 33.3333%;
   padding-left: 3.75rem;
 }
 
@@ -155,7 +154,7 @@ function scrollTo() {
     width: 50%;
     flex: 1;
     max-width: 33.3333%;
-    padding-left: 2rem;
+    padding-left: 3.75rem;
   }
 }
 </style>

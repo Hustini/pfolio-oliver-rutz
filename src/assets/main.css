@@ -49,10 +49,3 @@ html, body {
         padding: 0 1.25rem;
     }
 }
-
-@media (min-width: 1536px) {
-    .layout-container {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-}
