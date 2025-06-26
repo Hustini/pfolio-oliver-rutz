@@ -41,7 +41,7 @@ function scrollTo() {
             class="link"
         >
           <ProjectCard class="featured-project" imgPath="/img/placeholder.png" title="" caption=""/>
-          <div class="featured-title">Zürich Reimagined — IMD-Award-Winner</div>
+          <div class="featured-project-title">Zürich Reimagined — IMD-Award-Winner</div>
         </router-link>
         <router-link
             :to="{
@@ -57,7 +57,7 @@ function scrollTo() {
             class="link"
         >
           <ProjectCard class="featured-project" imgPath="/img/placeholder.png" title="" caption=""/>
-          <div class="featured-title">VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen.</div>
+          <div class="featured-project-title">VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen.</div>
         </router-link>
       </div>
     </div>
@@ -74,11 +74,15 @@ function scrollTo() {
 
 .featured-title {
   font-size: 2.5rem;
+  padding: 0 0 0.625rem 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .featured-projects {
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
   padding-bottom: 2.5rem;
 }
 
@@ -91,6 +95,7 @@ function scrollTo() {
   color: black;
   transition: transform 0.3s ease;
   transform-origin: center;
+  width: 50%;
 }
 
 .link:hover {
@@ -121,6 +126,10 @@ function scrollTo() {
 
   .project-container {
     padding-top: 4rem;
+  }
+
+  .link {
+    width: 100%;
   }
 }
 
