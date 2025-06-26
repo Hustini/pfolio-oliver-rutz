@@ -50,7 +50,7 @@ function scrollTo() {
           </div>
         </div>
         <div class="project-text">
-          <div>{{ text }}</div>
+          <div v-for="(line, idx) in text.split('\n')" :key="idx">{{ line }}</div>
           <a :href="link" target="_blank" class="link">{{ link }}</a>
         </div>
       </div>
