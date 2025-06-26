@@ -33,6 +33,10 @@ const props = defineProps({
 img {
   width: 100%;
   border: solid 1px black;
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .card {

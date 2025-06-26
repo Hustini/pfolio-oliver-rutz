@@ -74,6 +74,9 @@ footer {
   width: 100%;
   height: auto;
   pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .svg-text-rotated {
