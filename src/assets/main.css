@@ -38,7 +38,7 @@ html, body {
     text-decoration: underline !important;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
     html, body {
         margin: 0;
         padding: 0;
