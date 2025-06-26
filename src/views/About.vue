@@ -67,7 +67,6 @@ function scrollTo() {
 .text {
   font-size: 16px;
   width: 50%;
-  flex: 1;
   padding-left: 3.75rem;
 }
 
