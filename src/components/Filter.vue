@@ -199,7 +199,7 @@ export default {
   .projects {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.625rem;
+    gap: 1.875rem;
   }
 
   .filter-buttons {
