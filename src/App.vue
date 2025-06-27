@@ -7,9 +7,12 @@ const colors = [
   ['#17F4D7', '#17F4D74D'], // Blue
   ['#FF0090', '#FF00904D'], // Pink
   ['#FF7700', '#FF77004D'], // Orange
+  ['#FF0000', '#FF000099'], // Red
+  ['#EEFF00', '#EEFF0099'], // Yellow
+  ['#1500FF', '#1500FF99'], // Blue
 ]
 
-const randomNumber = Math.floor(Math.random() * 4);
+const randomNumber = Math.floor(Math.random() * 7);
 
 const initParams = {
   color: colors[randomNumber][0],
