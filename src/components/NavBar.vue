@@ -258,10 +258,6 @@ span.menu-item {
     transition: font-size 0.3s ease-in-out;
   }
 
-  .menu-items li:hover .menu-item{
-    font-size: 20px;
-  }
-
   .menu-items li {
     padding: 0.25rem 1.25rem 0.25rem 0;
   }
