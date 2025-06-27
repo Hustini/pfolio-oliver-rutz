@@ -113,6 +113,7 @@ const props = defineProps({
   height: 15px;
   transition: transform 0.3s ease-in-out;
   transform: rotate(-90deg);
+  padding-left: 1px;
 }
 
 .arrow-icon.rotated {
@@ -245,6 +246,7 @@ span.menu-item {
     width: 12px;
     height: 12px;
     transition: transform 0.3s ease-in-out;
+    padding-left: 0;
   }
 
   .menu-item {
