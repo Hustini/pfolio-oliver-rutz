@@ -27,7 +27,7 @@ function scrollToTeaser() {
     <NavBar @scroll-contact="() => scrollToFooter(scrollToContact)" />
     <div class="layout-container hero-content">
       <Blob class="blob" :color="color" :transparentColor="transparentColor" />
-      <h1 class="title">Interactive Media Designer Oliver Rutz</h1>
+      <h1 class="title">Interactive Media Designer Oliver Benjamin Rutz</h1>
       <svg class="arrow" @click="scrollToTeaser" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <path d="M26.29 20.29 18 28.59V0h-2v28.59l-8.29-8.3-1.42 1.42 10 10a1 1 0 0 0 1.41 0l10-10z" data-name="2-Arrow Down"/>
       </svg>
@@ -135,6 +135,16 @@ function scrollToTeaser() {
     max-width: 1500px;
   }
 
+  .arrow {
+    position: absolute;
+    bottom: 8.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
   .arrow {
     position: absolute;
     bottom: 8.5%;
