@@ -88,7 +88,6 @@ function scrollTo() {
 
 .featured-project-title {
   font-size: 2.5rem;
-  padding: 0.625rem 0 0 0;
   word-break: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -130,7 +129,6 @@ function scrollTo() {
 
   .featured-project-title {
     font-size: 1.5rem;
-    padding: 0;
   }
 
   .project-container {

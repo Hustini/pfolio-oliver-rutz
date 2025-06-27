@@ -64,9 +64,14 @@ img {
   transform-origin: center;
 }
 
+.text {
+  padding: 0.375rem 0 0 0;
+}
+
 .title {
   font-weight: 400;
   font-size: 20px;
+  padding: 0 0 0.25rem 0;
 }
 
 .caption {
@@ -78,6 +83,11 @@ img {
   .title {
     font-weight: 400;
     font-size: 16px;
+    padding: 0;
+  }
+
+  .text {
+    padding: 0;
   }
 }
 </style>
