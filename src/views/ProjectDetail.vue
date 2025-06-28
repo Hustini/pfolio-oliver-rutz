@@ -7,7 +7,7 @@ import Breadcrumb from '@/components/Breadcrumb.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import Button from '@/components/Button.vue';
 import { inject } from 'vue'
-import projects from '../../public/projects.json';
+import projects from '../assets/projects.json';
 
 const initParams = inject('initParams')
 const color = initParams.color
