@@ -15,14 +15,7 @@ defineExpose({ teaserRef })
         <router-link
             :to="{
           name: 'ProjectDetail',
-          query: {
-            imgPath: 'public/Zuerich Reimagined/Keyvisual.png',
-            title: 'Zürich Reimagined — IMD-Award-Winner',
-            tags: 'WEB',
-            time: '2024',
-            text: `In meinem Projekt «Zürich Reimagined» stelle ich Graffiti als künstlerische Ausdrucksform im Raum Zürich dar. Oft als Vandalismus abgetan, sehe ich Graffiti als ein Sprachrohr für kreative Freiheit und städtische Identität. Mein Ziel war es, eine Kultur des Miteinanders und der Kooperation zu fördern, indem ich Möglichkeit legale Graffiti-Flächen zu unterstützen biete und einen Dialog zwischen Künstlern, der Community und Behörden anrege. Dafür habe ich eine digitale Awareness-Kampagne in Form einer Website konzipiert, die über die Geschichte, Bedeutung und rechtlichen Rahmenbedingungen von Graffiti informiert. Das Design kombiniert Swiss-Layout-Prinzipien mit künstlerischen Elementen der Streetart.`,
-            link: 'https://studio.youtube.com/video/h3i8aFNgeLg/edit'
-          }
+          query: { project: 'Zurich_Reimagined' }
         }"
             class="link"
         >
