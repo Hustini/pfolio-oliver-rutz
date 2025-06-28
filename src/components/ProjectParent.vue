@@ -2,6 +2,7 @@
 import Button from "@/components/Button.vue";
 import ProjectCard from "@/components/ProjectCard.vue";
 import { ref, defineExpose } from 'vue'
+import projects from '../assets/projects.json';
 
 const teaserRef = ref(null)
 defineExpose({ teaserRef })
@@ -19,7 +20,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard imgPath="Zuerich Reimagined/Keyvisual.png" title="Zürich Reimagined — IMD-Award-Winner" caption="«Zürich Reimagined» macht Graffiti als kreative Stimme der Stadt erlebbar – mit einer digitalen Kampagne für Dialog, Aufklärung und legale Freiräume."/>
+          <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" :title="projects.Zurich_Reimagined.title" :caption="projects.Zurich_Reimagined.caption"/>
         </router-link>
         <router-link
             :to="{
@@ -28,7 +29,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard imgPath="VA/IMG_9794.png" title="VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen." caption="Vertiefungsarbeit zum Thema Religion & Social Media"/>
+          <ProjectCard :imgPath="projects.VA.imgPath" :title="projects.VA.title" :caption="projects.VA.caption"/>
         </router-link>
         <router-link
             :to="{
@@ -37,7 +38,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard imgPath="ArcadeBot/front Keyvisual.png" title="Bits-N-Bolts — ArcadeBot" caption="Selbstgebaute Installation mit dem Thema: «Können Roboter Emotionen zeigen?»"/>
+          <ProjectCard :imgPath="projects.ArcadeBot.imgPath" :title="projects.ArcadeBot.title" :caption="projects.ArcadeBot.caption"/>
         </router-link>
       </div>
       <router-link to="/projects"><Button buttonText="SEE ALL PROJECTS" isArrow="True"/></router-link>

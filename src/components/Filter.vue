@@ -1,6 +1,7 @@
 <script setup>
 import ProjectCard from "@/components/ProjectCard.vue";
 import Button from "@/components/Button.vue";
+import projects from '../assets/projects.json';
 </script>
 
 <script>
@@ -93,7 +94,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard imgPath="ArcadeBot/front Keyvisual.png" :tag="tags.print" title="Bits-N-Bolts — ArcadeBot" caption="Selbstgebaute Installation mit dem Thema: «Können Roboter Emotionen zeigen?»"/>
+        <ProjectCard :imgPath="projects.ArcadeBot.imgPath" :tag="tags.print" :title="projects.ArcadeBot.title" :caption="projects.ArcadeBot.caption"/>
       </router-link>
       <router-link
           v-if="tags.web === true"

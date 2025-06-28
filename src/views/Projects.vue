@@ -6,6 +6,7 @@ import ProjectCard from "@/components/ProjectCard.vue";
 import Breadcrumb from "@/components/Breadcrumb.vue";
 import { ref } from 'vue'
 import { inject } from 'vue'
+import projects from '../assets/projects.json';
 
 const initParams = inject('initParams')
 const color = initParams.color
@@ -33,8 +34,8 @@ function scrollTo() {
         }"
             class="link"
         >
-          <ProjectCard class="featured-project" imgPath="Zuerich Reimagined/Keyvisual.png" title="" caption=""/>
-          <div class="featured-project-title">Zürich Reimagined — IMD-Award-Winner</div>
+          <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" title="" caption=""/>
+          <div class="featured-project-title">{{ projects.Zurich_Reimagined.title }}</div>
         </router-link>
         <router-link
             :to="{
@@ -43,8 +44,8 @@ function scrollTo() {
         }"
             class="link"
         >
-          <ProjectCard class="featured-project" imgPath="VA/IMG_9794.png" title="" caption=""/>
-          <div class="featured-project-title">VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen.</div>
+          <ProjectCard :imgPath="projects.VA.imgPath" title="" caption=""/>
+          <div class="featured-project-title">{{ projects.VA.title }}</div>
         </router-link>
       </div>
     </div>
