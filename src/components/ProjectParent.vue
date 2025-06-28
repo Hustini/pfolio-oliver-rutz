@@ -16,7 +16,7 @@ defineExpose({ teaserRef })
             :to="{
           name: 'ProjectDetail',
           query: {
-            imgPath: '/img/placeholder.png',
+            imgPath: 'public/Zuerich Reimagined/Keyvisual.png',
             title: 'Zürich Reimagined — IMD-Award-Winner',
             tags: 'WEB',
             time: '2024',
@@ -26,7 +26,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard imgPath="/img/placeholder.png" title="Zürich Reimagined — IMD-Award-Winner" caption="«Zürich Reimagined» macht Graffiti als kreative Stimme der Stadt erlebbar – mit einer digitalen Kampagne für Dialog, Aufklärung und legale Freiräume."/>
+          <ProjectCard imgPath="public/Zuerich Reimagined/Keyvisual.png" title="Zürich Reimagined — IMD-Award-Winner" caption="«Zürich Reimagined» macht Graffiti als kreative Stimme der Stadt erlebbar – mit einer digitalen Kampagne für Dialog, Aufklärung und legale Freiräume."/>
         </router-link>
         <router-link
             :to="{
@@ -44,10 +44,20 @@ defineExpose({ teaserRef })
           <ProjectCard imgPath="/img/placeholder.png" title="VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen." caption="Vertiefungsarbeit zum Thema Religion & Social Media"/>
         </router-link>
         <router-link
-            :to="{ name: 'ProjectDetail', query: { imgPath: '/img/placeholder.png', title: 'Test 3', tags: 'HTML,CSS,JS', time: '2025', text: 'In meinem Projekt «Zürich  Reimagined» stelle ich Graffiti als künstlerische Ausdrucksform im Raum  Zürich dar. Oft als Vandalismus abgetan, sehe ich Graffiti als ein  Sprachrohr für kreative Freiheit und städtische Identität. Mein Ziel war es, eine Kultur des Miteinanders und der Kooperation zu fördern, indem  ich Möglichkeit legale Graffiti-Flächen zu unterstützen biete und einen  Dialog zwischen Künstlern, der Community und Behörden anrege. Dafür habe ich eine digitale Awareness-Kampagne in Form einer Website konzipiert,  die über die Geschichte, Bedeutung und rechtlichen Rahmenbedingungen von Graffiti informiert. Das Design kombiniert Swiss-Layout-Prinzipien mit  künstlerischen Elementen der Streetart. ', link: 'https://www.figma.com/proto/cwxJ3KXRWbxD2EYGdkAZ8Y/Z%C3%BCrich-Reimagined-Schule?page-id=582%3A537&node-id=582-803&viewport=848%2C270%2C0.08&t=Gw1DZNUiNjJdjqmJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=582%3A803&show-proto-sidebar=1'}}"
+            :to="{
+          name: 'ProjectDetail',
+          query: {
+            imgPath: '/img/placeholder.png',
+            title: 'Bits-N-Bolts — ArcadeBot',
+            tags: 'PRINT',
+            time: '2022 —2023',
+            text: `Für die Ausstellung Bits-N-Bolts habe ich den ArcadeBot entwickelt – eine interaktive Installation, die Besucher*innen täuscht: Sie glauben, ein echter Arcade-Automat spiele Street Fighter II. Tatsächlich läuft ein inszeniertes Video – gesteuert über Buttons und programmiert mit Python auf einem Raspberry Pi.\n Das Projekt entstand im Rahmen eines Lernprojekts bei Lucid und stellte mich vor echte Herausforderungen: Besonders die Programmierung und das Zusammenspiel von Video, Button-Input und Looping erwiesen sich als komplex. Nachdem ein erster Konzeptansatz (EmotionBot) zu aufwendig wurde, entwickelte ich in kurzer Zeit die Idee für den ArcadeBot – und setzte sie bis zur letzten Minute um.\nDer Bau, das Design und das Videomaterial wurden von mir selbst umgesetzt. Trotz durchprogrammierter Nächte, Hardwareproblemen und einem Autostart-Bug war es eine lehrreiche und unterhaltsame Erfahrung – mit einem Ergebnis, das für Verwirrung und Lacher bei den Besucher*innen sorgte.`,
+            link: 'https://bitsnbolts.ueberaktiv.ch/index.html'
+            }
+        }"
             class="link"
         >
-          <ProjectCard imgPath="/img/placeholder.png" title="Test 3" caption="dfalsdfhlaskj"/>
+          <ProjectCard imgPath="/img/placeholder.png" title="Bits-N-Bolts — ArcadeBot" caption="Selbstgebaute Installation mit dem Thema: «Können Roboter Emotionen zeigen?»"/>
         </router-link>
       </div>
       <router-link to="/projects"><Button buttonText="SEE ALL PROJECTS" isArrow="True"/></router-link>
