@@ -46,14 +46,7 @@ defineExpose({ teaserRef })
         <router-link
             :to="{
           name: 'ProjectDetail',
-          query: {
-            imgPath: 'ArcadeBot/front Keyvisual.png',
-            title: 'Bits-N-Bolts — ArcadeBot',
-            tags: 'PRINT',
-            time: '2022 —2023',
-            text: `Für die Ausstellung Bits-N-Bolts habe ich den ArcadeBot entwickelt – eine interaktive Installation, die Besucher*innen täuscht: Sie glauben, ein echter Arcade-Automat spiele Street Fighter II. Tatsächlich läuft ein inszeniertes Video – gesteuert über Buttons und programmiert mit Python auf einem Raspberry Pi.\n Das Projekt entstand im Rahmen eines Lernprojekts bei Lucid und stellte mich vor echte Herausforderungen: Besonders die Programmierung und das Zusammenspiel von Video, Button-Input und Looping erwiesen sich als komplex. Nachdem ein erster Konzeptansatz (EmotionBot) zu aufwendig wurde, entwickelte ich in kurzer Zeit die Idee für den ArcadeBot – und setzte sie bis zur letzten Minute um.\nDer Bau, das Design und das Videomaterial wurden von mir selbst umgesetzt. Trotz durchprogrammierter Nächte, Hardwareproblemen und einem Autostart-Bug war es eine lehrreiche und unterhaltsame Erfahrung – mit einem Ergebnis, das für Verwirrung und Lacher bei den Besucher*innen sorgte.`,
-            link: 'https://bitsnbolts.ueberaktiv.ch/index.html'
-            }
+          query: { project: 'ArcadeBot' }
         }"
             class="link"
         >

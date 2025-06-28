@@ -7,19 +7,27 @@ import Breadcrumb from '@/components/Breadcrumb.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import Button from '@/components/Button.vue';
 import { inject } from 'vue'
+import projects from '../../public/projects.json';
 
 const initParams = inject('initParams')
 const color = initParams.color
 const transparentColor = initParams.transparentColor
 
 const route = useRoute();
-const imgPath = route.query.imgPath || '';
-const title = route.query.title || '';
-const tags = route.query.tags || '';
+const projectKey = route.query.project as string || '';
+const projectData = projects[projectKey] || {};
+
+const {
+  imgPath = '',
+  title = '',
+  tags = '',
+  time = '',
+  text = '',
+  link = '',
+  images = []
+} = projectData;
+
 const tagsSplit = tags.split(',').filter(t => t.trim() !== '');
-const time = route.query.time || '';
-const text = route.query.text || '';
-const link = route.query.link || '';
 
 const scrollToContact = ref<HTMLElement | null>(null)
 function scrollTo() {
@@ -54,6 +62,9 @@ function scrollTo() {
           <a :href="link" target="_blank" class="link">{{ link }}</a>
         </div>
       </div>
+      <div class="project-images layout-container" v-if="images.length">
+        <img v-for="(img, index) in images" :key="index" :src="img" class="project-image" :alt="'Image ' + (index + 1)" />
+      </div>
     </div>
     <Footer ref="scrollToContact" :color="color" :transparentColor="transparentColor" />
   </div>
@@ -75,7 +86,7 @@ function scrollTo() {
   align-items: flex-start;
   justify-content: center;
   padding-top: 3rem;
-  margin-bottom: 120px;
+  padding-bottom: 1.375rem;
 }
 
 .project-info-item {
@@ -90,6 +101,19 @@ function scrollTo() {
   font-size: 1rem;
   padding: 0 3.75rem 0 0;
   width: 50%;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 120px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .title {
@@ -171,6 +195,13 @@ function scrollTo() {
     flex-direction: column;
     gap: 0;
     padding-top: 0.25rem;
+  }
+
+  @media (max-width: 640px) {
+    .project-images {
+      grid-template-columns: 1fr;
+      padding: 1.25rem;
+    }
   }
 
   .title {
