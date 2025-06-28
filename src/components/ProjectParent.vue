@@ -31,17 +31,11 @@ defineExpose({ teaserRef })
         <router-link
             :to="{
           name: 'ProjectDetail',
-          query: {
-            imgPath: '/img/placeholder.png',
-            title: 'VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen.',
-            tags: 'PRINT',
-            time: '2024 — 2025',
-            text: `Die Vorwissenschaftliche Arbeit mit dem Thema «Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen» hat mich dazu angeregt, mich intensiver mit meinem Umfeld und verschiedenen Religionen auseinanderzusetzen. Viele meiner Freunde sind gläubig und gehören unterschiedlichen Glaubensgemeinschaften an. Während der Beginn meiner Arbeit mit einer besonders intensiven Phase des Nahost-Konflikts zusammenfiel, waren die sozialen Netzwerke geprägt von hitzigen Diskussionen und teils hasserfüllten Kommentaren. Das hat in mir die Frage aufgeworfen, ob Social Media Menschen womöglich radikaler macht. In diesem Zusammenhang habe ich verschiedene Experimente zum Thema Hassrede und Hetze durchgeführt, um diesem Phänomen näher auf den Grund zu gehen.\nMeine VA wurde in die Top drei der VA im Lehrgang IMD gewählt, und wurde an der Schule für Gestaltung in St.Gallen ausgestellt und bekommt je nachdem noch eine Ehrung am 03.07.2025.`
-            }
+          query: { project: 'VA' }
         }"
             class="link"
         >
-          <ProjectCard imgPath="/img/placeholder.png" title="VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen." caption="Vertiefungsarbeit zum Thema Religion & Social Media"/>
+          <ProjectCard imgPath="public/VA/IMG_9794.png" title="VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen." caption="Vertiefungsarbeit zum Thema Religion & Social Media"/>
         </router-link>
         <router-link
             :to="{

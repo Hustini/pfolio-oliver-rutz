@@ -11,5 +11,18 @@
     "time": "2022 — 2023",
     "link": "https://bitsnbolts.ueberaktiv.ch/index.html",
     "text": "Für die Ausstellung Bits-N-Bolts habe ich den ArcadeBot entwickelt – eine interaktive Installation, die Besucher*innen täuscht: Sie glauben, ein echter Arcade-Automat spiele Street Fighter II. Tatsächlich läuft ein inszeniertes Video – gesteuert über Buttons und programmiert mit Python auf einem Raspberry Pi.\n Das Projekt entstand im Rahmen eines Lernprojekts bei Lucid und stellte mich vor echte Herausforderungen: Besonders die Programmierung und das Zusammenspiel von Video, Button-Input und Looping erwiesen sich als komplex. Nachdem ein erster Konzeptansatz (EmotionBot) zu aufwendig wurde, entwickelte ich in kurzer Zeit die Idee für den ArcadeBot – und setzte sie bis zur letzten Minute um.\nDer Bau, das Design und das Videomaterial wurden von mir selbst umgesetzt. Trotz durchprogrammierter Nächte, Hardwareproblemen und einem Autostart-Bug war es eine lehrreiche und unterhaltsame Erfahrung – mit einem Ergebnis, das für Verwirrung und Lacher bei den Besucher*innen sorgte."
+  },
+  "VA": {
+    "images": [
+      "public/VA/IMG_9795.png",
+      "public/VA/IMG_9798.png",
+      "public/VA/IMG_9800.png",
+      "public/VA/IMG_9803.png"
+    ],
+    "imgPath": "public/VA/IMG_9794.png",
+    "title": "VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen.",
+    "tags": "PRINT",
+    "time": "2024 — 2025",
+    "text": "Die Vorwissenschaftliche Arbeit mit dem Thema «Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen» hat mich dazu angeregt, mich intensiver mit meinem Umfeld und verschiedenen Religionen auseinanderzusetzen. Viele meiner Freunde sind gläubig und gehören unterschiedlichen Glaubensgemeinschaften an. Während der Beginn meiner Arbeit mit einer besonders intensiven Phase des Nahost-Konflikts zusammenfiel, waren die sozialen Netzwerke geprägt von hitzigen Diskussionen und teils hasserfüllten Kommentaren. Das hat in mir die Frage aufgeworfen, ob Social Media Menschen womöglich radikaler macht. In diesem Zusammenhang habe ich verschiedene Experimente zum Thema Hassrede und Hetze durchgeführt, um diesem Phänomen näher auf den Grund zu gehen.\nMeine VA wurde in die Top drei der VA im Lehrgang IMD gewählt, und wurde an der Schule für Gestaltung in St.Gallen ausgestellt und bekommt je nachdem noch eine Ehrung am 03.07.2025."
   }
 }
