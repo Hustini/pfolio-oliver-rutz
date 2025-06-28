@@ -1,9 +1,9 @@
 {
   "ArcadeBot": {
     "images": [
-      "/public/ArcadeBot/dismountet1.png",
-      "/public/ArcadeBot/dismountet2.png",
-      "/public/ArcadeBot/Unterseite.png"
+      "ArcadeBot/dismountet1.png",
+      "ArcadeBot/dismountet2.png",
+      "ArcadeBot/Unterseite.png"
     ],
     "imgPath": "ArcadeBot/front Keyvisual.png",
     "title": "Bits-N-Bolts — ArcadeBot",
@@ -14,12 +14,12 @@
   },
   "VA": {
     "images": [
-      "public/VA/IMG_9795.png",
-      "public/VA/IMG_9798.png",
-      "public/VA/IMG_9800.png",
-      "public/VA/IMG_9803.png"
+      "VA/IMG_9795.png",
+      "VA/IMG_9798.png",
+      "VA/IMG_9800.png",
+      "VA/IMG_9803.png"
     ],
-    "imgPath": "public/VA/IMG_9794.png",
+    "imgPath": "VA/IMG_9794.png",
     "title": "VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen.",
     "tags": "PRINT",
     "time": "2024 — 2025",
@@ -27,14 +27,14 @@
   },
   "Zurich_Reimagined": {
     "images": [
-      "public/Zuerich Reimagined/2024-06-26 Abgabe 1.png",
-      "public/Zuerich Reimagined/2024-06-26 Abgabe 2.png",
-      "public/Zuerich Reimagined/2024-06-26 Abgabe 3.png",
-      "public/Zuerich Reimagined/2024-06-26 Abgabe 4.png",
-      "public/Zuerich Reimagined/2024-06-26 Abgabe 5.png",
-      "public/Zuerich Reimagined/Shot.png"
+      "Zuerich Reimagined/2024-06-26 Abgabe 1.png",
+      "Zuerich Reimagined/2024-06-26 Abgabe 2.png",
+      "Zuerich Reimagined/2024-06-26 Abgabe 3.png",
+      "Zuerich Reimagined/2024-06-26 Abgabe 4.png",
+      "Zuerich Reimagined/2024-06-26 Abgabe 5.png",
+      "Zuerich Reimagined/Shot.png"
     ],
-    "imgPath": "public/Zuerich Reimagined/Keyvisual.png",
+    "imgPath": "Zuerich Reimagined/Keyvisual.png",
     "title": "Zürich Reimagined — IMD-Award-Winner",
     "tags": "WEB",
     "time": "2024",

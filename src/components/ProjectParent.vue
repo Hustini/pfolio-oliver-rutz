@@ -19,7 +19,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard imgPath="public/Zuerich Reimagined/Keyvisual.png" title="Zürich Reimagined — IMD-Award-Winner" caption="«Zürich Reimagined» macht Graffiti als kreative Stimme der Stadt erlebbar – mit einer digitalen Kampagne für Dialog, Aufklärung und legale Freiräume."/>
+          <ProjectCard imgPath="Zuerich Reimagined/Keyvisual.png" title="Zürich Reimagined — IMD-Award-Winner" caption="«Zürich Reimagined» macht Graffiti als kreative Stimme der Stadt erlebbar – mit einer digitalen Kampagne für Dialog, Aufklärung und legale Freiräume."/>
         </router-link>
         <router-link
             :to="{
@@ -28,7 +28,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard imgPath="public/VA/IMG_9794.png" title="VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen." caption="Vertiefungsarbeit zum Thema Religion & Social Media"/>
+          <ProjectCard imgPath="VA/IMG_9794.png" title="VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen." caption="Vertiefungsarbeit zum Thema Religion & Social Media"/>
         </router-link>
         <router-link
             :to="{
