@@ -47,7 +47,7 @@ defineExpose({ teaserRef })
             :to="{
           name: 'ProjectDetail',
           query: {
-            imgPath: '/img/placeholder.png',
+            imgPath: 'ArcadeBot/front Keyvisual.png',
             title: 'Bits-N-Bolts — ArcadeBot',
             tags: 'PRINT',
             time: '2022 —2023',
@@ -57,7 +57,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard imgPath="/img/placeholder.png" title="Bits-N-Bolts — ArcadeBot" caption="Selbstgebaute Installation mit dem Thema: «Können Roboter Emotionen zeigen?»"/>
+          <ProjectCard imgPath="ArcadeBot/front Keyvisual.png" title="Bits-N-Bolts — ArcadeBot" caption="Selbstgebaute Installation mit dem Thema: «Können Roboter Emotionen zeigen?»"/>
         </router-link>
       </div>
       <router-link to="/projects"><Button buttonText="SEE ALL PROJECTS" isArrow="True"/></router-link>
