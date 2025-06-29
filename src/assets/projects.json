@@ -124,6 +124,20 @@
     "link": "https://www.instagram.com/p/CfMqrMHDPaX/",
     "text": "In meinem Lehrbetrieb Lucid gibt es ein Format namens «Lucid Lab Workshop», das öffentlich zugänglich ist. Einer dieser Workshops entstand aus einem internen Running Gag, bei dem wir unser Halbwissen über Physik miteinander teilten. Aus dieser Dynamik heraus entstand schließlich die Idee, einen echten Physiker einzuladen, der unsere Fragen fachkundig beantworten konnte."
   },
+  "history_techno": {
+    "images": [
+      "ArcadeBot/dismountet1.png",
+      "ArcadeBot/dismountet2.png",
+      "ArcadeBot/Unterseite.png"
+    ],
+    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "title": "The History of Techno",
+    "caption": "«Von Detroit bis Berlin – tauch ein in den Beat, der die Welt veränderte.»",
+    "tags": "Video",
+    "time": "2024 — 2025",
+    "link": "https://www.youtube.com/watch?v=XgsrvpWeQZY",
+    "text": "Dieses interaktive Scrollytelling-Projekt nimmt dich mit auf eine audiovisuelle Reise durch die Geschichte des Techno – von den industriellen Klanglandschaften Detroits der 1980er bis zur globalen Clubkultur unserer Zeit.\nDurch multimediale Elemente, animierte Grafiken und eingebettete Soundwelten entsteht ein immersives Erlebnis, das nicht nur informiert, sondern spürbar macht, wie Techno als kulturelles Phänomen Grenzen überschritt und zur Stimme einer ganzen Generation wurde.\nDas Projekt wurde nominiert für den IMD-Award in der Kategorie «Storytelling» – eine Anerkennung für herausragendes Design, konzeptionelle Tiefe und innovatives digitales Storytelling."
+  },
   "VA": {
     "images": [
       "VA/IMG_9795.png",
@@ -137,6 +151,34 @@
     "tags": "PRINT",
     "time": "2024 — 2025",
     "text": "Die Vorwissenschaftliche Arbeit mit dem Thema «Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen» hat mich dazu angeregt, mich intensiver mit meinem Umfeld und verschiedenen Religionen auseinanderzusetzen. Viele meiner Freunde sind gläubig und gehören unterschiedlichen Glaubensgemeinschaften an. Während der Beginn meiner Arbeit mit einer besonders intensiven Phase des Nahost-Konflikts zusammenfiel, waren die sozialen Netzwerke geprägt von hitzigen Diskussionen und teils hasserfüllten Kommentaren. Das hat in mir die Frage aufgeworfen, ob Social Media Menschen womöglich radikaler macht. In diesem Zusammenhang habe ich verschiedene Experimente zum Thema Hassrede und Hetze durchgeführt, um diesem Phänomen näher auf den Grund zu gehen.\nMeine VA wurde in die Top drei der VA im Lehrgang IMD gewählt, und wurde an der Schule für Gestaltung in St.Gallen ausgestellt und bekommt je nachdem noch eine Ehrung am 03.07.2025."
+  },
+  "Waterman": {
+    "images": [
+      "ArcadeBot/dismountet1.png",
+      "ArcadeBot/dismountet2.png",
+      "ArcadeBot/Unterseite.png"
+    ],
+    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "title": "Werbespot — Waterman",
+    "caption": "Werbespot über die Stiftmarke «Waterman»",
+    "tags": "Video",
+    "time": "2024",
+    "link": "youtube.com/watch?v=EFIuAmPjW4w&feature=youtu.be",
+    "text": "Im Schulfach «Video» hatten wir die Aufgabe ein Video zu drehen. Dabei mussten wir Ton, Video etc. regulieren. Meine Aufgabe war der Videoschnitt und das Schauspielen."
+  },
+  "Wheeltalk": {
+    "images": [
+      "ArcadeBot/dismountet1.png",
+      "ArcadeBot/dismountet2.png",
+      "ArcadeBot/Unterseite.png"
+    ],
+    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "title": "Wheeltalk — Erarbeiten des CI/CD",
+    "caption": "Erarbeiten von CI für den Podcast Wheeltalk",
+    "tags": "CI-CD",
+    "time": "2022 — Jetzt",
+    "link": "https://linktr.ee/wheeltalk.podcast?fbclid=PAZXh0bgNhZW0CMTEAAac6fiGPIMiZYUOZQ_O1zruqTxTwNerDzBwX205kpi9flcAGN6C5USrorSAfjg_aem_yp5cUCCc4n2S1FAEhcSM2g",
+    "text": "Im Rahmen meiner Ausbildung habe ich das Corporate Design sowie das Content-Konzept für den Podcast «Wheeltalk» von Benjamin und Fabian entwickelt. Mein Schwerpunkt lag dabei auf der Gestaltung von Instagram-Beiträgen, Logos und weiteren visuellen Elementen. Die Logos und Beitragstemplates wurden in verschiedenen Farbvariationen erstellt, um eine vielseitige und ansprechende Darstellung auf Social Media zu ermöglichen. Mehr über den Podcast erfahrt ihr hier"
   },
   "Zurich_Reimagined": {
     "images": [
