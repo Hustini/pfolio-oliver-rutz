@@ -1,5 +1,6 @@
 <script setup>
 import Button from "@/components/Button.vue";
+import data from '../assets/about.json';
 
 const props = defineProps({
   transparentColor: {
@@ -12,7 +13,7 @@ const props = defineProps({
 <template>
   <div class="info-container" :style="{'background-color': transparentColor}">
     <div class="layout-container text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus diam aliquet risus egestas, aliquam molestie tortor fermentum. Nullam ornare enim vel tempor commodo. Mauris id lobortis augue. Nullam ornare enim vel tempor commodo. Mauris id lobortis augue.
+      {{ data.teaser }}
     </div>
     <div class="layout-container">
       <router-link to="/about"><Button buttonText="LEARN MORE ABOUT ME" isArrow="True"/></router-link>
