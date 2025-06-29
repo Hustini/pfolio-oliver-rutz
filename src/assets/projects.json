@@ -43,11 +43,10 @@
   },
   "IPA": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "IPA/Farm.png",
+      "IPA/Events.png"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "IPA/Keyvisual.png",
     "title": "Zürcher Bauernhofläden — und wo sie zu finden sind.",
     "caption": "«Finde regionale Hofläden – nachhaltig, nah & tierfreundlich einkaufen in Zürich.»",
     "tags": "WEB",
@@ -57,24 +56,22 @@
   },
   "Jungspund": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "Jungspund/Jungspund bild1.png",
+      "Jungspund/Jungspund bild1-1.png",
+      "Jungspund/Jungspund bild1-2.png"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "Jungspund/Jungspund -Keyvisual.png",
     "title": "Design Jungspund",
-    "caption": "Mithilfe einer Mitschülerin, die Website des Theater-Vereins «Jungspund»\nredesignen.",
+    "caption": "Mithilfe einer Mitschülerin, die Website des Theater-Vereins «Jungspund» redesignen.",
     "tags": "WEB",
     "time": "2023",
     "text": "Das Projekt zielte auf eine umfassende strukturelle, visuelle und funktionale Optimierung der bestehenden Jungspund-Website. Dabei ging es nicht allein um ein neues, modernes Erscheinungsbild, sondern vor allem um eine gezielte Verbesserung der Nutzerführung und Nutzerfreundlichkeit (User Experience). Die bisherige Website war in vielen Bereichen unübersichtlich, technisch unhandlich und nicht benutzerzentriert aufgebaut – insbesondere der Zugang zu wichtigen Funktionen wie dem Ticketkauf war erschwert oder gar nicht klar integriert. Durch das Redesign wurde die Informationsarchitektur neu gedacht, Inhalte logisch zusammengeführt und reduziert, sodass Nutzer*innen schneller zu relevanten Informationen gelangen. Gleichzeitig wurde großer Wert auf eine stärkere emotionale Ansprache gelegt: Durch persönliche Teamfotos, klar erkennbare Partner und ein visuelles Konzept, das sich am Stil eines Filmskripts orientiert, entsteht eine unmittelbare Verbindung zur Theaterwelt von Jungspund.Die neue Website bietet nicht nur eine intuitive Navigation, sondern auch eine direkte, unkomplizierte Möglichkeit zur Ticketbuchung – direkt bei den jeweiligen Veranstaltungen. Ergänzt wird dies durch zusätzliche Features wie Veranstaltungsempfehlungen, die den Zugang zum Festivalangebot niedrigschwelliger und persönlicher gestalten. Insgesamt stärkt die überarbeitete Online-Präsenz nicht nur die visuelle Identität von Jungspund, sondern trägt aktiv dazu bei, die Sichtbarkeit des Festivals zu erhöhen , das Vertrauen der Besucher*innen zu fördern und das Interesse an den kulturellen Angeboten nachhaltig zu steigern."
   },
   "Kim_Trimm": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "Kim_Trimm/Kim-Trimm.mp4"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "Kim_Trimm/Kim-Trimm.mp4",
     "title": "Kim-Trimm — Ük Aarau",
     "caption": "In einem Video ÜK in Aarau hatten wir die Aufgabe in der Schule ein Video zu erstellen. Dabei habe wir uns für die Storyline «Kim Trimm» entschieden.",
     "tags": "Video",
