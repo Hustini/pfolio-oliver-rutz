@@ -89,14 +89,14 @@ export default {
     </div>
     <div class="projects">
       <router-link
-          v-if="tags.print === true"
+          v-if="tags.installation === true"
           :to="{
           name: 'ProjectDetail',
           query: { project: 'ArcadeBot' }
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.ArcadeBot.imgPath" :tag="tags.print" :title="projects.ArcadeBot.title" :caption="projects.ArcadeBot.caption"/>
+        <ProjectCard :imgPath="projects.ArcadeBot.imgPath" :tag="tags.installation" :title="projects.ArcadeBot.title" :caption="projects.ArcadeBot.caption"/>
       </router-link>
       <router-link
           v-if="tags.web === true"
