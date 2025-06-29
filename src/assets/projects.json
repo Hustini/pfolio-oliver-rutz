@@ -68,6 +68,34 @@
     "time": "2023",
     "text": "Das Projekt zielte auf eine umfassende strukturelle, visuelle und funktionale Optimierung der bestehenden Jungspund-Website. Dabei ging es nicht allein um ein neues, modernes Erscheinungsbild, sondern vor allem um eine gezielte Verbesserung der Nutzerführung und Nutzerfreundlichkeit (User Experience). Die bisherige Website war in vielen Bereichen unübersichtlich, technisch unhandlich und nicht benutzerzentriert aufgebaut – insbesondere der Zugang zu wichtigen Funktionen wie dem Ticketkauf war erschwert oder gar nicht klar integriert. Durch das Redesign wurde die Informationsarchitektur neu gedacht, Inhalte logisch zusammengeführt und reduziert, sodass Nutzer*innen schneller zu relevanten Informationen gelangen. Gleichzeitig wurde großer Wert auf eine stärkere emotionale Ansprache gelegt: Durch persönliche Teamfotos, klar erkennbare Partner und ein visuelles Konzept, das sich am Stil eines Filmskripts orientiert, entsteht eine unmittelbare Verbindung zur Theaterwelt von Jungspund.Die neue Website bietet nicht nur eine intuitive Navigation, sondern auch eine direkte, unkomplizierte Möglichkeit zur Ticketbuchung – direkt bei den jeweiligen Veranstaltungen. Ergänzt wird dies durch zusätzliche Features wie Veranstaltungsempfehlungen, die den Zugang zum Festivalangebot niedrigschwelliger und persönlicher gestalten. Insgesamt stärkt die überarbeitete Online-Präsenz nicht nur die visuelle Identität von Jungspund, sondern trägt aktiv dazu bei, die Sichtbarkeit des Festivals zu erhöhen , das Vertrauen der Besucher*innen zu fördern und das Interesse an den kulturellen Angeboten nachhaltig zu steigern."
   },
+  "Kim_Trimm": {
+    "images": [
+      "ArcadeBot/dismountet1.png",
+      "ArcadeBot/dismountet2.png",
+      "ArcadeBot/Unterseite.png"
+    ],
+    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "title": "Kim-Trimm — Ük Aarau",
+    "caption": "In einem Video ÜK in Aarau hatten wir die Aufgabe in der Schule ein Video zu erstellen. Dabei habe wir uns für die Storyline «Kim Trimm» entschieden.",
+    "tags": "Video",
+    "time": "2023",
+    "link": "https://youtu.be/P_XlRm354nQ",
+    "text": "Die Aufgabe hat uns viel Freude bereitet. Unsere Storyline Kim Trimm hat uns alle sehr gefesselt und hat uns dazu gebracht mit wenigen Ressourcen ein Video zu drehen. Das Ergebnis ist ein lustiges Video mit einer unglaublich Schauspiel Performance meinerseits. Meine Aufgabe war es grössten Teil den Ton zu regulieren aber auch das Schneiden & Filmen war Teil davon."
+  },
+  "Labor": {
+    "images": [
+      "ArcadeBot/dismountet1.png",
+      "ArcadeBot/dismountet2.png",
+      "ArcadeBot/Unterseite.png"
+    ],
+    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "title": "Umsetzung Labör.ch",
+    "caption": "Webumsetzung für den Verein «Labör»",
+    "tags": "WEB",
+    "time": "2024 — 2025",
+    "link": "https://www.laboer.ch/",
+    "text": "Im Rahmen der Vorbereitung auf meine IPA habe ich die Website des Vereins «Labör.ch» [https://www.laboer.ch/] basierend auf einem internen Designentwurf von Labör umgesetzt. Die Realisierung erfolgte mit dem Webbaukasten Webflow, wobei zahlreiche Komponenten mithilfe individueller Code-Blöcke erstellt wurden. Zusätzlich kam die Webflow-Erweiterung «Finsweet» zum Einsatz, die verschiedene nützliche Funktionen und Lösungen für die Website bereitstellte."
+  },
   "VA": {
     "images": [
       "VA/IMG_9795.png",
