@@ -96,7 +96,7 @@
     "link": "https://www.laboer.ch/",
     "text": "Im Rahmen der Vorbereitung auf meine IPA habe ich die Website des Vereins «Labör.ch» [https://www.laboer.ch/] basierend auf einem internen Designentwurf von Labör umgesetzt. Die Realisierung erfolgte mit dem Webbaukasten Webflow, wobei zahlreiche Komponenten mithilfe individueller Code-Blöcke erstellt wurden. Zusätzlich kam die Webflow-Erweiterung «Finsweet» zum Einsatz, die verschiedene nützliche Funktionen und Lösungen für die Website bereitstellte."
   },
-  "Spätsommerfest": {
+  "Spaetsommerfest": {
     "images": [
       "ArcadeBot/dismountet1.png",
       "ArcadeBot/dismountet2.png",
