@@ -126,11 +126,11 @@
   },
   "history_techno": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "History_Techno/IMD-Award-Mockups v.png",
+      "History_Techno/IMD-Award-Mockups v 5.png",
+      "History_Techno/IMD-Award-Mockups v-1.png"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "History_Techno/Keyvisual.png",
     "title": "The History of Techno",
     "caption": "«Von Detroit bis Berlin – tauch ein in den Beat, der die Welt veränderte.»",
     "tags": "Video",
@@ -154,11 +154,9 @@
   },
   "Waterman": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "Waterman/Waterman-Screens v2-02 copy.png"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "Waterman/Keyvisual.png",
     "title": "Werbespot — Waterman",
     "caption": "Werbespot über die Stiftmarke «Waterman»",
     "tags": "Video",
@@ -168,11 +166,10 @@
   },
   "Wheeltalk": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "Wheeltalk/Instagram-Templates.png",
+      "Wheeltalk/Color-Variations.png"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "Wheeltalk/Keyvisual.png",
     "title": "Wheeltalk — Erarbeiten des CI/CD",
     "caption": "Erarbeiten von CI für den Podcast Wheeltalk",
     "tags": "CI-CD",
