@@ -28,19 +28,19 @@
     "text": "In der Schule wurde uns den Auftrag gegeben, eine Website welche wir kennen & nicht mögen zu redesignen. Zu dieser Zeit habe ich aktiv & viel Eishockey gespielt und mich deswegen die nicht ganz optimal gemachte Website meines Vereins EHCT zu redesignen. Dabei habe ich mich in die Geschichte des EHCT eingelesen um zu verstehen was die Bedürfnisse des Vereines sind. Dabei bin ich zum Schluss gekommen, dass die Spender*innen dem Verein eigentlich das wichtigste Organ ist, ohne diese könnte der Verein keine Saison überleben weil der Verein jedes Jahr + - 0 CHF. Einnimmt. Aus diesem Grund haben die Spender*innen eine deutlich\ngrössere Bedeutung auf der Website eingenommen."
   },
   "Orbit": {
-  "images": [
-    "ArcadeBot/dismountet1.png",
-    "ArcadeBot/dismountet2.png",
-    "ArcadeBot/Unterseite.png"
-  ],
-  "imgPath": "ArcadeBot/front Keyvisual.png",
-  "title": "Orbit — Website IMDExpo",
-  "caption": "Ein Website in welcher alle IPAs der Lernenden aufgeführt sind, und diese verewigt werden.",
-  "tags": "WEB",
-  "time": "2025",
-  "link": "https://imdexpo.ch/",
-  "text": "Für den Abschluss unseres IMD-Jahrgangs wurden verschiedene Aufgaben auf mehrere Personen verteilt. Ich war für das Design und die Umsetzung der Website verantwortlich. Diese habe ich mit dem Website-Baukasten Webflow erstellt. Obwohl ich bereits viel Erfahrung mit HTML, CSS und JavaScript habe, entschied ich mich aus Zeitgründen bewusst für Webflow. Das Tool ermöglicht es mir, Seiten ähnlich wie in meinem bevorzugten Designprogramm Figma zu gestalten – mit der Möglichkeit, dennoch individuelle Details per Hand zu codieren. Durch frühere Projekte bin ich mit Webflow bereits gut vertraut, was mir in der Umsetzung sehr geholfen hat. Trotz starkem Zeitdruck konnte ich eine ästhetisch und funktional überzeugende Website realisieren. Wenn ihr mehr darüber erfahren möchtet, wie ich einzelne Elemente umgesetzt habe, schreibt mir gerne eine Mail oder kontaktiert mich auf Instagram :)"
-},
+    "images": [
+      "ArcadeBot/dismountet1.png",
+      "ArcadeBot/dismountet2.png",
+      "ArcadeBot/Unterseite.png"
+    ],
+    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "title": "Orbit — Website IMDExpo",
+    "caption": "Ein Website in welcher alle IPAs der Lernenden aufgeführt sind, und diese verewigt werden.",
+    "tags": "WEB",
+    "time": "2025",
+    "link": "https://imdexpo.ch/",
+    "text": "Für den Abschluss unseres IMD-Jahrgangs wurden verschiedene Aufgaben auf mehrere Personen verteilt. Ich war für das Design und die Umsetzung der Website verantwortlich. Diese habe ich mit dem Website-Baukasten Webflow erstellt. Obwohl ich bereits viel Erfahrung mit HTML, CSS und JavaScript habe, entschied ich mich aus Zeitgründen bewusst für Webflow. Das Tool ermöglicht es mir, Seiten ähnlich wie in meinem bevorzugten Designprogramm Figma zu gestalten – mit der Möglichkeit, dennoch individuelle Details per Hand zu codieren. Durch frühere Projekte bin ich mit Webflow bereits gut vertraut, was mir in der Umsetzung sehr geholfen hat. Trotz starkem Zeitdruck konnte ich eine ästhetisch und funktional überzeugende Website realisieren. Wenn ihr mehr darüber erfahren möchtet, wie ich einzelne Elemente umgesetzt habe, schreibt mir gerne eine Mail oder kontaktiert mich auf Instagram :)"
+  },
   "VA": {
     "images": [
       "VA/IMG_9795.png",
