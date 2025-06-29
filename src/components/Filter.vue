@@ -159,6 +159,36 @@ export default {
         <ProjectCard :imgPath="projects.Labor.imgPath" :tag="tags.web" :title="projects.Labor.title" :caption="projects.Labor.caption"/>
       </router-link>
       <router-link
+          v-if="tags.print === true"
+          :to="{
+          name: 'ProjectDetail',
+          query: { project: 'Spaetsommerfest' }
+        }"
+          class="link"
+      >
+        <ProjectCard :imgPath="projects.Spaetsommerfest.imgPath" :tag="tags.print" :title="projects.Spaetsommerfest.title" :caption="projects.Spaetsommerfest.caption"/>
+      </router-link>
+      <router-link
+          v-if="tags.print === true"
+          :to="{
+          name: 'ProjectDetail',
+          query: { project: 'Street_Physics' }
+        }"
+          class="link"
+      >
+        <ProjectCard :imgPath="projects.Street_Physics.imgPath" :tag="tags.print" :title="projects.Street_Physics.title" :caption="projects.Street_Physics.caption"/>
+      </router-link>
+      <router-link
+          v-if="tags.video === true"
+          :to="{
+          name: 'ProjectDetail',
+          query: { project: 'history_techno' }
+        }"
+          class="link"
+      >
+        <ProjectCard :imgPath="projects.history_techno.imgPath" :tag="tags.video" :title="projects.history_techno.title" :caption="projects.history_techno.caption"/>
+      </router-link>
+      <router-link
           v-if="tags.web === true"
           :to="{ name: 'ProjectDetail',
           query: { imgPath: '/img/placeholder.png', title: 'WEB', tags: 'HTML,CSS,JS', time: '2025', text: 'In meinem Projekt «Zürich  Reimagined» stelle ich Graffiti als künstlerische Ausdrucksform im Raum  Zürich dar. Oft als Vandalismus abgetan, sehe ich Graffiti als ein  Sprachrohr für kreative Freiheit und städtische Identität. Mein Ziel war es, eine Kultur des Miteinanders und der Kooperation zu fördern, indem  ich Möglichkeit legale Graffiti-Flächen zu unterstützen biete und einen  Dialog zwischen Künstlern, der Community und Behörden anrege. Dafür habe ich eine digitale Awareness-Kampagne in Form einer Website konzipiert,  die über die Geschichte, Bedeutung und rechtlichen Rahmenbedingungen von Graffiti informiert. Das Design kombiniert Swiss-Layout-Prinzipien mit  künstlerischen Elementen der Streetart. ', link: 'https://www.figma.com/proto/cwxJ3KXRWbxD2EYGdkAZ8Y/Z%C3%BCrich-Reimagined-Schule?page-id=582%3A537&node-id=582-803&viewport=848%2C270%2C0.08&t=Gw1DZNUiNjJdjqmJ-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=582%3A803&show-proto-sidebar=1'}}"
