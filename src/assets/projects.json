@@ -84,11 +84,13 @@
   },
   "Labor": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "Laboer/Screenshot 2025-06-18 at 14.16.34.png",
+      "Laboer/Screenshot 2025-06-18 at 14.16.38.png",
+      "Laboer/Screenshot 2025-06-18 at 14.16.52.png",
+      "Laboer/Screenshot 2025-06-18 at 14.17.05.png",
+      "Laboer/Screenshot 2025-06-18 at 14.17.20.png"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "Laboer/Keyvisual.png",
     "title": "Umsetzung Labör.ch",
     "caption": "Webumsetzung für den Verein «Labör»",
     "tags": "WEB",
@@ -97,12 +99,8 @@
     "text": "Im Rahmen der Vorbereitung auf meine IPA habe ich die Website des Vereins «Labör.ch» [https://www.laboer.ch/] basierend auf einem internen Designentwurf von Labör umgesetzt. Die Realisierung erfolgte mit dem Webbaukasten Webflow, wobei zahlreiche Komponenten mithilfe individueller Code-Blöcke erstellt wurden. Zusätzlich kam die Webflow-Erweiterung «Finsweet» zum Einsatz, die verschiedene nützliche Funktionen und Lösungen für die Website bereitstellte."
   },
   "Spaetsommerfest": {
-    "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
-    ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "images": [],
+    "imgPath": "Spaetsommerfest/Spaetsommerfest Key-Visual.png",
     "title": "Flyer für das «Lucid»-Spätsommerfest",
     "caption": "Flyer für ein Event meines Lehrbetriebes «Lucid».",
     "tags": "PRINT",
@@ -112,11 +110,9 @@
   },
   "Street_Physics": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "Streetphysics/Street Physics Gedruckt.jpg"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "Streetphysics/Streetphysics Key-Visual Streetphysics.png",
     "title": "Plakat Lucid-Lab-Workshop — Street-Physics",
     "caption": "Plakat für die sechste Durchführung eines LLWS.",
     "tags": "PRINT",
