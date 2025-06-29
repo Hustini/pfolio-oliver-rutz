@@ -96,6 +96,34 @@
     "link": "https://www.laboer.ch/",
     "text": "Im Rahmen der Vorbereitung auf meine IPA habe ich die Website des Vereins «Labör.ch» [https://www.laboer.ch/] basierend auf einem internen Designentwurf von Labör umgesetzt. Die Realisierung erfolgte mit dem Webbaukasten Webflow, wobei zahlreiche Komponenten mithilfe individueller Code-Blöcke erstellt wurden. Zusätzlich kam die Webflow-Erweiterung «Finsweet» zum Einsatz, die verschiedene nützliche Funktionen und Lösungen für die Website bereitstellte."
   },
+  "Spätsommerfest": {
+    "images": [
+      "ArcadeBot/dismountet1.png",
+      "ArcadeBot/dismountet2.png",
+      "ArcadeBot/Unterseite.png"
+    ],
+    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "title": "Flyer für das «Lucid»-Spätsommerfest",
+    "caption": "Flyer für ein Event meines Lehrbetriebes «Lucid».",
+    "tags": "PRINT",
+    "time": "2023",
+    "link": "https://www.instagram.com/p/CjFlU3_Ijg9/",
+    "text": "Für das Spätsommer-Fest im Jahr 2023 habe ich mithilfe meiner Mitarbeiter, ein Flyer erarbeitet. Dabei war ich Massgeblich für das Konzept/Idee verantwortlich & habe danach für die Umsetzung des Plakates Hilfe bekommen. Das Plakat zeigt die Innenseite eines Strohhalmes"
+  },
+  "Street_Physics": {
+    "images": [
+      "ArcadeBot/dismountet1.png",
+      "ArcadeBot/dismountet2.png",
+      "ArcadeBot/Unterseite.png"
+    ],
+    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "title": "Plakat Lucid-Lab-Workshop — Street-Physics",
+    "caption": "Plakat für die sechste Durchführung eines LLWS.",
+    "tags": "PRINT",
+    "time": "2022",
+    "link": "https://www.instagram.com/p/CfMqrMHDPaX/",
+    "text": "In meinem Lehrbetrieb Lucid gibt es ein Format namens «Lucid Lab Workshop», das öffentlich zugänglich ist. Einer dieser Workshops entstand aus einem internen Running Gag, bei dem wir unser Halbwissen über Physik miteinander teilten. Aus dieser Dynamik heraus entstand schließlich die Idee, einen echten Physiker einzuladen, der unsere Fragen fachkundig beantworten konnte."
+  },
   "VA": {
     "images": [
       "VA/IMG_9795.png",
