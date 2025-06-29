@@ -18,6 +18,7 @@ export default {
         UX: true,
         print: true,
         video: true,
+        CICD: true,
       }
     };
   },
@@ -80,6 +81,7 @@ export default {
       <span><Button :class="['button', { toggled : !allTagsActive && tags.UX }]" buttonText="UX/UI" @click="toggleTag('UX')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.print }]" buttonText="PRINT" @click="toggleTag('print')"/></span>
       <span><Button :class="['button', { toggled : !allTagsActive && tags.video }]" buttonText="VIDEO" @click="toggleTag('video')"/></span>
+      <span><Button :class="['button', { toggled : !allTagsActive && tags.CICD }]" buttonText="CI/CD" @click="toggleTag('CICD')"/></span>
       <span class="reset" v-if="showReset === true" @click="reset()">
         <img class="reset-symbol" src="../assets/x_symbol.svg" alt="Reset Icon" />
         <Button class="reset-button button" buttonText="Reset Filter" />
