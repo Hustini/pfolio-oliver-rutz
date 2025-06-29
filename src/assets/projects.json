@@ -15,11 +15,12 @@
   },
   "EHCT": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "EHCT/Frame 9.png",
+      "EHCT/Frame 11.png",
+      "EHCT/Frame 12.png",
+      "EHCT/Frame 13.png"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "EHCT/Keyvisual.png",
     "title": "Webdesign — EHCT",
     "caption": "Entstanden aus einem kleinen Schulprojekt, habe ich ein Mögliches redesign der Website des EHCT gemacht.",
     "tags": "WEB",
@@ -29,11 +30,12 @@
   },
   "Orbit": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "Orbit/IMD-Expo 2025-06-18 at 13.34.27 1.png",
+      "Orbit/IMD-Expo 2025-06-18 at 13.34.29 1.png",
+      "Orbit/IMD-Expo 2025-06-18 at 13.34.40 1.png",
+      "Orbit/IMD-Expo 2025-06-18 at 13.34.48 1.png"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "Orbit/IMD-Expo Keyvisual.png",
     "title": "Orbit — Website IMDExpo",
     "caption": "Ein Website in welcher alle IPAs der Lernenden aufgeführt sind, und diese verewigt werden.",
     "tags": "WEB",
