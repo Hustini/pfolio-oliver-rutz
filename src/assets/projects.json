@@ -138,12 +138,11 @@
   },
   "VA": {
     "images": [
-      "VA/IMG_9795.png",
-      "VA/IMG_9798.png",
-      "VA/IMG_9800.png",
-      "VA/IMG_9803.png"
+      "VA/VA.png",
+      "VA/VA-1.png",
+      "VA/VA-2.png"
     ],
-    "imgPath": "VA/IMG_9794.png",
+    "imgPath": "VA/VA-Keyvisual.png",
     "title": "VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen.",
     "caption": "Vertiefungsarbeit zum Thema Religion & Social Media",
     "tags": "PRINT",
@@ -152,9 +151,9 @@
   },
   "Waterman": {
     "images": [
-      "Waterman/Waterman-Screens v2-02 copy.png"
+      "Waterman/Waterman.png"
     ],
-    "imgPath": "Waterman/Keyvisual.png",
+    "imgPath": "Waterman/Waterman — Keyvisual.png",
     "title": "Werbespot — Waterman",
     "caption": "Werbespot über die Stiftmarke «Waterman»",
     "tags": "Video",
