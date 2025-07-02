@@ -30,12 +30,12 @@
   },
   "Orbit": {
     "images": [
-      "Orbit/IMD-Expo 2025-06-18 at 13.34.27 1.png",
-      "Orbit/IMD-Expo 2025-06-18 at 13.34.29 1.png",
-      "Orbit/IMD-Expo 2025-06-18 at 13.34.40 1.png",
-      "Orbit/IMD-Expo 2025-06-18 at 13.34.48 1.png"
+      "Orbit/Orbit.png",
+      "Orbit/Orbit-1.png",
+      "Orbit/Orbit-2.png",
+      "Orbit/Orbit-3.png"
     ],
-    "imgPath": "Orbit/IMD-Expo Keyvisual.png",
+    "imgPath": "Orbit/Orbit Keyvisual.png",
     "title": "Orbit — Website IMDExpo",
     "caption": "Ein Website in welcher alle IPAs der Lernenden aufgeführt sind, und diese verewigt werden.",
     "tags": "WEB",
@@ -102,7 +102,7 @@
   },
   "Spaetsommerfest": {
     "images": [],
-    "imgPath": "Spaetsommerfest/Spaetsommerfest Key-Visual.png",
+    "imgPath": "Spaetsommerfest/Spätsommerfest-Keyvisual.png",
     "title": "Flyer für das «Lucid»-Spätsommerfest",
     "caption": "Flyer für ein Event meines Lehrbetriebes «Lucid».",
     "tags": "PRINT",
@@ -112,9 +112,9 @@
   },
   "Street_Physics": {
     "images": [
-      "Streetphysics/Street Physics Gedruckt.jpg"
+      "Streetphysics/Streetphysics.png"
     ],
-    "imgPath": "Streetphysics/Streetphysics Key-Visual Streetphysics.png",
+    "imgPath": "Streetphysics/Streetphysics-Keyvisual.png",
     "title": "Plakat Lucid-Lab-Workshop — Street-Physics",
     "caption": "Plakat für die sechste Durchführung eines LLWS.",
     "tags": "PRINT",
