@@ -34,7 +34,7 @@ function scrollTo() {
         }"
             class="link"
         >
-          <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" title="" caption=""/>
+          <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" :placeholder="projects.Zurich_Reimagined.placeholder" title="" caption=""/>
           <div class="featured-project-title">{{ projects.Zurich_Reimagined.title }}</div>
         </router-link>
         <router-link
@@ -44,7 +44,7 @@ function scrollTo() {
         }"
             class="link"
         >
-          <ProjectCard :imgPath="projects.VA.imgPath" title="" caption=""/>
+          <ProjectCard :imgPath="projects.VA.imgPath" :placeholder="projects.VA.placeholder" title="" caption=""/>
           <div class="featured-project-title">{{ projects.VA.title }}</div>
         </router-link>
       </div>

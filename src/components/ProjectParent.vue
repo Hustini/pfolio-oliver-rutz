@@ -29,7 +29,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard :imgPath="projects.VA.imgPath" :title="projects.VA.title" :caption="projects.VA.caption"/>
+          <ProjectCard :imgPath="projects.VA.imgPath" :placeholder="projects.VA.placeholder" :title="projects.VA.title" :caption="projects.VA.caption"/>
         </router-link>
         <router-link
             :to="{
@@ -38,7 +38,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard :imgPath="projects.ArcadeBot.imgPath" :title="projects.ArcadeBot.title" :caption="projects.ArcadeBot.caption"/>
+          <ProjectCard :imgPath="projects.ArcadeBot.imgPath" :placeholder="projects.ArcadeBot.placeholder" :title="projects.ArcadeBot.title" :caption="projects.ArcadeBot.caption"/>
         </router-link>
       </div>
       <router-link to="/projects"><Button buttonText="SEE ALL PROJECTS" isArrow="True"/></router-link>
