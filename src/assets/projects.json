@@ -15,10 +15,10 @@
   },
   "EHCT": {
     "images": [
-      "EHCT/Frame 9.png",
-      "EHCT/Frame 11.png",
-      "EHCT/Frame 12.png",
-      "EHCT/Frame 13.png"
+      "EHCT/EHCT-Bonusvisual.png",
+      "EHCT/EHCT-Bonusvisual-1.png",
+      "EHCT/EHCT-Bonusvisual-2.png",
+      "EHCT/EHCT-Bonusvisual-3.png"
     ],
     "imgPath": "EHCT/Keyvisual.png",
     "title": "Webdesign — EHCT",
@@ -121,11 +121,11 @@
   },
   "history_techno": {
     "images": [
-      "History_Techno/IMD-Award-Mockups v.png",
-      "History_Techno/IMD-Award-Mockups v 5.png",
-      "History_Techno/IMD-Award-Mockups v-1.png"
+      "History_Techno/TheHistoryOfTechno.png",
+      "History_Techno/TheHistoryOfTechno-1.png",
+      "History_Techno/TheHistoryOfTechno-2.png"
     ],
-    "imgPath": "History_Techno/Keyvisual.png",
+    "imgPath": "History_Techno/TheHistoryofTechno-Keyvisual.png",
     "title": "The History of Techno",
     "caption": "«Von Detroit bis Berlin – tauch ein in den Beat, der die Welt veränderte.»",
     "tags": "Video",
