@@ -45,10 +45,13 @@
   },
   "IPA": {
     "images": [
-      "IPA/Farm.png",
-      "IPA/Events.png"
+      "IPA/IPA.png",
+      "IPA/IPA-1.png",
+      "IPA/IPA-Desktop.png",
+      "IPA/IPA-Desktop-1.png",
+      "IPA/IPA-Desktop-2.png"
     ],
-    "imgPath": "IPA/Keyvisual.png",
+    "imgPath": "IPA/IPA-Keyvisual.png",
     "title": "Zürcher Bauernhofläden — und wo sie zu finden sind.",
     "caption": "«Finde regionale Hofläden – nachhaltig, nah & tierfreundlich einkaufen in Zürich.»",
     "tags": "WEB",
@@ -58,11 +61,11 @@
   },
   "Jungspund": {
     "images": [
-      "Jungspund/Jungspund bild1.png",
-      "Jungspund/Jungspund bild1-1.png",
-      "Jungspund/Jungspund bild1-2.png"
+      "Jungspund/Jungspund.png",
+      "Jungspund/Jungspund-1.png",
+      "Jungspund/Jungspund-2.png"
     ],
-    "imgPath": "Jungspund/Jungspund -Keyvisual.png",
+    "imgPath": "Jungspund/Jungspund-Keyvisual.png",
     "title": "Design Jungspund",
     "caption": "Mithilfe einer Mitschülerin, die Website des Theater-Vereins «Jungspund» redesignen.",
     "tags": "WEB",
@@ -83,13 +86,13 @@
   },
   "Labor": {
     "images": [
-      "Laboer/Screenshot 2025-06-18 at 14.16.34.png",
-      "Laboer/Screenshot 2025-06-18 at 14.16.38.png",
-      "Laboer/Screenshot 2025-06-18 at 14.16.52.png",
-      "Laboer/Screenshot 2025-06-18 at 14.17.05.png",
-      "Laboer/Screenshot 2025-06-18 at 14.17.20.png"
+      "Laboer/Labör.png",
+      "Laboer/Labör-1.png",
+      "Laboer/Labör-2.png",
+      "Laboer/Labör-3.png",
+      "Laboer/Labör-4.png"
     ],
-    "imgPath": "Laboer/Keyvisual.png",
+    "imgPath": "Laboer/Labör-Keyvisual.png",
     "title": "Umsetzung Labör.ch",
     "caption": "Webumsetzung für den Verein «Labör»",
     "tags": "WEB",
