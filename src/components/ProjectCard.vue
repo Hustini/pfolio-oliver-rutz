@@ -4,6 +4,10 @@ const props = defineProps({
     type: [Number, String],
     default: "/img/placeholder.png"
   },
+  placeholder: {
+    type: [Number, String],
+    default: "default placeholder"
+  },
   title: {
     type: [Number, String],
     default: "default title"
@@ -26,7 +30,7 @@ const props = defineProps({
 <template>
   <div class="card">
     <div class="image-wrapper" :class="{ 'no-hover': disableHover }">
-      <img :src="imgPath" alt="placeholder" />
+      <img :src="imgPath" :alt="placeholder" />
     </div>
     <div class="text">
       <div class="title">{{ title }}</div>

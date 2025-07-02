@@ -146,7 +146,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Kim_Trimm.imgPath" :tag="tags.video" :title="projects.Kim_Trimm.title" :caption="projects.Kim_Trimm.caption"/>
+        <ProjectCard :imgPath="projects.Kim_Trimm.imgPath" :placeholder="projects.Kim_Trimm.placeholder" :tag="tags.video" :title="projects.Kim_Trimm.title" :caption="projects.Kim_Trimm.caption"/>
       </router-link>
       <router-link
           v-if="tags.web === true"
