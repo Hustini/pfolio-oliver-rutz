@@ -1,11 +1,11 @@
 {
   "ArcadeBot": {
     "images": [
-      "ArcadeBot/dismountet1.png",
-      "ArcadeBot/dismountet2.png",
-      "ArcadeBot/Unterseite.png"
+      "ArcadeBot/Arcadebot.png",
+      "ArcadeBot/Arcadebot-1.png",
+      "ArcadeBot/Arcadebot-2.png"
     ],
-    "imgPath": "ArcadeBot/front Keyvisual.png",
+    "imgPath": "ArcadeBot/Arcadebot—Keyvisual.png",
     "title": "Bits-N-Bolts — ArcadeBot",
     "caption": "Selbstgebaute Installation mit dem Thema: «Können Roboter Emotionen zeigen?»",
     "tags": "installation",
