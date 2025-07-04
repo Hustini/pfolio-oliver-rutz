@@ -26,9 +26,9 @@ function scrollTo() {
       <img class="hero-portrait" src="/img/about_portrait.jpg" alt="portrait">
     </div>
     <div class="layout-container about-content">
-      <div class="text">
-        {{ data.text }}
-      </div>
+      <p class="text" v-for="(line, idx) in data.text.split('\n')" :key="idx">
+        {{ line }}
+      </p>
     </div>
   </div>
   <Footer ref="scrollToContact" :color="color" :transparentColor="transparentColor" />
@@ -60,9 +60,7 @@ function scrollTo() {
 }
 
 .about-content {
-  display: flex;
   padding-bottom: 1.625rem;
-  gap: 1.875rem;
 }
 
 @media (max-width: 640px) {
@@ -82,11 +80,9 @@ function scrollTo() {
   }
 
   .about-content {
-    flex-direction: column;
     width: 100%;
     padding: 0;
     margin: 0;
-    gap: 1rem;
   }
 
   .text {
