@@ -8,7 +8,7 @@ const colors = [
   ['#FF0090', '#FF00904D'], // Pink
   ['#FF7700', '#FF77004D'], // Orange
   ['#FF0000', '#FF00004D'], // Red
-  ['#EEFF00', '#EEFF004D'], // Yellow
+  ['#EEFF00', '#EEFF0099'], // Yellow
   ['#1500FF', '#1500FF4D'], // Blue
 ]
 
