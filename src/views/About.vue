@@ -25,16 +25,9 @@ function scrollTo() {
       <div class="about">About</div>
       <img class="hero-portrait" src="/img/about_portrait.jpg" alt="portrait">
     </div>
-    <div class="about-content">
+    <div class="layout-container about-content">
       <div class="text">
         {{ data.text }}
-      </div>
-      <div class="layout-container img-container">
-        <div class="rectangle"></div>
-        <div class="wrapper">
-          <div class="rectangle"></div>
-          <div class="rectangle"></div>
-        </div>
       </div>
     </div>
   </div>
@@ -63,36 +56,13 @@ function scrollTo() {
 
 .text {
   font-size: 16px;
-  width: 50%;
-  padding-left: 3.75rem;
+  width: 100%;
 }
 
 .about-content {
   display: flex;
   padding-bottom: 1.625rem;
   gap: 1.875rem;
-}
-
-.img-container {
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-  gap: 2rem;
-  width: 100%;
-  padding: 0 3.75rem 0 0;
-}
-
-.rectangle {
-  aspect-ratio: 4 / 3;
-  width: 100%;
-  background: #333333;
-  display: block;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
 }
 
 @media (max-width: 640px) {
@@ -124,41 +94,16 @@ function scrollTo() {
     max-width: 100%;
     flex: unset;
     border-top: solid 1px black;
-    border-bottom: solid 1px black;
     padding: 2.5rem 1.25rem;
-  }
-
-  .img-container {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    gap: 1.25rem;
-    width: 100%;
-    padding: 2.5rem 1.25rem;
-  }
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
   }
 }
 
 @media (min-width: 1536px) {
   .text {
     font-size: 1.5rem;
-    width: 50%;
+    width: 100%;
     flex: 1;
     max-width: 33.3333%;
-    padding-left: 3.75rem;
   }
 }
 </style>
