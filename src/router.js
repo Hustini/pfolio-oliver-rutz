@@ -4,14 +4,12 @@ import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
 import Projects from "@/views/Projects.vue";
 import ProjectDetail from "@/views/ProjectDetail.vue"
-import tmpSite from "@/views/tmpSite.vue";
 
 const routes = [
-    { path: '/home', name: 'Home', component: Home },
+    { path: '/', name: 'Home', component: Home },
     { path: '/about', name: 'About', component: About },
     { path: '/projects', name: 'Projects', component: Projects },
-    { path: '/projectsDetail', name: 'ProjectDetail', component: ProjectDetail },
-    { path: '/', name: 'ComingSoon', component: tmpSite },
+    { path: '/projectsDetail', name: 'ProjectDetail', component: ProjectDetail }
 ];
 
 const router = createRouter({
