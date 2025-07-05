@@ -4,7 +4,13 @@ import { useRoute } from 'vue-router';
 
 export default {
   name: 'Breadcrumb',
-  setup() {
+  props: {
+    lastItem: {
+      type: String,
+      default: ''
+    }
+  },
+  setup(props) {
     const route = useRoute();
 
     const breadcrumbs = computed(() => {
@@ -30,7 +36,7 @@ export default {
             name: 'PROJECTS',
             path: route.path
           });
-        } else {
+        } else if (!props.lastItem) {
           crumbs.push({
             name: route.name.toUpperCase(),
             path: route.path
@@ -38,10 +44,18 @@ export default {
         }
       }
 
+      // Add the custom last item if provided
+      if (props.lastItem) {
+        crumbs.push({
+          name: props.lastItem.toUpperCase(),
+          path: route.path
+        });
+      }
+
       return crumbs;
     });
 
-    return { breadcrumbs };
+    return {breadcrumbs};
   }
 };
 </script>
