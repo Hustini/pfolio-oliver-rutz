@@ -39,7 +39,7 @@ function scrollTo() {
   <div class="page-container">
     <NavBar isArrow="True" @scroll-contact="() => scrollTo(scrollToContact)" />
     <div class="padding-bottom layout-container">
-      <Breadcrumb />
+      <Breadcrumb :lastItem="title"/>
     </div>
     <div class="project">
       <div class="project-wrapper layout-container">
