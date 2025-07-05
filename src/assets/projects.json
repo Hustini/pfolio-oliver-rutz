@@ -5,6 +5,7 @@
       "ArcadeBot/Arcadebot-1.png",
       "ArcadeBot/Arcadebot-2.png"
     ],
+    "videos": [],
     "imgPath": "ArcadeBot/Arcadebot—Keyvisual.png",
     "title": "Bits-N-Bolts — ArcadeBot",
     "caption": "Selbstgebaute Installation mit dem Thema: «Können Roboter Emotionen zeigen?»",
@@ -21,6 +22,7 @@
       "EHCT/EHCT-Bonusvisual-2.png",
       "EHCT/EHCT-Bonusvisual-3.png"
     ],
+    "videos": [],
     "imgPath": "EHCT/Keyvisual.png",
     "title": "Webdesign — EHCT",
     "caption": "Entstanden aus einem kleinen Schulprojekt, habe ich ein Mögliches redesign der Website des EHCT gemacht.",
@@ -37,6 +39,7 @@
       "Orbit/Orbit-2.png",
       "Orbit/Orbit-3.png"
     ],
+    "videos": [],
     "imgPath": "Orbit/Orbit Keyvisual.png",
     "title": "Orbit — Website IMDExpo",
     "caption": "Ein Website in welcher alle IPAs der Lernenden aufgeführt sind, und diese verewigt werden.",
@@ -54,6 +57,7 @@
       "IPA/IPA-Desktop-1.png",
       "IPA/IPA-Desktop-2.png"
     ],
+    "videos": [],
     "imgPath": "IPA/IPA-Keyvisual.png",
     "title": "Zürcher Bauernhofläden — und wo sie zu finden sind.",
     "caption": "«Finde regionale Hofläden – nachhaltig, nah & tierfreundlich einkaufen in Zürich.»",
@@ -69,6 +73,7 @@
       "Jungspund/Jungspund-1.png",
       "Jungspund/Jungspund-2.png"
     ],
+    "videos": [],
     "imgPath": "Jungspund/Jungspund-Keyvisual.png",
     "title": "Design Jungspund",
     "caption": "Mithilfe einer Mitschülerin, die Website des Theater-Vereins «Jungspund» redesignen.",
@@ -78,10 +83,11 @@
     "placeholder": "UX-optimiertes Redesign für eine Theaterfestival-Website."
   },
   "Kim_Trimm": {
-    "images": [
+    "images": [],
+    "videos": [
       "Kim_Trimm/Kim-Trimm.mp4"
     ],
-    "imgPath": "Kim_Trimm/Kim-Trimm.mp4",
+    "imgPath": "Kim_Trimm/Keyvisual.png",
     "title": "Kim-Trimm — Ük Aarau",
     "caption": "In einem Video ÜK in Aarau hatten wir die Aufgabe in der Schule ein Video zu erstellen. Dabei habe wir uns für die Storyline «Kim Trimm» entschieden.",
     "tags": "VIDEO",
@@ -98,6 +104,7 @@
       "Laboer/Labör-3.png",
       "Laboer/Labör-4.png"
     ],
+    "videos": [],
     "imgPath": "Laboer/Labör-Keyvisual.png",
     "title": "Umsetzung Labör.ch",
     "caption": "Webumsetzung für den Verein «Labör»",
@@ -109,6 +116,7 @@
   },
   "Spaetsommerfest": {
     "images": [],
+    "videos": [],
     "imgPath": "Spaetsommerfest/Spätsommerfest-Keyvisual.png",
     "title": "Flyer für das «Lucid»-Spätsommerfest",
     "caption": "Flyer für ein Event meines Lehrbetriebes «Lucid».",
@@ -122,6 +130,7 @@
     "images": [
       "Streetphysics/Streetphysics.png"
     ],
+    "videos": [],
     "imgPath": "Streetphysics/Streetphysics-Keyvisual.png",
     "title": "Plakat Lucid-Lab-Workshop — Street-Physics",
     "caption": "Plakat für die sechste Durchführung eines LLWS.",
@@ -137,6 +146,7 @@
       "History_Techno/TheHistoryOfTechno-1.png",
       "History_Techno/TheHistoryOfTechno-2.png"
     ],
+    "videos": [],
     "imgPath": "History_Techno/TheHistoryofTechno-Keyvisual.png",
     "title": "The History of Techno",
     "caption": "«Von Detroit bis Berlin – tauch ein in den Beat, der die Welt veränderte.»",
@@ -152,6 +162,7 @@
       "VA/VA-1.png",
       "VA/VA-2.png"
     ],
+    "videos": [],
     "imgPath": "VA/VA-Keyvisual.png",
     "title": "VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen.",
     "caption": "Vertiefungsarbeit zum Thema Religion & Social Media",
@@ -164,6 +175,7 @@
     "images": [
       "Waterman/Waterman.png"
     ],
+    "videos": [],
     "imgPath": "Waterman/Waterman — Keyvisual.png",
     "title": "Werbespot — Waterman",
     "caption": "Werbespot über die Stiftmarke «Waterman»",
@@ -178,6 +190,7 @@
       "Wheeltalk/Wheeltalk.png",
       "Wheeltalk/Wheeltalk-1.png"
     ],
+    "videos": [],
     "imgPath": "Wheeltalk/Wheeltalk—Keyvisual.png",
     "title": "Wheeltalk — Erarbeiten des CI/CD",
     "caption": "Erarbeiten von CI für den Podcast Wheeltalk",
@@ -192,6 +205,7 @@
       "Zuerich Reimagined/Zürich Reimagined.png",
       "Zuerich Reimagined/Zürich Reimagined-1.png"
     ],
+    "videos": [],
     "imgPath": "Zuerich Reimagined/Zürich Reimagined — Keyvisual.png",
     "title": "Zürich Reimagined — IMD-Award-Winner",
     "caption": "«Zürich Reimagined» macht Graffiti als kreative Stimme der Stadt erlebbar – mit einer digitalen Kampagne für Dialog, Aufklärung und legale Freiräume.",
