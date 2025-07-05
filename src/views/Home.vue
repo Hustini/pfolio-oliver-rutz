@@ -80,7 +80,7 @@ function scrollToTeaser() {
 
 .arrow {
   position: absolute;
-  bottom: 13.5%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   height: 20px;
@@ -137,7 +137,7 @@ function scrollToTeaser() {
 
   .arrow {
     position: absolute;
-    bottom: 8.5%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     height: 20px;
@@ -147,7 +147,7 @@ function scrollToTeaser() {
 @media (min-width: 641px) and (max-width: 1024px) {
   .arrow {
     position: absolute;
-    bottom: 8.5%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     height: 20px;
