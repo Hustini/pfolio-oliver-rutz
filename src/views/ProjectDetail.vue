@@ -24,7 +24,8 @@ const {
   time = '',
   text = '',
   link = '',
-  images = []
+  images = [],
+  videos = []
 } = projectData;
 
 const tagsSplit = tags.split(',').filter(t => t.trim() !== '');
@@ -62,8 +63,12 @@ function scrollTo() {
           <a :href="link" target="_blank" class="link">{{ link }}</a>
         </div>
       </div>
-      <div class="project-images layout-container" v-if="images.length">
+      <div class="project-images layout-container" v-if="images.length || videos.length">
         <img v-for="(img, index) in images" :key="index" :src="img" class="project-image" :alt="'Image ' + (index + 1)" />
+        <video v-if="videos.length" class="project-image" controls>
+          <source v-for="(video, index) in videos" :key="index" :src="video" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
       </div>
     </div>
     <Footer ref="scrollToContact" :color="color" :transparentColor="transparentColor" />
