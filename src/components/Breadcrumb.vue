@@ -25,7 +25,7 @@ export default {
       if (route.name !== 'Home') {
         crumbs.push({
           name: 'HOME',
-          path: '/home'
+          path: '/'
         });
       }
 
