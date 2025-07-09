@@ -99,7 +99,7 @@ export default {
         <ProjectCard :imgPath="projects.ArcadeBot.imgPath" :placeholder="projects.ArcadeBot.placeholder" :tag="tags.installation" :title="projects.ArcadeBot.title" :caption="projects.ArcadeBot.caption"/>
       </router-link>
       <router-link
-          v-if="tags.web === true"
+          v-if="tags.web === true || tags.UX === true"
           :to="{
           name: 'ProjectDetail',
           query: { project: 'EHCT' }
@@ -109,7 +109,7 @@ export default {
         <ProjectCard :imgPath="projects.EHCT.imgPath" :placeholder="projects.EHCT.placeholder" :tag="tags.web" :title="projects.EHCT.title" :caption="projects.EHCT.caption"/>
       </router-link>
       <router-link
-          v-if="tags.web === true"
+          v-if="tags.web === true || tags.UX === true"
           :to="{
           name: 'ProjectDetail',
           query: { project: 'Orbit' }
@@ -119,7 +119,7 @@ export default {
         <ProjectCard :imgPath="projects.Orbit.imgPath" :placeholder="projects.Orbit.placeholder" :tag="tags.web" :title="projects.Orbit.title" :caption="projects.Orbit.caption"/>
       </router-link>
       <router-link
-          v-if="tags.web === true"
+          v-if="tags.web === true || tags.UX === true"
           :to="{
           name: 'ProjectDetail',
           query: { project: 'IPA' }
@@ -129,7 +129,7 @@ export default {
         <ProjectCard :imgPath="projects.IPA.imgPath" :placeholder="projects.IPA.placeholder" :tag="tags.web" :title="projects.IPA.title" :caption="projects.IPA.caption"/>
       </router-link>
       <router-link
-          v-if="tags.web === true"
+          v-if="tags.web === true || tags.UX === true"
           :to="{
           name: 'ProjectDetail',
           query: { project: 'Jungspund' }
@@ -149,7 +149,7 @@ export default {
         <ProjectCard :imgPath="projects.Kim_Trimm.imgPath" :placeholder="projects.Kim_Trimm.placeholder" :tag="tags.video" :title="projects.Kim_Trimm.title" :caption="projects.Kim_Trimm.caption"/>
       </router-link>
       <router-link
-          v-if="tags.web === true"
+          v-if="tags.web === true || tags.UX === true"
           :to="{
           name: 'ProjectDetail',
           query: { project: 'Labor' }
@@ -219,7 +219,7 @@ export default {
         <ProjectCard :imgPath="projects.Wheeltalk.imgPath" :placeholder="projects.Wheeltalk.placeholder" :tag="tags.CICD" :title="projects.Wheeltalk.title" :caption="projects.Wheeltalk.caption"/>
       </router-link>
       <router-link
-          v-if="tags.web === true"
+          v-if="tags.web === true || tags.UX === true"
           :to="{
           name: 'ProjectDetail',
           query: { project: 'Zurich_Reimagined' }
