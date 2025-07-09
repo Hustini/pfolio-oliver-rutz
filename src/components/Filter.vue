@@ -96,7 +96,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.ArcadeBot.imgPath" :placeholder="projects.ArcadeBot.placeholder" :tag="tags.installation" :title="projects.ArcadeBot.title" :caption="projects.ArcadeBot.caption"/>
+        <ProjectCard :imgPath="projects.ArcadeBot.imgPath" :placeholder="projects.ArcadeBot.placeholder" :title="projects.ArcadeBot.title" :caption="projects.ArcadeBot.caption"/>
       </router-link>
       <router-link
           v-if="tags.web === true || tags.UX === true"
@@ -106,7 +106,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.EHCT.imgPath" :placeholder="projects.EHCT.placeholder" :tag="tags.web" :title="projects.EHCT.title" :caption="projects.EHCT.caption"/>
+        <ProjectCard :imgPath="projects.EHCT.imgPath" :placeholder="projects.EHCT.placeholder" :title="projects.EHCT.title" :caption="projects.EHCT.caption"/>
       </router-link>
       <router-link
           v-if="tags.web === true || tags.UX === true"
@@ -116,7 +116,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Orbit.imgPath" :placeholder="projects.Orbit.placeholder" :tag="tags.web" :title="projects.Orbit.title" :caption="projects.Orbit.caption"/>
+        <ProjectCard :imgPath="projects.Orbit.imgPath" :placeholder="projects.Orbit.placeholder" :title="projects.Orbit.title" :caption="projects.Orbit.caption"/>
       </router-link>
       <router-link
           v-if="tags.web === true || tags.UX === true"
@@ -126,7 +126,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.IPA.imgPath" :placeholder="projects.IPA.placeholder" :tag="tags.web" :title="projects.IPA.title" :caption="projects.IPA.caption"/>
+        <ProjectCard :imgPath="projects.IPA.imgPath" :placeholder="projects.IPA.placeholder" :title="projects.IPA.title" :caption="projects.IPA.caption"/>
       </router-link>
       <router-link
           v-if="tags.web === true || tags.UX === true"
@@ -136,7 +136,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Jungspund.imgPath" :placeholder="projects.Jungspund.placeholder" :tag="tags.web" :title="projects.Jungspund.title" :caption="projects.Jungspund.caption"/>
+        <ProjectCard :imgPath="projects.Jungspund.imgPath" :placeholder="projects.Jungspund.placeholder" :title="projects.Jungspund.title" :caption="projects.Jungspund.caption"/>
       </router-link>
       <router-link
           v-if="tags.video === true"
@@ -146,7 +146,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Kim_Trimm.imgPath" :placeholder="projects.Kim_Trimm.placeholder" :tag="tags.video" :title="projects.Kim_Trimm.title" :caption="projects.Kim_Trimm.caption"/>
+        <ProjectCard :imgPath="projects.Kim_Trimm.imgPath" :placeholder="projects.Kim_Trimm.placeholder" :title="projects.Kim_Trimm.title" :caption="projects.Kim_Trimm.caption"/>
       </router-link>
       <router-link
           v-if="tags.web === true || tags.UX === true"
@@ -156,7 +156,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Labor.imgPath" :placeholder="projects.Labor.placeholder" :tag="tags.web" :title="projects.Labor.title" :caption="projects.Labor.caption"/>
+        <ProjectCard :imgPath="projects.Labor.imgPath" :placeholder="projects.Labor.placeholder" :title="projects.Labor.title" :caption="projects.Labor.caption"/>
       </router-link>
       <router-link
           v-if="tags.print === true"
@@ -166,7 +166,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Spaetsommerfest.imgPath" :placeholder="projects.Spaetsommerfest.placeholder" :tag="tags.print" :title="projects.Spaetsommerfest.title" :caption="projects.Spaetsommerfest.caption"/>
+        <ProjectCard :imgPath="projects.Spaetsommerfest.imgPath" :placeholder="projects.Spaetsommerfest.placeholder" :title="projects.Spaetsommerfest.title" :caption="projects.Spaetsommerfest.caption"/>
       </router-link>
       <router-link
           v-if="tags.print === true"
@@ -176,7 +176,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Street_Physics.imgPath" :placeholder="projects.Street_Physics.placeholder" :tag="tags.print" :title="projects.Street_Physics.title" :caption="projects.Street_Physics.caption"/>
+        <ProjectCard :imgPath="projects.Street_Physics.imgPath" :placeholder="projects.Street_Physics.placeholder" :title="projects.Street_Physics.title" :caption="projects.Street_Physics.caption"/>
       </router-link>
       <router-link
           v-if="tags.video === true"
@@ -186,7 +186,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.history_techno.imgPath" :placeholder="projects.history_techno.placeholder" :tag="tags.video" :title="projects.history_techno.title" :caption="projects.history_techno.caption"/>
+        <ProjectCard :imgPath="projects.history_techno.imgPath" :placeholder="projects.history_techno.placeholder" :title="projects.history_techno.title" :caption="projects.history_techno.caption"/>
       </router-link>
       <router-link
           v-if="tags.print === true"
@@ -196,7 +196,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.VA.imgPath" :placeholder="projects.VA.placeholder" :tag="tags.print" :title="projects.VA.title" :caption="projects.VA.caption"/>
+        <ProjectCard :imgPath="projects.VA.imgPath" :placeholder="projects.VA.placeholder" :title="projects.VA.title" :caption="projects.VA.caption"/>
       </router-link>
       <router-link
           v-if="tags.video === true"
@@ -206,7 +206,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Waterman.imgPath" :placeholder="projects.Waterman.placeholder" :tag="tags.video" :title="projects.Waterman.title" :caption="projects.Waterman.caption"/>
+        <ProjectCard :imgPath="projects.Waterman.imgPath" :placeholder="projects.Waterman.placeholder" :title="projects.Waterman.title" :caption="projects.Waterman.caption"/>
       </router-link>
       <router-link
           v-if="tags.CICD === true"
@@ -216,7 +216,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Wheeltalk.imgPath" :placeholder="projects.Wheeltalk.placeholder" :tag="tags.CICD" :title="projects.Wheeltalk.title" :caption="projects.Wheeltalk.caption"/>
+        <ProjectCard :imgPath="projects.Wheeltalk.imgPath" :placeholder="projects.Wheeltalk.placeholder" :title="projects.Wheeltalk.title" :caption="projects.Wheeltalk.caption"/>
       </router-link>
       <router-link
           v-if="tags.web === true || tags.UX === true"
@@ -226,7 +226,7 @@ export default {
         }"
           class="link"
       >
-        <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" :placeholder="projects.Zurich_Reimagined.placeholder" :tag="tags.web" :title="projects.Zurich_Reimagined.title" :caption="projects.Zurich_Reimagined.caption"/>
+        <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" :placeholder="projects.Zurich_Reimagined.placeholder" :title="projects.Zurich_Reimagined.title" :caption="projects.Zurich_Reimagined.caption"/>
       </router-link>
     </div>
   </div>

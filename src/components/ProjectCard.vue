@@ -16,10 +16,6 @@ const props = defineProps({
     type: [Number, String],
     default: "default caption"
   },
-  tag: {
-    type: Boolean,
-    default: true
-  },
   disableHover: {
     type: Boolean,
     default: false
