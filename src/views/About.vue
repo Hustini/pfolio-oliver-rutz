@@ -31,7 +31,10 @@ function scrollTo() {
           {{ line }}
         </div>
       </div>
-      <img class="about-image" src="/img/about_image.jpg" alt="portrait">
+      <div class="about-images">
+        <img class="about-image" src="/img/about_image.jpg" alt="portrait">
+        <img class="about-image" src="/img/about_image2.jpg" alt="portrait">
+      </div>
     </div>
   </div>
   <Footer ref="scrollToContact" :color="color" :transparentColor="transparentColor" />
@@ -59,7 +62,7 @@ function scrollTo() {
 
 .text-container {
   font-size: 16px;
-  width: 100%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
@@ -72,7 +75,22 @@ function scrollTo() {
   gap: 1rem;
 }
 
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
 .about-image {
+  width: 100%;
+}
+
+.about-image:last-of-type {
   width: 50%;
 }
 
