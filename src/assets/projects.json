@@ -6,6 +6,7 @@
       "ArcadeBot/Arcadebot-2.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "ArcadeBot/Arcadebot—Keyvisual.png",
     "title": "Bits-N-Bolts — ArcadeBot",
     "caption": "Selbstgebaute Installation mit dem Thema: «Können Roboter Emotionen zeigen?»",
@@ -23,6 +24,7 @@
       "EHCT/EHCT-Bonusvisual-3.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "EHCT/Keyvisual.png",
     "title": "Webdesign — EHCT",
     "caption": "Entstanden aus einem kleinen Schulprojekt, habe ich ein Mögliches redesign der Website des EHCT gemacht.",
@@ -40,6 +42,7 @@
       "Orbit/Orbit-3.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "Orbit/Orbit Keyvisual.png",
     "title": "Orbit — Website IMDExpo",
     "caption": "Ein Website in welcher alle IPAs der Lernenden aufgeführt sind, und diese verewigt werden.",
@@ -58,6 +61,7 @@
       "IPA/IPA-Desktop-2.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "IPA/IPA-Keyvisual.png",
     "title": "Zürcher Bauernhofläden — und wo sie zu finden sind.",
     "caption": "«Finde regionale Hofläden – nachhaltig, nah & tierfreundlich einkaufen in Zürich.»",
@@ -74,6 +78,7 @@
       "Jungspund/Jungspund-2.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "Jungspund/Jungspund-Keyvisual.png",
     "title": "Design Jungspund",
     "caption": "Mithilfe einer Mitschülerin, die Website des Theater-Vereins «Jungspund» redesignen.",
@@ -87,6 +92,7 @@
     "videos": [
       "Kim_Trimm/Kim-Trimm.mp4"
     ],
+    "awardImage": "",
     "imgPath": "Kim_Trimm/Keyvisual.png",
     "title": "Kim-Trimm — Ük Aarau",
     "caption": "In einem Video ÜK in Aarau hatten wir die Aufgabe in der Schule ein Video zu erstellen. Dabei habe wir uns für die Storyline «Kim Trimm» entschieden.",
@@ -105,6 +111,7 @@
       "Laboer/Labör-4.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "Laboer/Labör-Keyvisual.png",
     "title": "Umsetzung Labör.ch",
     "caption": "Webumsetzung für den Verein «Labör»",
@@ -117,6 +124,7 @@
   "Spaetsommerfest": {
     "images": [],
     "videos": [],
+    "awardImage": "",
     "imgPath": "Spaetsommerfest/Spätsommerfest-Keyvisual.png",
     "title": "Flyer für das «Lucid»-Spätsommerfest",
     "caption": "Flyer für ein Event meines Lehrbetriebes «Lucid».",
@@ -131,6 +139,7 @@
       "Streetphysics/Streetphysics.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "Streetphysics/Streetphysics-Keyvisual.png",
     "title": "Plakat Lucid-Lab-Workshop — Street-Physics",
     "caption": "Plakat für die sechste Durchführung eines LLWS.",
@@ -147,6 +156,7 @@
       "History_Techno/TheHistoryOfTechno-2.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "History_Techno/TheHistoryofTechno-Keyvisual.png",
     "title": "The History of Techno",
     "caption": "«Von Detroit bis Berlin – tauch ein in den Beat, der die Welt veränderte.»",
@@ -163,6 +173,7 @@
       "VA/VA-2.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "VA/VA-Keyvisual.png",
     "title": "VA — Der Einfluss von Social Media auf religiöse Praktiken und Glaubensüberzeugungen.",
     "caption": "Vertiefungsarbeit zum Thema Religion & Social Media",
@@ -176,6 +187,7 @@
       "Waterman/Waterman.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "Waterman/Waterman — Keyvisual.png",
     "title": "Werbespot — Waterman",
     "caption": "Werbespot über die Stiftmarke «Waterman»",
@@ -191,6 +203,7 @@
       "Wheeltalk/Wheeltalk-1.png"
     ],
     "videos": [],
+    "awardImage": "",
     "imgPath": "Wheeltalk/Wheeltalk—Keyvisual.png",
     "title": "Wheeltalk — Erarbeiten des CI/CD",
     "caption": "Erarbeiten von CI für den Podcast Wheeltalk",
@@ -206,6 +219,7 @@
       "Zuerich Reimagined/Zürich Reimagined-1.png"
     ],
     "videos": [],
+    "awardImage": "Zuerich Reimagined/gold_2025.png",
     "imgPath": "Zuerich Reimagined/Zürich Reimagined — Keyvisual.png",
     "title": "Zürich Reimagined — IMD-Award-Winner",
     "caption": "«Zürich Reimagined» macht Graffiti als kreative Stimme der Stadt erlebbar – mit einer digitalen Kampagne für Dialog, Aufklärung und legale Freiräume.",
