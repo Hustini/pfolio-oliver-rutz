@@ -16,11 +16,6 @@ export default {
     const breadcrumbs = computed(() => {
       const crumbs = [];
 
-      // Ignore the ComingSoon route
-      if (route.name === 'ComingSoon') {
-        return crumbs;
-      }
-
       // Add Home as the first breadcrumb for all routes except Home itself
       if (route.name !== 'Home') {
         crumbs.push({
