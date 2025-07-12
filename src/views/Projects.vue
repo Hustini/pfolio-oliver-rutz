@@ -34,7 +34,7 @@ function scrollTo() {
         }"
             class="link"
         >
-          <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" :placeholder="projects.Zurich_Reimagined.placeholder" title="" caption=""/>
+          <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" :awardImg="projects.Zurich_Reimagined.awardImage" :placeholder="projects.Zurich_Reimagined.placeholder" title="" caption=""/>
           <div class="featured-project-title">{{ projects.Zurich_Reimagined.title }}</div>
         </router-link>
         <router-link

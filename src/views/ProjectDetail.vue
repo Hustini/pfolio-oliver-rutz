@@ -19,6 +19,7 @@ const projectData = projects[projectKey] || {};
 
 const {
   imgPath = '',
+  awardImage = '',
   title = '',
   tags = '',
   time = '',
@@ -44,7 +45,7 @@ function scrollTo() {
     </div>
     <div class="project">
       <div class="project-wrapper layout-container">
-        <ProjectCard class="project-card" :imgPath="imgPath" title="" caption="" :disableHover=true />
+        <ProjectCard class="project-card" :imgPath="imgPath" :awardImg="awardImage" title="" caption="" :disableHover=true />
       </div>
       <div class="project-info">
         <div class="project-info-item layout-container">

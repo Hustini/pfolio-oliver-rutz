@@ -20,7 +20,7 @@ defineExpose({ teaserRef })
         }"
             class="link"
         >
-          <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" :placeholder="projects.Zurich_Reimagined.placeholder" :title="projects.Zurich_Reimagined.title" :caption="projects.Zurich_Reimagined.caption"/>
+          <ProjectCard :imgPath="projects.Zurich_Reimagined.imgPath" :awardImg="projects.Zurich_Reimagined.awardImage" :placeholder="projects.Zurich_Reimagined.placeholder" :title="projects.Zurich_Reimagined.title" :caption="projects.Zurich_Reimagined.caption"/>
         </router-link>
         <router-link
             :to="{

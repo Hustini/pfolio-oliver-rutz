@@ -4,6 +4,10 @@ const props = defineProps({
     type: [Number, String],
     default: "/img/placeholder.png"
   },
+  awardImg: {
+    type: [Number, String],
+    default: ""
+  },
   placeholder: {
     type: [Number, String],
     default: "default placeholder"
@@ -27,7 +31,7 @@ const props = defineProps({
   <div class="card">
     <div class="image-wrapper" :class="{ 'no-hover': disableHover }">
       <img :src="imgPath" :alt="placeholder" />
-      <img class="top-image" src="../../public/Zuerich Reimagined/gold_2025.png" alt="placeholder" />
+      <img v-if="awardImg !== ''" class="top-image" :src="awardImg" alt="placeholder" />
     </div>
     <div class="text">
       <div class="title">{{ title }}</div>
