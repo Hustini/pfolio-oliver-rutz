@@ -27,6 +27,7 @@ const props = defineProps({
   <div class="card">
     <div class="image-wrapper" :class="{ 'no-hover': disableHover }">
       <img :src="imgPath" :alt="placeholder" />
+      <img class="top-image" src="../../public/Zuerich Reimagined/gold_2025.png" alt="placeholder" />
     </div>
     <div class="text">
       <div class="title">{{ title }}</div>
@@ -56,6 +57,18 @@ img {
 }
 .image-wrapper.no-hover:hover img {
   transform: scale(1) !important;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.top-image {
+  position: absolute;
+  width: 22%;
+  top: 0;
+  right: 8%;
 }
 
 .card {
