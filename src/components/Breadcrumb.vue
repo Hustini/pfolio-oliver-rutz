@@ -27,9 +27,10 @@ export default {
       // Add current route if it's not Home and change route if it's ProjectDetail
       if (route.name && route.name !== 'Home') {
         if (route.name === 'ProjectDetail') {
+          console.log(route.path)
           crumbs.push({
             name: 'PROJECTS',
-            path: route.path
+            path: '/projects'
           });
         } else if (!props.lastItem) {
           crumbs.push({
