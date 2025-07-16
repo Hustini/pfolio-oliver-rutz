@@ -31,7 +31,7 @@ const props = defineProps({
   <div class="card">
     <div class="image-wrapper" :class="{ 'no-hover': disableHover }">
       <img :src="imgPath" :alt="placeholder" />
-      <img v-if="awardImg !== ''" class="top-image" :src="awardImg" alt="placeholder" />
+      <img v-if="awardImg !== ''" class="top-image" :src="awardImg" alt="award" />
     </div>
     <div class="text">
       <div class="title">{{ title }}</div>
@@ -52,14 +52,14 @@ img {
   transform-origin: center;
 }
 
-.image-wrapper img {
+.image-wrapper {
   transition: transform 0.3s ease;
 }
 
-.image-wrapper:hover img {
+.image-wrapper:hover {
   transform: scale(1.025);
 }
-.image-wrapper.no-hover:hover img {
+.image-wrapper.no-hover:hover {
   transform: scale(1) !important;
 }
 
@@ -78,8 +78,6 @@ img {
 
 .card {
   width: 100%;
-  transition: transform 0.3s ease;
-  transform-origin: center;
 }
 
 .text {
