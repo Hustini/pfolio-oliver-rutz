@@ -118,9 +118,12 @@ function scrollTo() {
     gap: 0;
   }
 
+  .about-images {
+    padding: 2.5rem 1.25rem;
+  }
+
   .about-image {
     width: 100%;
-    padding: 2.5rem 1.25rem;
   }
 
   .text-container {
