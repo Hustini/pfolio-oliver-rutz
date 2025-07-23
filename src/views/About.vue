@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar.vue";
 import Breadcrumb from "@/components/Breadcrumb.vue";
 import { ref } from 'vue'
 import { inject } from 'vue'
+import { computed } from 'vue'
 import data from '../assets/about.json';
 
 const initParams = inject('initParams')
@@ -15,6 +16,13 @@ const scrollToContact = ref<HTMLElement | null>(null)
 function scrollTo() {
   scrollToContact.value?.footerRef?.scrollIntoView({ behavior: 'smooth' });
 }
+
+// Basic markdown-style parser for [text](url)
+const parsedText = computed(() => {
+  return data.text.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, (match, text, url) => {
+    return `<a class="link" href="${url}" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: underline;">${text}</a>`
+  }).replace(/\n/g, '<br>')
+})
 </script>
 
 <template>
@@ -27,9 +35,7 @@ function scrollTo() {
     </div>
     <div class="layout-container about-content">
       <div class="text-container">
-        <div class="text" v-for="(line, idx) in data.text.split('\n')" :key="idx">
-          {{ line }}
-        </div>
+        <div v-html="parsedText" />
       </div>
       <div class="about-images">
         <img class="about-image" src="/img/about_image.jpg" alt="portrait">
@@ -66,6 +72,10 @@ function scrollTo() {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
+}
+
+:deep(.link):hover {
+  font-style: italic;
 }
 
 .about-content {
