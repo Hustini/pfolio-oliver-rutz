@@ -41,6 +41,8 @@ function scrollToTeaser() {
 <style scoped>
 .home {
   position: relative;
+  height: 100vh;
+  height: -webkit-fill-available;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -89,7 +91,7 @@ function scrollToTeaser() {
 
 @media (max-width: 640px) {
   .hero-content {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: block;
     position: relative;
