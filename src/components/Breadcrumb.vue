@@ -100,7 +100,6 @@ export default {
 
 .breadcrumb-item {
   display: flex;
-  align-items: center;
   color: #000000;
   height: 100%;
 }
@@ -111,6 +110,8 @@ export default {
   color: #000000;
   font-size: 1em;
   text-align: center;
+  position: relative;
+  top: 0;
 }
 
 .breadcrumb-link {
