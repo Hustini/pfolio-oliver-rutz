@@ -61,7 +61,7 @@ function scrollTo() {
         </div>
         <div class="project-text">
           <div v-for="(line, idx) in text.split('\n')" :key="idx">{{ line }}</div>
-          <a :href="link" target="_blank" class="link">{{ link }}</a>
+          <a v-if="link !== ''" :href="link" target="_blank" class="link">{{ link }}</a>
         </div>
       </div>
       <div class="project-images layout-container" v-if="images.length || videos.length">
@@ -201,13 +201,14 @@ function scrollTo() {
     flex-direction: column;
     gap: 0;
     padding-top: 0.25rem;
+    padding-bottom: 0;
   }
 
-  @media (max-width: 640px) {
-    .project-images {
-      grid-template-columns: 1fr;
-      padding: 1.25rem;
-    }
+  .project-images {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1.25rem;
+    border-top: black solid 1px;
+    margin-bottom: 0;
   }
 
   .title {
