@@ -89,7 +89,7 @@ function scrollTo() {
   display: flex;
   flex-direction: row;
   gap: 1.25rem;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 1.375rem;
