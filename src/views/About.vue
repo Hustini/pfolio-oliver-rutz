@@ -35,11 +35,8 @@ const parsedText = computed(() => {
     </div>
     <div class="layout-container about-content">
       <div class="text-container">
+        <div class="title">Oliver Benjamin Rutz – Interactive Media Designer</div>
         <div v-html="parsedText" />
-      </div>
-      <div class="about-images">
-        <img class="about-image" src="/img/about_image.jpg" alt="portrait">
-        <img class="about-image" src="/img/about_image2.jpg" alt="portrait">
       </div>
     </div>
   </div>
@@ -68,10 +65,21 @@ const parsedText = computed(() => {
 
 .text-container {
   font-size: 16px;
-  width: 75%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: baseline;
   gap: 0.625rem;
+}
+
+.title {
+  min-width: 50%;
+  width: 50%;
+  font-size: 4.7rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  border-bottom: black solid 1px;
 }
 
 :deep(.link):hover {
@@ -81,7 +89,7 @@ const parsedText = computed(() => {
 .about-content {
   padding-bottom: 1.625rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
 }
 
