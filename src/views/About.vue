@@ -41,8 +41,8 @@ const parsedText = computed(() => {
       <div class="about-images">
         <img class="" src="/img/about_image.jpg" alt="portrait">
         <div class="about-image-group">
-          <img class="" src="/img/about_image2.jpg" alt="portrait">
-          <img class="" src="/img/about_image3.jpg" alt="portrait">
+          <img class="about-image" src="/img/about_image2.jpg" alt="portrait">
+          <img class="about-image" src="/img/about_image3.jpg" alt="portrait">
         </div>
       </div>
     </div>
@@ -157,6 +157,28 @@ const parsedText = computed(() => {
     gap: 0;
   }
 
+  .about-image-group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+    width: 100%;
+  }
+
+  .about-image-group img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    aspect-ratio: auto;
+  }
+
+  .about-image-group img:nth-child(1) {
+    grid-column: span 1;
+  }
+
+  .about-image-group img:nth-child(2) {
+    grid-column: span 1;
+  }
+
   .about-images {
     padding: 2.5rem 1.25rem;
   }
@@ -168,9 +190,19 @@ const parsedText = computed(() => {
   .text-container {
     width: 100%;
     max-width: 100%;
-    border-top: black solid 1px;
+    flex-direction: column;
     border-bottom: black solid 1px;
     padding: 2.5rem 1.25rem;
+  }
+
+  .title {
+    min-width: 50%;
+    width: 100%;
+    font-size: 1.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    border-bottom: black solid 1px;
   }
 }
 
