@@ -33,12 +33,12 @@ const parsedText = computed(() => {
       <div class="about">About</div>
       <img class="hero-portrait" src="/img/about_portrait.jpg" alt="portrait">
     </div>
-    <div class="layout-container about-content">
+    <div class="about-content">
       <div class="text-container">
         <div class="title">Oliver Benjamin Rutz – Interactive Media Designer</div>
-        <div v-html="parsedText" />
+        <div class="text" v-html="parsedText" />
       </div>
-      <div class="about-images">
+      <div class="layout-container about-images">
         <img class="" src="/img/about_image.jpg" alt="portrait">
         <div class="about-image-group">
           <img class="about-image" src="/img/about_image2.jpg" alt="portrait">
@@ -77,6 +77,7 @@ const parsedText = computed(() => {
   flex-direction: row;
   align-items: baseline;
   gap: 0.625rem;
+  padding: 0 3.75rem;
 }
 
 .title {
@@ -157,6 +158,30 @@ const parsedText = computed(() => {
     gap: 0;
   }
 
+  .text-container {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    border-bottom: black solid 1px;
+    padding: 0;
+    gap: 0;
+  }
+
+  .title {
+    min-width: 50%;
+    width: 100%;
+    font-size: 1.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    border-bottom: black solid 1px;
+    padding: 2.5rem 1.25rem;
+  }
+
+  .text {
+    padding: 2.5rem 1.25rem;
+  }
+
   .about-image-group {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -185,24 +210,6 @@ const parsedText = computed(() => {
 
   .about-image {
     width: 100%;
-  }
-
-  .text-container {
-    width: 100%;
-    max-width: 100%;
-    flex-direction: column;
-    border-bottom: black solid 1px;
-    padding: 2.5rem 1.25rem;
-  }
-
-  .title {
-    min-width: 50%;
-    width: 100%;
-    font-size: 1.5rem;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    border-bottom: black solid 1px;
   }
 }
 
