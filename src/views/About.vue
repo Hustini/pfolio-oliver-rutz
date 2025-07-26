@@ -38,6 +38,13 @@ const parsedText = computed(() => {
         <div class="title">Oliver Benjamin Rutz – Interactive Media Designer</div>
         <div v-html="parsedText" />
       </div>
+      <div class="about-images">
+        <img class="" src="/img/about_image.jpg" alt="portrait">
+        <div class="about-image-group">
+          <img class="" src="/img/about_image2.jpg" alt="portrait">
+          <img class="" src="/img/about_image3.jpg" alt="portrait">
+        </div>
+      </div>
     </div>
   </div>
   <Footer ref="scrollToContact" :color="color" :transparentColor="transparentColor" />
@@ -104,12 +111,26 @@ const parsedText = computed(() => {
   -webkit-user-select: none;
 }
 
-.about-image {
+.about-image-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
   width: 100%;
 }
 
-.about-image:last-of-type {
-  width: 50%;
+.about-image-group img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+}
+
+.about-image-group img:nth-child(1) {
+  grid-column: span 1;
+}
+
+.about-image-group img:nth-child(2) {
+  grid-column: span 2;
 }
 
 @media (max-width: 640px) {
