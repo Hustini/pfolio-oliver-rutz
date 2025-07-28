@@ -241,6 +241,16 @@ function scrollTo() {
   }
 }
 
+@media (min-width: 641px) and (max-width: 1024px) {
+  .project-info-item {
+    padding: 0 0 0 1.25rem;
+  }
+
+  .project-text {
+    padding: 0 1.25rem 0 0 ;
+  }
+}
+
 @media (min-width: 1536px) {
   .project-info-item {
     padding: 0 0 0 4rem;
