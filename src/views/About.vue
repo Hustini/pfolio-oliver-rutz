@@ -245,5 +245,21 @@ const parsedText = computed(() => {
   }
 }
 
+@media (min-width: 861px) and (max-width: 1024px) {
+  .text-container {
+    padding: 0;
+    gap: 0;
+  }
+
+  .title {
+    padding: 0;
+    margin: 0 0 0 1.25rem;
+  }
+
+  .text {
+    padding: 2.5rem 1.25rem;
+  }
+}
+
 @media (min-width: 1536px) {}
 </style>
