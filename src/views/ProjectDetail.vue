@@ -241,7 +241,52 @@ function scrollTo() {
   }
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
+@media (min-width: 641px) and (max-width: 860px) {
+  .page-container {
+    padding-top: 4.75rem;
+  }
+
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: baseline;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+
+  .project-info-item {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+
+  .project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 2.5rem 1.25rem;
+    width: 100%;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+  }
+
+  .info-wrapper {
+    font-size: 20px;
+    padding: 1.125rem 0 1.375rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border-bottom: none;
+  }
+
+  .project-images {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1024px) {
   .page-container {
     padding-top: 4.75rem;
   }
