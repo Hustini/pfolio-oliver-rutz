@@ -242,6 +242,10 @@ function scrollTo() {
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
+  .page-container {
+    padding-top: 4.75rem;
+  }
+
   .project-info-item {
     padding: 0 0 0 1.25rem;
   }

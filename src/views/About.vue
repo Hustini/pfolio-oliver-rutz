@@ -246,6 +246,11 @@ const parsedText = computed(() => {
 }
 
 @media (min-width: 861px) and (max-width: 1024px) {
+  .about-container {
+    padding-top: 4.75rem;
+    padding-bottom: 0;
+  }
+
   .text-container {
     padding: 0;
     gap: 0;

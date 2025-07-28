@@ -128,4 +128,9 @@ function scrollTo() {
   }
 }
 
+@media (min-width: 641px) and (max-width: 1024px) {
+  .project-container {
+    padding-top: 4.75rem;
+  }
+}
 </style>
