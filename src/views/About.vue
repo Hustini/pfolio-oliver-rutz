@@ -76,7 +76,7 @@ const parsedText = computed(() => {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  gap: 0.625rem;
+  gap: 1.25rem;
   padding: 0 3.75rem;
 }
 
@@ -88,6 +88,7 @@ const parsedText = computed(() => {
   overflow-wrap: break-word;
   hyphens: auto;
   border-bottom: black solid 1px;
+  padding: 0 0 1.5rem 0;
 }
 
 :deep(.link):hover {
@@ -137,7 +138,7 @@ const parsedText = computed(() => {
 @media (max-width: 640px) {
   .about-container {
     padding-top: 4.75rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0;
   }
 
   .about {
@@ -175,7 +176,7 @@ const parsedText = computed(() => {
     overflow-wrap: break-word;
     hyphens: auto;
     border-bottom: black solid 1px;
-    padding: 2.5rem 1.25rem;
+    padding: 0.75rem 1.25rem 1.25rem;
   }
 
   .text {
