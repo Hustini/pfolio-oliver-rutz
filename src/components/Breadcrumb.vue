@@ -133,7 +133,7 @@ export default {
   font-weight: 500;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 860px) {
   .breadcrumb-link {
     text-decoration: none;
     color: #000000;
