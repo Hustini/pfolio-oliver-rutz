@@ -316,4 +316,11 @@ export default {
     border: none;
   }
 }
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .filter {
+    border-top: black solid 1px;
+    padding: 1.25rem;
+  }
+}
 </style>
