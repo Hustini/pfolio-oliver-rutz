@@ -19,7 +19,7 @@ function scrollTo() {
 
 // Basic markdown-style parser for [text](url)
 const parsedText = computed(() => {
-  return data.text.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, (match, text, url) => {
+  return data.text.replace(/\[([^\]]+)]\((https?:\/\/[^)]+)\)/g, (match, text, url) => {
     return `<a class="link" href="${url}" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: underline;">${text}</a>`
   }).replace(/\n/g, '<br>')
 })
@@ -211,6 +211,37 @@ const parsedText = computed(() => {
 
   .about-image {
     width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 860px) {
+  .about-container {
+    padding-top: 4.75rem;
+    padding-bottom: 0;
+  }
+
+  .text-container {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    border-bottom: black solid 1px;
+    padding: 0;
+    gap: 0;
+  }
+
+  .title {
+    min-width: 50%;
+    width: 100%;
+    font-size: 1.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    border-bottom: black solid 1px;
+    padding: 0.75rem 1.25rem 1.25rem;
+  }
+
+  .text {
+    padding: 2.5rem 1.25rem;
   }
 }
 
