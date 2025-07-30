@@ -99,7 +99,7 @@ const parsedText = computed(() => {
   padding-bottom: 1.625rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 3.125rem;
 }
 
 .about-images {
@@ -220,6 +220,18 @@ const parsedText = computed(() => {
     padding-bottom: 0;
   }
 
+  .about-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-images {
+    padding: 2.5rem 1.25rem;
+  }
+
   .text-container {
     width: 100%;
     max-width: 100%;
@@ -248,7 +260,11 @@ const parsedText = computed(() => {
 @media (min-width: 861px) and (max-width: 1024px) {
   .about-container {
     padding-top: 4.75rem;
-    padding-bottom: 0;
+    padding-bottom: 1.875rem;
+  }
+
+  .about-content {
+    gap: 0;
   }
 
   .text-container {
@@ -257,7 +273,7 @@ const parsedText = computed(() => {
   }
 
   .title {
-    padding: 0;
+    padding: 0 0 1.5rem 0;
     margin: 0 0 0 1.25rem;
   }
 
