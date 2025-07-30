@@ -82,9 +82,9 @@ export default {
 
 <style scoped>
 .breadcrumb {
-  height: 1.25em;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .breadcrumb-list {
