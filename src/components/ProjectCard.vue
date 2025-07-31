@@ -93,6 +93,7 @@ img {
 .caption {
   font-weight: 400;
   font-size: 12px;
+  line-height: 20px;
 }
 
 @media (max-width: 640px) {

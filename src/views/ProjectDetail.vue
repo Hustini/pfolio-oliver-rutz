@@ -107,6 +107,7 @@ function scrollTo() {
   font-size: 1rem;
   padding: 0 3.75rem 0 0;
   width: 50%;
+  line-height: 22px;
 }
 
 .project-images {
@@ -127,6 +128,7 @@ function scrollTo() {
   word-break: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+  line-height: 88px;
 }
 
 .info-wrapper {
@@ -214,6 +216,7 @@ function scrollTo() {
   .title {
     font-size: 1.5rem;
     padding: 0.75rem 0 0 0;
+    line-height: normal;
   }
 
   .info-wrapper {

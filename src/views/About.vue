@@ -89,6 +89,11 @@ const parsedText = computed(() => {
   hyphens: auto;
   border-bottom: black solid 1px;
   padding: 0 0 1.5rem 0;
+  line-height: 88px;
+}
+
+.text {
+  line-height: 22px;
 }
 
 :deep(.link):hover {
@@ -177,6 +182,7 @@ const parsedText = computed(() => {
     hyphens: auto;
     border-bottom: black solid 1px;
     padding: 0.75rem 1.25rem 1.25rem;
+    line-height: normal;
   }
 
   .text {
@@ -250,6 +256,7 @@ const parsedText = computed(() => {
     hyphens: auto;
     border-bottom: black solid 1px;
     padding: 0.75rem 1.25rem 1.25rem;
+    line-height: normal;
   }
 
   .text {
