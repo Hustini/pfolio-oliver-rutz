@@ -7,6 +7,7 @@ import Breadcrumb from '@/components/Breadcrumb.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import Button from '@/components/Button.vue';
 import { inject } from 'vue'
+import { computed } from 'vue'
 import projects from '../assets/projects.json';
 
 const initParams = inject('initParams')
@@ -28,6 +29,13 @@ const {
   images = [],
   videos = []
 } = projectData;
+
+// Basic markdown-style parser for [text](url)
+const parsedText = computed(() => {
+  return text.replace(/\[([^\]]+)]\((https?:\/\/[^)]+)\)/g, (match, text, url) => {
+    return `<a class="link" href="${url}" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: underline;">${text}</a>`
+  }).replace(/\n/g, '<br>')
+})
 
 const tagsSplit = tags.split(',').filter(t => t.trim() !== '');
 
@@ -60,7 +68,7 @@ function scrollTo() {
           </div>
         </div>
         <div class="project-text">
-          <div v-for="(line, idx) in text.split('\n')" :key="idx">{{ line }}</div>
+          <div class="" v-html="parsedText" />
           <a v-if="link !== ''" :href="link" target="_blank" class="link">{{ link }}</a>
         </div>
       </div>
@@ -108,6 +116,10 @@ function scrollTo() {
   padding: 0 3.75rem 0 0;
   width: 50%;
   line-height: 22px;
+}
+
+:deep(.link):hover {
+  font-style: italic;
 }
 
 .project-images {
