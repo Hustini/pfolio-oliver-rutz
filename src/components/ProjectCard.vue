@@ -105,5 +105,9 @@ img {
   .text {
     padding: 0;
   }
+
+  :deep(.image-wrapper:hover) {
+    transform: scale(1) !important;
+  }
 }
 </style>

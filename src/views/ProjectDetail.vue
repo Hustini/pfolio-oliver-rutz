@@ -53,7 +53,7 @@ function scrollTo() {
     </div>
     <div class="project">
       <div class="project-wrapper layout-container">
-        <ProjectCard class="project-card" :imgPath="imgPath" :awardImg="awardImage" title="" caption="" :disableHover=true />
+        <ProjectCard class="project-card" :imgPath="imgPath" :awardImg="awardImage" title="" caption="" />
       </div>
       <div class="project-info">
         <div class="project-info-item layout-container">
@@ -91,6 +91,10 @@ function scrollTo() {
 
 .project-card {
   width: 100%;
+}
+
+/deep/ .image-wrapper {
+  transform: scale(1) !important;
 }
 
 .project-info {
