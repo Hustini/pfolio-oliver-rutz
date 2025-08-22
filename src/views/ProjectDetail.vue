@@ -93,7 +93,7 @@ function scrollTo() {
   width: 100%;
 }
 
-/deep/ .image-wrapper {
+.project-card :deep(.image-wrapper:hover) {
   transform: scale(1) !important;
 }
 
