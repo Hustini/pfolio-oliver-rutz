@@ -19,17 +19,13 @@ const props = defineProps({
   caption: {
     type: [Number, String],
     default: "default caption"
-  },
-  disableHover: {
-    type: Boolean,
-    default: false
   }
 })
 </script>
 
 <template>
   <div class="card">
-    <div class="image-wrapper" :class="{ 'no-hover': disableHover }">
+    <div class="image-wrapper">
       <img :src="imgPath" :alt="placeholder" />
       <img v-if="awardImg !== ''" class="top-image" :src="awardImg" alt="award" />
     </div>
@@ -58,9 +54,6 @@ img {
 
 .image-wrapper:hover {
   transform: scale(1.025);
-}
-.image-wrapper.no-hover:hover {
-  transform: scale(1) !important;
 }
 
 .image-wrapper {
