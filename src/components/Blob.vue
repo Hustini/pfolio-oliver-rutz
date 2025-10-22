@@ -68,6 +68,15 @@ onUnmounted(() => {
   filter: blur(30px);
 }
 
+@media (min-width: 641px) and (max-width: 1024px) {
+  .blob {
+    width: 365px;
+    height: 365px;
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+}
 
 @media (max-width: 640px) {
   .blob {
