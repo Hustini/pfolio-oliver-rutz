@@ -140,7 +140,7 @@ const props = defineProps({
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 0 ;
+  padding: 4px 0 ;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -272,6 +272,12 @@ span.menu-item {
     border: 1px solid #000000;
     border-top: none;
     border-right: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-items li {
+    padding: 0.25rem 1.25rem 0.25rem 0;
   }
 }
 </style>
