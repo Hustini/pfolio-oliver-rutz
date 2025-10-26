@@ -26,8 +26,10 @@ function scrollToTeaser() {
   <div class="home">
     <NavBar @scroll-contact="() => scrollToFooter(scrollToContact)" />
     <div class="layout-container hero-content">
-      <Blob class="blob" :color="color" :transparentColor="transparentColor" />
-      <h1 class="title">Interactive Media Designer Oliver Benjamin Rutz</h1>
+      <div class="flex-container">
+        <Blob class="blob" :color="color" :transparentColor="transparentColor" />
+        <h1 class="title">Interactive Media Designer Oliver Benjamin Rutz</h1>
+      </div>
       <svg class="arrow" @click="scrollToTeaser" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <path d="M26.29 20.29 18 28.59V0h-2v28.59l-8.29-8.3-1.42 1.42 10 10a1 1 0 0 0 1.41 0l10-10z" data-name="2-Arrow Down"/>
       </svg>
@@ -59,7 +61,6 @@ function scrollToTeaser() {
 }
 
 .blob {
-  position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -76,6 +77,18 @@ function scrollToTeaser() {
   color: #000;
   margin-top: auto;
   padding: 1rem 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .arrow {
