@@ -85,6 +85,10 @@ function scrollTo() {
 </template>
 
 <style scoped>
+.page-container {
+  padding: 4rem 0 0 0;
+}
+
 .padding-bottom {
   padding-bottom: 0.625rem;
 }
@@ -320,6 +324,10 @@ function scrollTo() {
 }
 
 @media (min-width: 1536px) {
+  .page-container {
+    padding: 4rem 0 0 0;
+  }
+
   .project-info-item {
     padding: 0 0 0 4rem;
   }

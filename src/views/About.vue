@@ -52,7 +52,7 @@ const parsedText = computed(() => {
 
 <style scoped>
 .about-container {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 1.875rem
 }
 

@@ -82,7 +82,7 @@ function scrollTo() {
 }
 
 .project-container {
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 
 .link {
