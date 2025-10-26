@@ -100,7 +100,7 @@ function scrollToTeaser() {
 
 .arrow {
   position: absolute;
-  bottom: 5%;
+  bottom: 2.5%;
   left: 50%;
   transform: translateX(-50%);
   height: 20px;
@@ -159,7 +159,7 @@ function scrollToTeaser() {
 
   .arrow {
     position: absolute;
-    bottom: 5%;
+    bottom: 2.5%;
     left: 50%;
     transform: translateX(-50%);
     height: 20px;
