@@ -70,7 +70,7 @@ function scrollToTeaser() {
   aspect-ratio: 1;
   z-index: 0;
   pointer-events: none;
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 .title {
@@ -121,19 +121,21 @@ function scrollToTeaser() {
     padding: 1rem 0 0 1rem;
     position: absolute;
     left: 0;
-    top: 100%; /* 👈 anchor it to the bottom of hero-content */
-    transform-origin: top left; /* 👈 rotate around the corner */
+    top: 100%;
+    transform-origin: top left;
     transform: rotate(-90deg);
-    width: 85vh; /* match height of hero-content */
+    width: 85vh;
   }
 
   .blob {
-    top: 50%;
+    position: absolute;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80vw;
     height: 80vw;
     z-index: 2;
+    margin: 0;
   }
 
   .arrow {
