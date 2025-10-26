@@ -167,6 +167,12 @@ function scrollToTeaser() {
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
+  .blob {
+    top: auto;
+    bottom: auto;
+    transform: none;
+  }
+
   .arrow {
     position: absolute;
     bottom: 2.5%;
