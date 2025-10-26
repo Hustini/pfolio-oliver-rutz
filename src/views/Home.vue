@@ -61,11 +61,16 @@ function scrollToTeaser() {
 }
 
 .blob {
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: auto;
+  max-width: 450px;
+  max-height: 450px;
+  aspect-ratio: 1;
   z-index: 0;
   pointer-events: none;
+  margin-top: 4rem;
 }
 
 .title {
@@ -75,8 +80,10 @@ function scrollToTeaser() {
   font-weight: 400;
   text-align: left;
   color: #000;
-  margin-top: auto;
-  padding: 1rem 0;
+  margin: 0;
+  padding: 0 0 2rem 0;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 .flex-container {
@@ -84,11 +91,11 @@ function scrollToTeaser() {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0;
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .arrow {
